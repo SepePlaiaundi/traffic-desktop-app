@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.DashboardCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border Padding="20"
+            Background="White"
+            CornerRadius="6"
+            BorderBrush="#DDD"
+            BorderThickness="1">
+
+        <StackPanel>
+
+            <TextBlock Text="{Binding Title}"
+                       FontSize="13"
+                       FontWeight="SemiBold"/>
+
+            <TextBlock Text="{Binding Value}"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Margin="0,10,0,5"/>
+
+            <TextBlock Text="{Binding Subtitle}"
+                       FontSize="11"
+                       Foreground="Gray"/>
+
+        </StackPanel>
+
+    </Border>
+
+</UserControl>

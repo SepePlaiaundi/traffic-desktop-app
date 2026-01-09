@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.DashboardHeader"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border Background="White"
+            BorderBrush="#DDD"
+            BorderThickness="0,0,0,1">
+
+        <Grid Margin="20,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Panel de control"
+                       VerticalAlignment="Center"
+                       FontSize="16"
+                       FontWeight="SemiBold"/>
+
+            <Image Grid.Column="1"
+                   Source="/Assets/logo.png"
+                   Height="60"
+                   HorizontalAlignment="Center"/>
+
+            <Ellipse Grid.Column="2"
+                     Width="32"
+                     Height="32"
+                     Fill="#CCC"
+                     VerticalAlignment="Center"/>
+        </Grid>
+
+    </Border>
+</UserControl>

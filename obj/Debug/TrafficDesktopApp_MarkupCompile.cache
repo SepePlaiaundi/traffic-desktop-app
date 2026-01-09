@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\SePe\traffic-desktop-app\App.xaml
-2-373711641
+6-1779079370
 
-61188841383
-13-1310406943
-Dashboard.xaml;MainWindow.xaml;
+101801403512
+15501485083
+Controls\DashboardCard.xaml;Controls\DashboardHeader.xaml;Controls\DashboardLineChart.xaml;Controls\DashboardPanel.xaml;Dashboard.xaml;MainWindow.xaml;
 
 False
 
