@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="TrafficDesktopApp.Controls.DashboardHeader"
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.Header"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
@@ -14,7 +14,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Panel de control"
+            <TextBlock Text="{Binding Title, RelativeSource={RelativeSource AncestorType=UserControl}}"
                        VerticalAlignment="Center"
                        FontSize="16"
                        FontWeight="SemiBold"/>

@@ -3,11 +3,11 @@
 namespace TrafficDesktopApp
 {
     /// <summary>
-    /// Lógica de interacción para Dashboard.xaml
+    /// Interaction logic for Incidents.xaml
     /// </summary>
-    public partial class Dashboard : Window
+    public partial class Incidents : Window
     {
-        public Dashboard()
+        public Incidents()
         {
             InitializeComponent();
         }

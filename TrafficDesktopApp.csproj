@@ -61,19 +61,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Controls\DashboardCard.xaml">
+    <Page Include="Controls\Dashboard\CamerasList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Dashboard\DashboardCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Dashboard\IncidentsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Dashboard\LineChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Dashboard\MonthlyBarChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Header.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\DashboardHeader.xaml">
+    <Page Include="Controls\Incidents\IncidentsListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\DashboardLineChart.xaml">
+    <Page Include="Controls\Incidents\IncidentsSidebar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Incidents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -85,17 +109,35 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controls\DashboardCard.xaml.cs">
+    <Compile Include="Controls\Dashboard\CamerasList.xaml.cs">
+      <DependentUpon>CamerasList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\DashboardCard.xaml.cs">
       <DependentUpon>DashboardCard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DashboardHeader.xaml.cs">
-      <DependentUpon>DashboardHeader.xaml</DependentUpon>
+    <Compile Include="Controls\Dashboard\IncidentsList.xaml.cs">
+      <DependentUpon>IncidentsList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DashboardLineChart.xaml.cs">
-      <DependentUpon>DashboardLineChart.xaml</DependentUpon>
+    <Compile Include="Controls\Dashboard\LineChart.xaml.cs">
+      <DependentUpon>LineChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\MonthlyBarChart.xaml.cs">
+      <DependentUpon>MonthlyBarChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.xaml.cs">
+      <DependentUpon>Header.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Incidents\IncidentsListView.xaml.cs">
+      <DependentUpon>IncidentsListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Incidents\IncidentsSidebar.xaml.cs">
+      <DependentUpon>IncidentsSidebar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Incidents.xaml.cs">
+      <DependentUpon>Incidents.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -103,6 +145,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CameraItem.cs" />
+    <Compile Include="Models\Incident.cs" />
+    <Compile Include="Models\IncidentItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -129,9 +174,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\camera.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,14 +3,14 @@ using LiveCharts.Wpf;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace TrafficDesktopApp.Controls
+namespace TrafficDesktopApp.Controls.Dashboard
 {
-    public partial class DashboardLineChart : UserControl
+    public partial class LineChart : UserControl
     {
         public SeriesCollection Series { get; set; }
         public string[] Labels { get; set; }
 
-        public DashboardLineChart()
+        public LineChart()
         {
             InitializeComponent();
 

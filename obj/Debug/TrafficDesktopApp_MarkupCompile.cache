@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\SePe\traffic-desktop-app\obj\Debug\
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\
 TrafficDesktopApp
 none
 false
 DEBUG;TRACE
-D:\SePe\traffic-desktop-app\App.xaml
-6-1779079370
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\App.xaml
+11456465367
 
-101801403512
-15501485083
-Controls\DashboardCard.xaml;Controls\DashboardHeader.xaml;Controls\DashboardLineChart.xaml;Controls\DashboardPanel.xaml;Dashboard.xaml;MainWindow.xaml;
+18-2005960430
+15715255835
+Controls\Dashboard\CamerasList.xaml;Controls\Dashboard\DashboardCard.xaml;Controls\Dashboard\IncidentsList.xaml;Controls\Dashboard\LineChart.xaml;Controls\Dashboard\MonthlyBarChart.xaml;Controls\Header.xaml;Controls\Incidents\IncidentsListView.xaml;Controls\Incidents\IncidentsSidebar.xaml;Dashboard.xaml;Incidents.xaml;MainWindow.xaml;
 
 False
 

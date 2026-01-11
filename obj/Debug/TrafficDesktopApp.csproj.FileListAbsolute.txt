@@ -32,3 +32,46 @@ D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.xml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardLineChart.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardLineChart.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.AssemblyReference.cache
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Header.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsListView.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsSidebar.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Header.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsListView.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsSidebar.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Dashboard.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Incidents.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\MainWindow.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\App.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.cache
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.lref
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Incidents.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\MainWindow.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe.config
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.pdb
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.pdb
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.pdb
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Dashboard.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.g.resources
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.Properties.Resources.resources
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.GenerateResource.cache
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.CoreCompileInputs.cache
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
