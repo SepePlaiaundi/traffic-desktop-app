@@ -16,21 +16,13 @@ D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe.config
 D:\SePe\traffic-desktop-app\obj\Debug\Dashboard.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Dashboard.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardCard.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardCard.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardHeader.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardHeader.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardPanel.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardPanel.g.cs
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.dll
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.dll
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.pdb
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.xml
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.pdb
 D:\SePe\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.xml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardLineChart.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\DashboardLineChart.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.AssemblyReference.cache
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
@@ -75,3 +67,21 @@ C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.Pr
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.GenerateResource.cache
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.CoreCompileInputs.cache
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsListView.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsSidebar.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsListView.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsSidebar.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Incidents.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Incidents.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\General\Header.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\General\Header.g.cs

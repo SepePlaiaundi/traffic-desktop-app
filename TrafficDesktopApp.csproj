@@ -81,7 +81,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Controls\Header.xaml">
+    <Page Include="Controls\General\Header.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,7 +124,7 @@
     <Compile Include="Controls\Dashboard\MonthlyBarChart.xaml.cs">
       <DependentUpon>MonthlyBarChart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Header.xaml.cs">
+    <Compile Include="Controls\General\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Incidents\IncidentsListView.xaml.cs">

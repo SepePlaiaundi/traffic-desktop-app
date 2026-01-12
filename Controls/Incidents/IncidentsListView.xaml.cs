@@ -11,41 +11,36 @@ namespace TrafficDesktopApp.Controls.Incidents
     /// </summary>
     public partial class IncidentsListView : UserControl
     {
-        public ObservableCollection<Incident> AllIncidents { get; set; }
+
+        private List<Incident> _allIncidents;
         public ObservableCollection<Incident> VisibleIncidents { get; set; }
 
         public IncidentsListView()
         {
             InitializeComponent();
 
-            AllIncidents = new ObservableCollection<Incident>
-        {
-            new Incident{ Id=16345, Description="Obras en la calzada", Road="AP-8", Province="GI", Type=IncidentType.Obras, Date="Dic 5"},
-            new Incident{ Id=16346, Description="Accidente", Road="A-1", Province="AR", Type=IncidentType.Accidente, Date="Dic 5"},
-            new Incident{ Id=16347, Description="Desvío temporal", Road="GI-20", Province="GI", Type=IncidentType.Otro, Date="Dic 4"},
-        };
+            _allIncidents = new List<Incident>
+            {
+                new Incident{ Id=16345, Description="Obras en la calzada", Road="AP-8", Province="GI", Type=IncidentType.Obras, Date="Dic 5"},
+                new Incident{ Id=16346, Description="Accidente", Road="A-1", Province="AR", Type=IncidentType.Accidente, Date="Dic 5"},
+                new Incident{ Id=16347, Description="Desvío temporal", Road="GI-20", Province="GI", Type=IncidentType.Otro, Date="Dic 4"},
+            };
 
-            VisibleIncidents = new ObservableCollection<Incident>(AllIncidents);
+            VisibleIncidents = new ObservableCollection<Incident>(_allIncidents);
             DataContext = this;
         }
 
-        public void ApplyFilter(string filter)
+
+        public void ApplyFilter(IncidentType? filter)
         {
             VisibleIncidents.Clear();
 
-            IEnumerable<Incident> result;
+            var filtered = filter == null
+                ? _allIncidents
+                : _allIncidents.Where(i => i.Type == filter);
 
-            if (filter == "Works")
-                result = AllIncidents.Where(i => i.Type == IncidentType.Obras);
-            else if (filter == "Accidents")
-                result = AllIncidents.Where(i => i.Type == IncidentType.Accidente);
-            else if (filter == "Others")
-                result = AllIncidents.Where(i => i.Type == IncidentType.Otro);
-            else
-                result = AllIncidents;
-
-            foreach (var i in result)
-                VisibleIncidents.Add(i);
+            foreach (var item in filtered)
+                VisibleIncidents.Add(item);
         }
     }
 }

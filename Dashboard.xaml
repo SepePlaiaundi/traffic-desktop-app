@@ -1,12 +1,12 @@
 ﻿<Window x:Class="TrafficDesktopApp.Dashboard"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"
       xmlns:controls="clr-namespace:TrafficDesktopApp.Controls.Dashboard"
-      xmlns:header="clr-namespace:TrafficDesktopApp.Controls"
       Title="SEID - Dashboard"
       Width="1280"
       Height="1000"
-      Background="#F7F7F7" WindowStartupLocation="CenterScreen">
+      Background="#F7F7F7" >
 
     <Grid>
         
@@ -15,7 +15,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <header:Header Grid.Row="0" Title="Panel de control"/>
+        <general:Header x:Name="Header" Grid.Row="0" Title="Panel de control" />
 
         <ScrollViewer Grid.Row="1"
               VerticalScrollBarVisibility="Auto"

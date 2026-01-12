@@ -10,6 +10,15 @@ namespace TrafficDesktopApp
         public Dashboard()
         {
             InitializeComponent();
+
+            Header.SetActive("Dashboard");
+
+            Header.IncidentsClicked += () =>
+            {
+                new Incidents().Show();
+                Close();
+            };
         }
+
     }
 }

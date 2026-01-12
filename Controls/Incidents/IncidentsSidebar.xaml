@@ -10,44 +10,51 @@
 
         <StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                <Ellipse Width="10" Height="10"
-                         Fill="#F5B400"
-                         VerticalAlignment="Center"/>
-                <TextBlock Text="Todas"
-                        Margin="10,0,0,0"
-                        FontWeight="SemiBold"
-                        VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
+                MouseLeftButtonUp="All_Click">
+                <Ellipse x:Name="AllDot"
+                 Width="10" Height="10"
+                 Fill="#F5B400"
+                 VerticalAlignment="Center"/>
+                <TextBlock x:Name="AllText"
+                   Text="Todas"
+                   Margin="10,0,0,0"
+                   FontWeight="SemiBold"
+                   VerticalAlignment="Center"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                <Ellipse Width="10" Height="10"
-                         Fill="#CCC"
-                         VerticalAlignment="Center"/>
-                <TextBlock Text="Obras"
-                           Margin="10,0,0,0"
-                           VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
+                MouseLeftButtonUp="Works_Click">
+                <Ellipse x:Name="WorksDot"
+                 Width="10" Height="10"
+                 Fill="#CCC"/>
+                <TextBlock x:Name="WorksText"
+                   Text="Obras"
+                   Margin="10,0,0,0"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                <Ellipse Width="10" Height="10"
-                         Fill="#CCC"
-                         VerticalAlignment="Center"/>
-                <TextBlock Text="Accidentes"
-                           Margin="10,0,0,0"
-                           VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
+                MouseLeftButtonUp="Accidents_Click">
+                <Ellipse x:Name="AccidentsDot"
+                 Width="10" Height="10"
+                 Fill="#CCC"/>
+                <TextBlock x:Name="AccidentsText"
+                   Text="Accidentes"
+                   Margin="10,0,0,0"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal">
-                <Ellipse Width="10" Height="10"
-                         Fill="#CCC"
-                         VerticalAlignment="Center"/>
-                <TextBlock Text="Otros"
-                           Margin="10,0,0,0"
-                           VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal"
+                MouseLeftButtonUp="Others_Click">
+                <Ellipse x:Name="OthersDot"
+                 Width="10" Height="10"
+                 Fill="#CCC"/>
+                <TextBlock x:Name="OthersText"
+                   Text="Otros"
+                   Margin="10,0,0,0"/>
             </StackPanel>
 
         </StackPanel>
+
 
     </Border>
 </UserControl>

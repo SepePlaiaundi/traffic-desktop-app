@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using TrafficDesktopApp.Controls.Dashboard;
 
 namespace TrafficDesktopApp
 {
@@ -10,6 +11,17 @@ namespace TrafficDesktopApp
         public Incidents()
         {
             InitializeComponent();
+
+            Header.SetActive("Incidents");
+
+            Header.DashboardClicked += () =>
+            {
+                new Dashboard().Show();
+                Close();
+            };
+
+            Sidebar.FilterChanged += IncidentsList.ApplyFilter;
         }
+
     }
 }
