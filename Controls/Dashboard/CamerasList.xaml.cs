@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using TrafficDesktopApp.Models;
+using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
@@ -9,35 +10,26 @@ namespace TrafficDesktopApp.Controls.Dashboard
     /// </summary>
     public partial class CamerasList : UserControl
     {
-        public ObservableCollection<CameraItem> Cameras { get; }
+        public ObservableCollection<CameraDto> Cameras { get; set; } =
+            new ObservableCollection<CameraDto>();
 
         public CamerasList()
         {
             InitializeComponent();
-
-            Cameras = new ObservableCollection<CameraItem>
-            {
-                new CameraItem
-                {
-                    Name = "C10254D",
-                    LastUpdate = "última actualización: 10/05/2025 20:00 UTC+1",
-                    Image = "/Assets/camera.png"
-                },
-                new CameraItem
-                {
-                    Name = "C10254D",
-                    LastUpdate = "última actualización: 10/05/2025 20:00 UTC+1",
-                    Image = "/Assets/camera.png"
-                },
-                new CameraItem
-                {
-                    Name = "C10254D",
-                    LastUpdate = "última actualización: 10/05/2025 20:00 UTC+1",
-                    Image = "/Assets/camera.png"
-                }
-            };
-
             DataContext = this;
+
+            Load();
+        }
+
+        private async void Load()
+        {
+            var cameras = await CamerasService.GetCamerasAsync();
+
+            Cameras.Clear();
+            foreach (CameraDto cam in cameras)
+            {
+                Cameras.Add(cam);
+            }
         }
     }
 }

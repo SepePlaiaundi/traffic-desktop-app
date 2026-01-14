@@ -45,9 +45,9 @@
                             <!-- Texto -->
                             <StackPanel Grid.Column="1"
                                         Margin="12,0,0,0">
-                                <TextBlock Text="{Binding Name}"
+                                <TextBlock Text="{Binding CameraName}"
                                            FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding LastUpdate}"
+                                <TextBlock Text="{Binding Road}"
                                            FontSize="11"
                                            Foreground="#888"/>
                             </StackPanel>
