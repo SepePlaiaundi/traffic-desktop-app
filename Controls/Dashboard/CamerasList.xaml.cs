@@ -10,8 +10,8 @@ namespace TrafficDesktopApp.Controls.Dashboard
     /// </summary>
     public partial class CamerasList : UserControl
     {
-        public ObservableCollection<CameraDto> Cameras { get; set; } =
-            new ObservableCollection<CameraDto>();
+        public ObservableCollection<Camera> Cameras { get; set; } =
+            new ObservableCollection<Camera>();
 
         public CamerasList()
         {
@@ -26,7 +26,7 @@ namespace TrafficDesktopApp.Controls.Dashboard
             var cameras = await CamerasService.GetCamerasAsync();
 
             Cameras.Clear();
-            foreach (CameraDto cam in cameras)
+            foreach (Camera cam in cameras)
             {
                 Cameras.Add(cam);
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrafficDesktopApp.Models
 {
-    public class CameraDto
+    public class Camera
     {
         public string CameraId { get; set; }
         public string CameraName { get; set; }

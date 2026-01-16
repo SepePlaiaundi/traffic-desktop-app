@@ -132,7 +132,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\CameraDto.cs" />
+    <Compile Include="Models\Camera.cs" />
     <Compile Include="Services\ApiClient.cs" />
     <Compile Include="Services\CameraService.cs" />
     <Page Include="Controls\Dashboard\CamerasList.xaml">
