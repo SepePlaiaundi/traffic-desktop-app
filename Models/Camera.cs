@@ -1,23 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace TrafficDesktopApp.Models
 {
     public class Camera
     {
-        public string CameraId { get; set; }
+        // 1. JSON envía "nombre" -> XAML pide "CameraName"
+        [JsonProperty("nombre")]
         public string CameraName { get; set; }
+
+        // 2. JSON envía "carretera" -> XAML pide "Road"
+        [JsonProperty("carretera")]
         public string Road { get; set; }
-        public string Kilometer { get; set; }
-        public string Address { get; set; }
 
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        // 3. JSON envía "urlImage" -> XAML pide "Image"
+        // WPF es listo: si le pasas una URL string al ImageSource, él descarga la imagen solo.
+        [JsonProperty("urlImage")]
+        public string Image { get; set; }
 
-        public string SourceId { get; set; }
-        public string UrlImage { get; set; }
+        // Otros campos opcionales que venían en tu JSON
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("latitud")]
+        public double? Latitude { get; set; }
+
+        [JsonProperty("longitud")]
+        public double? Longitude { get; set; }
     }
 }

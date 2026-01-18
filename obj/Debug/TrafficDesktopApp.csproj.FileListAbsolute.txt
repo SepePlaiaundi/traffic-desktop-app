@@ -27,7 +27,6 @@ D:\SePe\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.AssemblyReference.cache
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Header.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.baml
@@ -35,7 +34,6 @@ C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\I
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidents\IncidentsSidebar.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.g.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Header.g.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.g.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.g.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.g.cs
@@ -107,3 +105,27 @@ D:\SePe\traffic-desktop-app\bin\Debug\System.Text.Json.xml
 D:\SePe\traffic-desktop-app\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\SePe\traffic-desktop-app\bin\Debug\Newtonsoft.Json.dll
 D:\SePe\traffic-desktop-app\bin\Debug\Newtonsoft.Json.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Newtonsoft.Json.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Buffers.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.IO.Pipelines.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Memory.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Net.Http.Json.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Numerics.Vectors.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Encodings.Web.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Json.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Newtonsoft.Json.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Buffers.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.IO.Pipelines.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Memory.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Net.Http.Json.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Numerics.Vectors.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Encodings.Web.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Json.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\General\Header.baml
+C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\General\Header.g.cs

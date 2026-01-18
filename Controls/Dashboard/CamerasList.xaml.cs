@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using TrafficDesktopApp.Models;
 using TrafficDesktopApp.Services;
@@ -30,6 +31,12 @@ namespace TrafficDesktopApp.Controls.Dashboard
             {
                 Cameras.Add(cam);
             }
+        }
+
+        public void UpdateList(List<Camera> cameras)
+        {
+            Cameras.Clear();
+            foreach (var cam in cameras) Cameras.Add(cam);
         }
     }
 }

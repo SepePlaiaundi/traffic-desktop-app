@@ -14,9 +14,7 @@ namespace TrafficDesktopApp.Services
         public static async Task<List<Models.Camera>> GetCamerasAsync()
         {
             var json = await ApiClient.Http.GetStringAsync("camara");
-            var all = JsonConvert.DeserializeObject<List<Models.Camera>>(json);
-
-            return all.Take(5).ToList();
+            return JsonConvert.DeserializeObject<List<Models.Camera>>(json);
         }
     }
 }

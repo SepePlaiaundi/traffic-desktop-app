@@ -13,7 +13,7 @@ namespace TrafficDesktopApp.Services
     {
         public static readonly HttpClient Http = new HttpClient
         {
-            BaseAddress = new Uri("http://localhost:8080/")
+            BaseAddress = new Uri("http://127.0.0.1:8080/")
         };
 
         static ApiClient()

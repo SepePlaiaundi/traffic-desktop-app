@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
@@ -7,6 +8,9 @@ namespace TrafficDesktopApp.Controls.Dashboard
     /// </summary>
     public partial class DashboardCard : UserControl
     {
+        public static readonly DependencyProperty ValueProperty =
+        DependencyProperty.Register("Value", typeof(string), typeof(DashboardCard), new PropertyMetadata("—"));
+
         public DashboardCard()
         {
             InitializeComponent();
@@ -14,7 +18,11 @@ namespace TrafficDesktopApp.Controls.Dashboard
         }
 
         public string Title { get; set; }
-        public string Value { get; set; }
+        public string Value
+        {
+            get { return (string)GetValue(ValueProperty); }
+            set { SetValue(ValueProperty, value); }
+        }
         public string Subtitle { get; set; }
     }
 }

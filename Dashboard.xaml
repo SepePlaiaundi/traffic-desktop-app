@@ -46,6 +46,7 @@
                         Subtitle="+ respecto al día anterior"/>
 
                     <controls:DashboardCard
+                        x:Name="CardTotalCamaras"
                         Grid.Column="1"
                         Margin="0,0,15,0"
                         Title="Cámaras disponibles"
@@ -92,7 +93,7 @@
 
                     </Border>
 
-                    <controls:CamerasList Grid.Column="1"/>
+                    <controls:CamerasList x:Name="CamerasList" Grid.Column="1"/>
                     
                 </Grid>
 
