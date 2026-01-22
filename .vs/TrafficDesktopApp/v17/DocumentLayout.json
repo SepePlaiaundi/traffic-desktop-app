@@ -1,68 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\SePe\\traffic-desktop-app\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\dashboard\\cameraslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\cameraslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|D:\\SePe\\traffic-desktop-app\\controls\\dashboard\\cameraslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\cameraslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|D:\\SePe\\traffic-desktop-app\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CamerasList.xaml.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\CamerasList.xaml.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\CamerasList.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T07:08:06.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CamerasList.xaml",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\CamerasList.xaml",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml",
-              "RelativeToolTip": "Controls\\Dashboard\\CamerasList.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T07:08:04.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Models\\Camera.cs",
-              "RelativeDocumentMoniker": "Models\\Camera.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Models\\Camera.cs",
-              "RelativeToolTip": "Models\\Camera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T12:02:07.061Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using TrafficDesktopApp.Controls.Dashboard;
+using TrafficDesktopApp.Services;
+
+namespace TrafficDesktopApp.Windows
+{
+    /// <summary>
+    /// Lógica de interacción para Users.xaml
+    /// </summary>
+    public partial class Users : Window
+    {
+        public Users()
+        {
+            InitializeComponent();
+
+            Header.SetActive("Users");
+
+            LoadUsersData();
+        }
+
+
+        private async void LoadUsersData()
+        {
+            try
+            {
+                var allUsers = await UsersService.GetUsersAsync();
+
+                if (allUsers != null)
+                {
+                    UsersList.SetUsers(allUsers);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar usuarios: " + ex.Message);
+            }
+        }
+    }
+}

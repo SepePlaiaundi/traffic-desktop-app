@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace TrafficDesktopApp
+namespace TrafficDesktopApp.Windows
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml

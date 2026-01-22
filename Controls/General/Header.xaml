@@ -32,17 +32,43 @@
                 </StackPanel>
 
                 <StackPanel Cursor="Hand"
-                            MouseLeftButtonUp="Incidents_Click">
-                    <TextBlock x:Name="IncidentsLink"
-                               Text="Incidents"
+                            Margin="0,0,24,0"
+                            MouseLeftButtonUp="Incidences_Click">
+                    <TextBlock x:Name="IncidencesLink"
+                               Text="Incidencias"
                                FontSize="14"/>
-                    <Border x:Name="IncidentsUnderline"
+                    <Border x:Name="IncidencesUnderline"
                             Height="3"
                             Width="24"
                             Background="Transparent"
                             Margin="0,6,0,0"/>
                 </StackPanel>
 
+                <StackPanel Cursor="Hand"
+                            Margin="0,0,24,0"
+                            MouseLeftButtonUp="Cameras_Click">
+                    <TextBlock x:Name="CamerasLink"
+                               Text="Cámaras"
+                               FontSize="14"/>
+                    <Border x:Name="CamerasUnderline"
+                            Height="3"
+                            Width="24"
+                            Background="Transparent"
+                            Margin="0,6,0,0"/>
+                </StackPanel>
+
+                <StackPanel Cursor="Hand"
+                            Margin="0,0,24,0"
+                            MouseLeftButtonUp="Users_Click">
+                    <TextBlock x:Name="UsersLink"
+                               Text="Usuarios"
+                               FontSize="14"/>
+                    <Border x:Name="UsersUnderline"
+                            Height="3"
+                            Width="24"
+                            Background="Transparent"
+                            Margin="0,6,0,0"/>
+                </StackPanel>
             </StackPanel>
 
             <!-- Logo -->

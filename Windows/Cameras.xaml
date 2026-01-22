@@ -1,0 +1,33 @@
+﻿<Window x:Class="TrafficDesktopApp.Windows.Cameras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"
+        xmlns:controls="clr-namespace:TrafficDesktopApp.Controls.Cameras"
+        Title="Cameras"
+        Width="1280"
+        Height="800"
+        Background="#F7F7F7">
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <general:Header x:Name="Header" Grid.Row="0" Title="Cámaras"/>
+
+        <Grid Grid.Row="1" Margin="20">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <controls:CamerasGridView x:Name="CamerasGrid" Grid.Column="2"/>
+            
+        </Grid>
+
+    </Grid>
+</Window>

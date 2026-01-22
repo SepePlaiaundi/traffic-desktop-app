@@ -14,18 +14,45 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- Título -->
-            <TextBlock Text="Cámaras"
-                       FontSize="14"
-                       FontWeight="SemiBold"
-                       Margin="0,0,0,12"/>
+            <DockPanel Grid.Row="0" LastChildFill="False" Margin="0,0,0,12">
+                <TextBlock Text="Cámaras"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
 
-            <!-- Lista -->
+                <Button Content="Ver más" 
+                        Click="BtnViewMore_Click"
+                        DockPanel.Dock="Right"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Foreground="#0078D4"
+                        Cursor="Hand"
+                        VerticalAlignment="Center"
+                        FontSize="12">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <TextBlock Text="{TemplateBinding Content}" 
+                                       TextDecorations="None">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextDecorations" Value="Underline"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </DockPanel>
+
             <ListView Grid.Row="1"
                       ItemsSource="{Binding Cameras}"
                       BorderThickness="0"
-                      Background="Transparent">
-
+                      Background="Transparent"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,8">
@@ -34,30 +61,20 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <!-- Imagen -->
-                            <Ellipse Width="36"
-                                     Height="36">
+                            <Ellipse Width="36" Height="36">
                                 <Ellipse.Fill>
-                                    <ImageBrush ImageSource="{Binding Image}"/>
+                                    <ImageBrush ImageSource="{Binding Image}" Stretch="UniformToFill"/>
                                 </Ellipse.Fill>
                             </Ellipse>
 
-                            <!-- Texto -->
-                            <StackPanel Grid.Column="1"
-                                        Margin="12,0,0,0">
-                                <TextBlock Text="{Binding CameraName}"
-                                           FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding Road}"
-                                           FontSize="11"
-                                           Foreground="#888"/>
+                            <StackPanel Grid.Column="1" Margin="12,0,0,0">
+                                <TextBlock Text="{Binding CameraName}" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding Road}" FontSize="11" Foreground="#888"/>
                             </StackPanel>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-
             </ListView>
-
         </Grid>
-
     </Border>
 </UserControl>

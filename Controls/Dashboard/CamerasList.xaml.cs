@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
 using TrafficDesktopApp.Models;
 using TrafficDesktopApp.Services;
+using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
@@ -18,25 +20,21 @@ namespace TrafficDesktopApp.Controls.Dashboard
         {
             InitializeComponent();
             DataContext = this;
-
-            Load();
-        }
-
-        private async void Load()
-        {
-            var cameras = await CamerasService.GetCamerasAsync();
-
-            Cameras.Clear();
-            foreach (Camera cam in cameras)
-            {
-                Cameras.Add(cam);
-            }
         }
 
         public void UpdateList(List<Camera> cameras)
         {
             Cameras.Clear();
             foreach (var cam in cameras) Cameras.Add(cam);
+        }
+
+        private void BtnViewMore_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Cameras camerasWindow = new Windows.Cameras();
+
+            camerasWindow.Show();
+
+            Window.GetWindow(this)?.Close();
         }
     }
 }

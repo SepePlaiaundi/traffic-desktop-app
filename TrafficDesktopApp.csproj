@@ -132,9 +132,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\Cameras\CamerasGridView.xaml.cs">
+      <DependentUpon>CamerasGridView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Users\UsersListView.xaml.cs">
+      <DependentUpon>UsersListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Services\UsersService.cs" />
+    <Compile Include="Windows\Cameras.xaml.cs">
+      <DependentUpon>Cameras.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Camera.cs" />
     <Compile Include="Services\ApiClient.cs" />
     <Compile Include="Services\CameraService.cs" />
+    <Compile Include="Windows\Users.xaml.cs">
+      <DependentUpon>Users.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\Cameras\CamerasGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Users\UsersListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Cameras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\Dashboard\CamerasList.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -159,23 +185,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\Incidents\IncidentsListView.xaml">
+    <Page Include="Controls\Incidences\IncidencesListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\Incidents\IncidentsSidebar.xaml">
+    <Page Include="Controls\Incidences\IncidencesSidebar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dashboard.xaml">
+    <Page Include="Windows\Dashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Incidents.xaml">
+    <Page Include="Windows\Incidences.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -201,27 +227,31 @@
     <Compile Include="Controls\General\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Incidents\IncidentsListView.xaml.cs">
-      <DependentUpon>IncidentsListView.xaml</DependentUpon>
+    <Compile Include="Controls\Incidences\IncidencesListView.xaml.cs">
+      <DependentUpon>IncidencesListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Incidents\IncidentsSidebar.xaml.cs">
-      <DependentUpon>IncidentsSidebar.xaml</DependentUpon>
+    <Compile Include="Controls\Incidences\IncidencesSidebar.xaml.cs">
+      <DependentUpon>IncidencesSidebar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.xaml.cs">
+    <Compile Include="Windows\Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Incidents.xaml.cs">
-      <DependentUpon>Incidents.xaml</DependentUpon>
+    <Compile Include="Windows\Incidences.xaml.cs">
+      <DependentUpon>Incidences.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\Users.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CameraItem.cs" />
-    <Compile Include="Models\Incident.cs" />
-    <Compile Include="Models\IncidentItem.cs" />
+    <Compile Include="Models\Incidence.cs" />
+    <Compile Include="Models\IncidenceItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

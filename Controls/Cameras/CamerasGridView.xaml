@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.Cameras.CamerasGridView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <ItemsControl ItemsSource="{Binding VisibleCameras}">
+
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Margin="0,0,-20,0" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="White" Width="280" Height="240" Margin="0,0,20,20"
+                            CornerRadius="8" BorderBrush="#EEE" BorderThickness="1">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.1"/>
+                        </Border.Effect>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="160"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0" 
+                                Background="#EEE" 
+                                CornerRadius="8,8,0,0" 
+                                ClipToBounds="True">
+
+                                <Image Stretch="UniformToFill"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center">
+                                    
+                                    <Image.Source>
+                                        
+                                        <BitmapImage UriSource="{Binding Image}" 
+                                                 DecodePixelWidth="280" 
+                                                 CacheOption="OnLoad" 
+                                                 CreateOptions="IgnoreImageCache"/>
+                                        
+                                    </Image.Source>
+                                    
+                                </Image>
+                                
+                            </Border>
+
+                            <Border Grid.Row="1" Padding="12,8">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding CameraName}" 
+                                       FontWeight="Bold" FontSize="14" 
+                                       TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Text="{Binding Road}" 
+                                       Foreground="#666" FontSize="12" 
+                                       Margin="0,2,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </ScrollViewer>
+</UserControl>

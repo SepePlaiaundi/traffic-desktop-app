@@ -4,7 +4,7 @@ using System.Windows;
 using TrafficDesktopApp.Controls.Dashboard;
 using TrafficDesktopApp.Services;
 
-namespace TrafficDesktopApp
+namespace TrafficDesktopApp.Windows
 {
     /// <summary>
     /// Lógica de interacción para Dashboard.xaml
@@ -16,6 +16,8 @@ namespace TrafficDesktopApp
         {
             InitializeComponent();
             LoadDashboardData();
+
+            Header.SetActive("Dashboard");
         }
 
         private async void LoadDashboardData()

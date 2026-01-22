@@ -1,4 +1,4 @@
-﻿<Window x:Class="TrafficDesktopApp.Dashboard"
+﻿<Window x:Class="TrafficDesktopApp.Windows.Dashboard"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"

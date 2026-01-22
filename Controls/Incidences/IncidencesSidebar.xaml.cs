@@ -6,16 +6,16 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using TrafficDesktopApp.Models;
 
-namespace TrafficDesktopApp.Controls.Incidents
+namespace TrafficDesktopApp.Controls.Incidences
 {
     /// <summary>
-    /// Interaction logic for IncidentsSidebar.xaml
+    /// Interaction logic for IncidencesSidebar.xaml
     /// </summary>
-    public partial class IncidentsSidebar : UserControl
+    public partial class IncidencesSidebar : UserControl
     {
-        public event Action<IncidentType?> FilterChanged;
+        public event Action<IncidenceType?> FilterChanged;
 
-        public IncidentsSidebar()
+        public IncidencesSidebar()
         {
             InitializeComponent();
         }
@@ -29,19 +29,19 @@ namespace TrafficDesktopApp.Controls.Incidents
         private void Works_Click(object sender, MouseButtonEventArgs e)
         {
             SetActive(WorksDot, WorksText);
-            FilterChanged?.Invoke(IncidentType.Obras);
+            FilterChanged?.Invoke(IncidenceType.Obras);
         }
 
         private void Accidents_Click(object sender, MouseButtonEventArgs e)
         {
             SetActive(AccidentsDot, AccidentsText);
-            FilterChanged?.Invoke(IncidentType.Accidente);
+            FilterChanged?.Invoke(IncidenceType.Accidente);
         }
 
         private void Others_Click(object sender, MouseButtonEventArgs e)
         {
             SetActive(OthersDot, OthersText);
-            FilterChanged?.Invoke(IncidentType.Otro);
+            FilterChanged?.Invoke(IncidenceType.Otro);
         }
 
 

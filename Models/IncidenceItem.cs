@@ -1,12 +1,12 @@
 ﻿namespace TrafficDesktopApp.Models
 {
-    public class IncidentItem
+    public class IncidenceItem
     {
         public string Type { get; }
         public string Road { get; }
         public string Province { get; }
 
-        public IncidentItem(string type, string road, string province)
+        public IncidenceItem(string type, string road, string province)
         {
             Type = type;
             Road = road;

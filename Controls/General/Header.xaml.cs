@@ -35,31 +35,55 @@ namespace TrafficDesktopApp.Controls.General
         public void SetActive(string page)
         {
             DashboardLink.Foreground = Brushes.Gray;
-            IncidentsLink.Foreground = Brushes.Gray;
+            IncidencesLink.Foreground = Brushes.Gray;
+            CamerasLink.Foreground = Brushes.Gray;
+            UsersLink.Foreground = Brushes.Gray;
 
             DashboardUnderline.Background = Brushes.Transparent;
-            IncidentsUnderline.Background = Brushes.Transparent;
+            IncidencesUnderline.Background = Brushes.Transparent;
+            CamerasUnderline.Background = Brushes.Transparent;
+            UsersUnderline.Background = Brushes.Transparent;
 
             if (page == "Dashboard")
             {
                 DashboardLink.Foreground = Brushes.Black;
                 DashboardUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
             }
-            else if (page == "Incidents")
+            else if (page == "Incidences")
             {
-                IncidentsLink.Foreground = Brushes.Black;
-                IncidentsUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
+                IncidencesLink.Foreground = Brushes.Black;
+                IncidencesUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
+            }
+            else if (page == "Cameras")
+            {
+                CamerasLink.Foreground = Brushes.Black;
+                CamerasUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
+            }
+            else
+            {
+                UsersLink.Foreground = Brushes.Black;
+                UsersUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
             }
         }
 
         private void Dashboard_Click(object sender, RoutedEventArgs e)
         {
-            OpenWindow(new TrafficDesktopApp.Dashboard());
+            OpenWindow(new TrafficDesktopApp.Windows.Dashboard());
         }
 
-        private void Incidents_Click(object sender, RoutedEventArgs e)
+        private void Incidences_Click(object sender, RoutedEventArgs e)
         {
-            OpenWindow(new TrafficDesktopApp.Incidents());
+            OpenWindow(new TrafficDesktopApp.Windows.Incidences());
+        }
+
+        private void Cameras_Click(object sender, RoutedEventArgs e)
+        {
+            OpenWindow(new TrafficDesktopApp.Windows.Cameras());
+        }
+
+        private void Users_Click(object sender, RoutedEventArgs e)
+        {
+            OpenWindow(new TrafficDesktopApp.Windows.Users());
         }
 
         private void OpenWindow(Window newWindow)

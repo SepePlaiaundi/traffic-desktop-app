@@ -1,24 +1,18 @@
 ﻿using System.Windows;
 using TrafficDesktopApp.Controls.Dashboard;
 
-namespace TrafficDesktopApp
+namespace TrafficDesktopApp.Windows
 {
     /// <summary>
     /// Interaction logic for Incidents.xaml
     /// </summary>
-    public partial class Incidents : Window
+    public partial class Incidences : Window
     {
-        public Incidents()
+        public Incidences()
         {
             InitializeComponent();
 
-            Header.SetActive("Incidents");
-
-            Header.DashboardClicked += () =>
-            {
-                new Dashboard().Show();
-                Close();
-            };
+            Header.SetActive("Incidences");
 
             Sidebar.FilterChanged += IncidentsList.ApplyFilter;
         }
