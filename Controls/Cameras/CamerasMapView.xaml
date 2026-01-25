@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.Cameras.CamerasMapView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation">
+
+    <Grid>
+        <gmap:GMapControl x:Name="Map"
+                          Zoom="10" />
+    </Grid>
+</UserControl>

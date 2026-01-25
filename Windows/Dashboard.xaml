@@ -4,8 +4,10 @@
       xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"
       xmlns:controls="clr-namespace:TrafficDesktopApp.Controls.Dashboard"
       Title="SEID - Dashboard"
-      Width="1280"
-      Height="1000"
+      MinWidth="1100"
+      MinHeight="720"
+      WindowStartupLocation="CenterScreen"
+      WindowState="Maximized"
       Background="#F7F7F7" >
 
     <Grid>

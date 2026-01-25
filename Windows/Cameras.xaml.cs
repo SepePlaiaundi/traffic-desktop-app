@@ -27,6 +27,21 @@ namespace TrafficDesktopApp.Windows
             Header.SetActive("Cameras");
 
             LoadCamerasData();
+
+        }
+
+        private void SwitchView_Click(object sender, RoutedEventArgs e)
+        {
+            if (BtnGrid.IsChecked == true)
+            {
+                CamerasGrid.Visibility = Visibility.Visible;
+                CamerasMap.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                CamerasGrid.Visibility = Visibility.Collapsed;
+                CamerasMap.Visibility = Visibility.Visible;
+            }
         }
 
         private async void LoadCamerasData()
@@ -36,15 +51,17 @@ namespace TrafficDesktopApp.Windows
                 var cameras = await CamerasService.GetCamerasAsync();
                 if (cameras != null)
                 {
+                    // Update the Grid
                     CamerasGrid.SetCameras(cameras);
+                    // Update the Map
+                    CamerasMap.SetCameras(cameras);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar cámaras: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
-
     }
 }
 

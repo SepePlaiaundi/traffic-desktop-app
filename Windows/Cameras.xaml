@@ -3,31 +3,86 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"
         xmlns:controls="clr-namespace:TrafficDesktopApp.Controls.Cameras"
-        Title="Cameras"
-        Width="1280"
-        Height="800"
+        Title="SEID - Control de Cámaras"
+        MinWidth="1100"
+        MinHeight="720"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
         Background="#F7F7F7">
-    
-    <Grid>
 
+    <Window.Resources>
+        <Style x:Key="SegmentedButtonStyle" TargetType="RadioButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#666666"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="BackgroundBorder" 
+                            Background="{TemplateBinding Background}" 
+                            CornerRadius="15" 
+                            Padding="15,0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Background" Value="#222222"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <general:Header x:Name="Header" Grid.Row="0" Title="Cámaras"/>
+        <general:Header x:Name="Header" Grid.Row="0"/>
 
-        <Grid Grid.Row="1" Margin="20">
+        <Border Grid.Row="1" Background="White" BorderBrush="#E0E0E0" BorderThickness="0,0,0,1">
+            <Grid Margin="24,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="220"/>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                    <Border Background="#F0F0F0" CornerRadius="18" Padding="3" Height="36">
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="BtnGrid" 
+                                 Content="CUADRÍCULA" 
+                                 Style="{StaticResource SegmentedButtonStyle}" 
+                                 IsChecked="True" 
+                                 MinWidth="110"
+                                 Click="SwitchView_Click"/>
 
-            <controls:CamerasGridView x:Name="CamerasGrid" Grid.Column="2"/>
-            
+                            <RadioButton x:Name="BtnMap" 
+                                 Content="MAPA" 
+                                 Style="{StaticResource SegmentedButtonStyle}" 
+                                 MinWidth="110"
+                                 Click="SwitchView_Click"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Text="Vista de monitoreo" 
+                       VerticalAlignment="Center" 
+                       Margin="15,0,0,0" 
+                       Foreground="#999" 
+                       FontSize="11" 
+                       FontWeight="Medium"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="2">
+            <controls:CamerasGridView x:Name="CamerasGrid" Visibility="Visible" Padding="20"/>
+            <controls:CamerasMapView x:Name="CamerasMap" Visibility="Collapsed" />
         </Grid>
-
     </Grid>
 </Window>

@@ -3,67 +3,161 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d">
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="1000">
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <ItemsControl ItemsSource="{Binding VisibleCameras}">
+    <UserControl.Resources>
+        <Style x:Key="ImmersiveCameraCard" TargetType="Border">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="12"/>
+            <Setter Property="Width" Value="320"/>
+            <Setter Property="Height" Value="200"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.2" Color="#000"/>
+                </Setter.Value>
+            </Setter>
 
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel Margin="0,0,-20,0" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#3498db"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="15" ShadowDepth="4" Opacity="0.4" Color="#000"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Border Background="White" Width="280" Height="240" Margin="0,0,20,20"
-                            CornerRadius="8" BorderBrush="#EEE" BorderThickness="1">
-                        <Border.Effect>
-                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.1"/>
-                        </Border.Effect>
+        <Style x:Key="ZoomImageStyle" TargetType="Image">
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.0" ScaleY="1.0"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Border}}" Value="True">
+                    <DataTrigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+                                                 To="1.1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+                                                 To="1.1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </DataTrigger.EnterActions>
+                    <DataTrigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+                                                 To="1.0" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+                                                 To="1.0" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </DataTrigger.ExitActions>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
 
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="160"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="20">
+            <ItemsControl ItemsSource="{Binding VisibleCameras}" HorizontalAlignment="Center">
 
-                            <Border Grid.Row="0" 
-                                Background="#EEE" 
-                                CornerRadius="8,8,0,0" 
-                                ClipToBounds="True">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
 
-                                <Image Stretch="UniformToFill"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center">
-                                    
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Style="{StaticResource ImmersiveCameraCard}" MouseLeftButtonUp="CameraCard_Click">
+                            <Grid>
+                                <Image Style="{StaticResource ZoomImageStyle}"
+                                       Stretch="UniformToFill">
                                     <Image.Source>
-                                        
                                         <BitmapImage UriSource="{Binding Image}" 
-                                                 DecodePixelWidth="280" 
-                                                 CacheOption="OnLoad" 
-                                                 CreateOptions="IgnoreImageCache"/>
-                                        
+                                                     DecodePixelWidth="320" 
+                                                     CacheOption="OnLoad" 
+                                                     CreateOptions="IgnoreImageCache"/>
                                     </Image.Source>
-                                    
                                 </Image>
-                                
-                            </Border>
 
-                            <Border Grid.Row="1" Padding="12,8">
-                                <StackPanel>
+                                <Border VerticalAlignment="Bottom" Height="80">
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                            <GradientStop Color="#00000000" Offset="0"/>
+                                            <GradientStop Color="#CC000000" Offset="0.6"/>
+                                            <GradientStop Color="#E6000000" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                </Border>
+
+                                <StackPanel VerticalAlignment="Bottom" Margin="15,0,15,15">
                                     <TextBlock Text="{Binding CameraName}" 
-                                       FontWeight="Bold" FontSize="14" 
-                                       TextTrimming="CharacterEllipsis"/>
-                                    <TextBlock Text="{Binding Road}" 
-                                       Foreground="#666" FontSize="12" 
-                                       Margin="0,2,0,0"/>
+                                               Foreground="White" 
+                                               FontWeight="Bold" 
+                                               FontSize="14"
+                                               TextTrimming="CharacterEllipsis">
+                                        <TextBlock.Effect>
+                                            <DropShadowEffect ShadowDepth="1" BlurRadius="2" Opacity="0.8"/>
+                                        </TextBlock.Effect>
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                        <Ellipse Width="6" Height="6" Fill="#CCC" VerticalAlignment="Center" Margin="0,0,6,0"/>
+
+                                        <TextBlock Text="{Binding Road}" 
+                                                   Foreground="#CCC" 
+                                                   FontSize="12"
+                                                   TextTrimming="CharacterEllipsis"/>
+                                    </StackPanel>
                                 </StackPanel>
-                            </Border>
-                        </Grid>
-                    </Border>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-    </ScrollViewer>
+
+                                <Border HorizontalAlignment="Right" VerticalAlignment="Top" 
+                                        Margin="10" 
+                                        Background="#222" 
+                                        CornerRadius="4" 
+                                        BorderBrush="#444" 
+                                        BorderThickness="1"
+                                        Padding="6,3">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Ellipse Width="6" Height="6" Fill="#00E676" Margin="0,0,5,0"/>
+                                        <TextBlock Text="ONLINE" Foreground="White" FontSize="10" FontWeight="SemiBold"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Grid.Style>
+                                        <Style TargetType="Grid">
+                                            <Setter Property="Opacity" Value="0"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Border}}" Value="True">
+                                                    <Setter Property="Opacity" Value="1"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Grid.Style>
+                                    <Ellipse Width="40" Height="40" Fill="#80000000"/>
+                                    <Path Data="M10,6L8.59,7.41L13.17,12L8.59,16.59L10,18L16,12L10,6Z" 
+                                          Fill="White" Stretch="Uniform" Width="16" Height="16" Margin="2,0,0,0"/>
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
 </UserControl>

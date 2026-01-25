@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using TrafficDesktopApp.Models;
+using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Cameras
 {
@@ -21,6 +25,16 @@ namespace TrafficDesktopApp.Controls.Cameras
             if (cameras != null)
             {
                 foreach (var cam in cameras) VisibleCameras.Add(cam);
+            }
+        }
+
+        private void CameraCard_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is Border card && card.DataContext is Camera camera)
+            {
+                var detailsWindow = new CameraDetails(camera);
+                detailsWindow.Owner = Window.GetWindow(this); 
+                detailsWindow.ShowDialog(); 
             }
         }
     }
