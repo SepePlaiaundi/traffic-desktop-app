@@ -11,7 +11,7 @@
       Background="#F7F7F7" >
 
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
@@ -25,15 +25,15 @@
 
             <Grid Margin="20">
                 <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="20"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="20"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0">
-                
+
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -96,11 +96,11 @@
                     </Border>
 
                     <controls:CamerasList x:Name="CamerasList" Grid.Column="1"/>
-                    
+
                 </Grid>
 
                 <Grid Grid.Row="4">
-                    
+
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" MinWidth="520"/>
                         <ColumnDefinition Width="*" MinWidth="360"/>
@@ -146,9 +146,9 @@
                 </Grid>
 
             </Grid>
-            
+
         </ScrollViewer>
-        
+
     </Grid>
-             
+
 </Window>
