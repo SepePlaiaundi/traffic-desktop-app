@@ -3,17 +3,21 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using TrafficDesktopApp.Services; // Ensure you have this for AuthService
+using TrafficDesktopApp.Windows;  // Ensure this for MainWindow (Login)
 
 namespace TrafficDesktopApp.Controls.General
 {
     /// <summary>
-    /// Lógica de interacción para DashboardHeader.xaml
+    /// Interaction logic for Header.xaml
     /// </summary>
     public partial class Header : UserControl
     {
+        // --- EXISTING EVENTS ---
         public event Action DashboardClicked;
         public event Action IncidentsClicked;
 
+        // --- DEPENDENCY PROPERTIES ---
         public static readonly DependencyProperty TitleProperty =
             DependencyProperty.Register(
                 nameof(Title),
@@ -27,11 +31,28 @@ namespace TrafficDesktopApp.Controls.General
             set => SetValue(TitleProperty, value);
         }
 
+        // --- CONSTRUCTOR ---
         public Header()
         {
             InitializeComponent();
+            CheckUserRole(); // Run security check on load
         }
 
+        // --- NEW: ROLE CHECK ---
+        private void CheckUserRole()
+        {
+            // If the user is NOT an Admin, hide the "Users" navigation link
+            if (!AuthService.IsAdmin())
+            {
+                UsersLink.Visibility = Visibility.Collapsed;
+                UsersUnderline.Visibility = Visibility.Collapsed;
+
+                // Optional: Disable the click event or hide the container
+                // (Assuming the parent stackpanel doesn't have a name, hiding the text is usually enough)
+            }
+        }
+
+        // --- EXISTING: NAVIGATION HIGHLIGHTING ---
         public void SetActive(string page)
         {
             DashboardLink.Foreground = Brushes.Gray;
@@ -59,13 +80,14 @@ namespace TrafficDesktopApp.Controls.General
                 CamerasLink.Foreground = Brushes.Black;
                 CamerasUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
             }
-            else
+            else if (page == "Users")
             {
                 UsersLink.Foreground = Brushes.Black;
                 UsersUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
             }
         }
 
+        // --- EXISTING: NAVIGATION CLICKS ---
         private void Dashboard_Click(object sender, RoutedEventArgs e)
         {
             OpenWindow(new TrafficDesktopApp.Windows.Dashboard());
@@ -86,12 +108,48 @@ namespace TrafficDesktopApp.Controls.General
             OpenWindow(new TrafficDesktopApp.Windows.Users());
         }
 
+        // --- NEW: AVATAR & LOGOUT LOGIC ---
+
+        private void Avatar_Click(object sender, MouseButtonEventArgs e)
+        {
+            // Find the ContextMenu defined in XAML resources or inline
+            // Note: Ensure your XAML Border has the ContextMenu defined inside it
+            // and the Border sender is cast correctly.
+
+            if (sender is FrameworkElement element && element.ContextMenu != null)
+            {
+                element.ContextMenu.PlacementTarget = element;
+                element.ContextMenu.IsOpen = true;
+            }
+        }
+
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Configuración de perfil (Próximamente)", "Mi Perfil", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            // 1. Clear Session
+            AuthService.Logout();
+
+            // 2. Open Login Window (MainWindow)
+            Login loginWindow = new Login();
+            loginWindow.Show();
+
+            // 3. Close the current window (Dashboard/Cameras/etc.)
+            Window currentWindow = Window.GetWindow(this);
+            currentWindow?.Close();
+        }
+
+        // --- EXISTING: WINDOW SWAPPING ---
         private void OpenWindow(Window newWindow)
         {
             Window current = Window.GetWindow(this);
 
             if (current != null)
             {
+                // Preserve state (Maximized/Normal) and position
                 newWindow.WindowState = current.WindowState;
 
                 if (current.WindowState == WindowState.Normal)
@@ -106,6 +164,5 @@ namespace TrafficDesktopApp.Controls.General
                 current.Close();
             }
         }
-
     }
 }

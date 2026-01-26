@@ -239,7 +239,10 @@
     <Compile Include="Controls\Users\UsersListView.xaml.cs">
       <DependentUpon>UsersListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CoordinateConverter.cs" />
+    <Compile Include="Models\LoginResponse.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\UsersService.cs" />
     <Compile Include="Windows\CameraDetails.xaml.cs">
       <DependentUpon>CameraDetails.xaml</DependentUpon>
@@ -313,7 +316,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\MainWindow.xaml">
+    <Page Include="Windows\Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -351,8 +354,8 @@
     <Compile Include="Windows\Incidences.xaml.cs">
       <DependentUpon>Incidences.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\Users.xaml">

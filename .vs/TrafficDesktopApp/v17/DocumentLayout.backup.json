@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SePe\\traffic-desktop-app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Services\\ApiClient.cs",
+              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Services\\ApiClient.cs*",
+              "RelativeToolTip": "Services\\ApiClient.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T11:23:09.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T11:08:43.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Models\\Camera.cs",
+              "RelativeDocumentMoniker": "Models\\Camera.cs",
+              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Models\\Camera.cs",
+              "RelativeToolTip": "Models\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T11:08:15.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\SePe\\traffic-desktop-app\\App.xaml*",
+              "RelativeToolTip": "App.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-26T11:07:57.534Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

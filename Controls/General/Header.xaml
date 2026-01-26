@@ -85,8 +85,34 @@
                     CornerRadius="18"
                     BorderBrush="#DDD"
                     BorderThickness="1"
-                    VerticalAlignment="Center">
-                <Ellipse Fill="#CCC"/>
+                    VerticalAlignment="Center"
+                    Cursor="Hand"
+                    MouseLeftButtonUp="Avatar_Click"
+                    Background="Transparent">
+                
+                <Border.ContextMenu>
+                    
+                    <ContextMenu x:Name="UserMenu" Placement="Bottom">
+                        
+                        <MenuItem Header="Mi Perfil" Click="Profile_Click"/>
+                        <Separator/>
+                        <MenuItem Header="Cerrar Sesión" Click="Logout_Click" Foreground="Red"/>
+                        
+                    </ContextMenu>
+                    
+                </Border.ContextMenu>
+
+                <Grid>
+                    
+                    <Ellipse Fill="#EEE"/>
+                    
+                    <TextBlock Text="U" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center" 
+                               Foreground="#888" 
+                               FontWeight="Bold"/>
+                </Grid>
+                
             </Border>
 
         </Grid>

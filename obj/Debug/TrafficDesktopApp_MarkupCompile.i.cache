@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\
+D:\SePe\traffic-desktop-app\obj\Debug\
 TrafficDesktopApp
 none
 false
 DEBUG;TRACE
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\App.xaml
-17-941395975
-10348413302
-30-938924326
-166-1568475881
-Controls\Cameras\CamerasGridView.xaml;Controls\Cameras\CamerasMapView.xaml;Controls\Users\UsersListView.xaml;Windows\CameraDetails.xaml;Windows\Cameras.xaml;Controls\Dashboard\CamerasList.xaml;Controls\Dashboard\DashboardCard.xaml;Controls\Dashboard\IncidentsList.xaml;Controls\Dashboard\LineChart.xaml;Controls\Dashboard\MonthlyBarChart.xaml;Controls\General\Header.xaml;Controls\Incidences\IncidencesListView.xaml;Controls\Incidences\IncidencesSidebar.xaml;Windows\Dashboard.xaml;Windows\Incidences.xaml;Windows\MainWindow.xaml;Windows\Users.xaml;
+D:\SePe\traffic-desktop-app\App.xaml
+171866551623
+102030783744
+33-371305228
+1661192721453
+Controls\Cameras\CamerasGridView.xaml;Controls\Cameras\CamerasMapView.xaml;Controls\Users\UsersListView.xaml;Windows\CameraDetails.xaml;Windows\Cameras.xaml;Controls\Dashboard\CamerasList.xaml;Controls\Dashboard\DashboardCard.xaml;Controls\Dashboard\IncidentsList.xaml;Controls\Dashboard\LineChart.xaml;Controls\Dashboard\MonthlyBarChart.xaml;Controls\General\Header.xaml;Controls\Incidences\IncidencesListView.xaml;Controls\Incidences\IncidencesSidebar.xaml;Windows\Dashboard.xaml;Windows\Incidences.xaml;Windows\Login.xaml;Windows\Users.xaml;
 
 False
 

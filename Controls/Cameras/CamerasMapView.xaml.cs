@@ -46,6 +46,8 @@ namespace TrafficDesktopApp.Controls.Cameras
             );
         }
 
+        // Inside CamerasMapView.cs
+
         public void SetCameras(List<Camera> cameras)
         {
             Map.Markers.Clear();
@@ -55,8 +57,18 @@ namespace TrafficDesktopApp.Controls.Cameras
                 if (!cam.Latitude.HasValue || !cam.Longitude.HasValue)
                     continue;
 
-                var marker = new GMapMarker(
-                    new PointLatLng(cam.Latitude.Value, cam.Longitude.Value))
+                double lat = cam.Latitude.Value;
+                double lon = cam.Longitude.Value;
+
+                if (lat > 1000 || lat < -1000)
+                {
+
+                    var converted = TrafficDesktopApp.Helpers.CoordinateConverter.UtmToWgs84(x: lon, y: lat);
+                    lat = converted.Latitude;
+                    lon = converted.Longitude;
+                }
+
+                var marker = new GMapMarker(new PointLatLng(lat, lon))
                 {
                     Shape = CreateCameraMarker(cam),
                     Offset = new Point(-20, -40)
