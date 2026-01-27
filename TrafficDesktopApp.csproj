@@ -87,6 +87,9 @@
     <Reference Include="OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <HintPath>packages\OpenTK.GLControl.3.1.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
+    <Reference Include="QuestPDF, Version=2025.12.3.1, Culture=neutral, PublicKeyToken=0f3c2b2315ff52c8, processorArchitecture=MSIL">
+      <HintPath>packages\QuestPDF.2025.12.3.1-alpha2\lib\netstandard2.0\QuestPDF.dll</HintPath>
+    </Reference>
     <Reference Include="ShimSkiaSharp, Version=0.5.7.1, Culture=neutral, PublicKeyToken=dafe96fe6c845a74, processorArchitecture=MSIL">
       <HintPath>packages\ShimSkiaSharp.0.5.7.1\lib\net461\ShimSkiaSharp.dll</HintPath>
     </Reference>
@@ -236,13 +239,19 @@
     <Compile Include="Controls\Cameras\CamerasMapView.xaml.cs">
       <DependentUpon>CamerasMapView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Report\ReportButton.xaml.cs">
+      <DependentUpon>ReportButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Users\UsersListView.xaml.cs">
       <DependentUpon>UsersListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CoordinateConverter.cs" />
     <Compile Include="Models\LoginResponse.cs" />
+    <Compile Include="Models\ReportData.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\PdfReportService.cs" />
+    <Compile Include="Services\UiElementCapturer.cs" />
     <Compile Include="Services\UsersService.cs" />
     <Compile Include="Windows\CameraDetails.xaml.cs">
       <DependentUpon>CameraDetails.xaml</DependentUpon>
@@ -261,6 +270,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Cameras\CamerasMapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Report\ReportButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -364,7 +377,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\CameraItem.cs" />
     <Compile Include="Models\Incidence.cs" />
     <Compile Include="Models\IncidenceItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -413,10 +425,12 @@
     <Error Condition="!Exists('packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets'))" />
     <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
     <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets'))" />
   </Target>
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Import Project="packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets" Condition="Exists('packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+  <Import Project="packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets')" />
 </Project>

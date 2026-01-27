@@ -71,15 +71,21 @@
 
         <Border Grid.Column="0" Margin="24" Background="White" 
                 CornerRadius="8" BorderBrush="#E0E0E0" BorderThickness="1">
-            <Grid>
-                <Image Source="{Binding Image}" Stretch="UniformToFill" Margin="1">
-                    <Image.Clip>
-                        <RectangleGeometry Rect="0,0,2000,2000" RadiusX="7" RadiusY="7"/>
-                    </Image.Clip>
-                </Image>
+
+            <Grid Background="Transparent">
+
+                <Grid.ToolTip>
+                    <ToolTip Background="White" BorderBrush="#E0E0E0" BorderThickness="1" 
+                     Placement="Mouse" VerticalOffset="10">
+                        <Image Source="{Binding Image}" Height="400" Stretch="Uniform"/>
+                    </ToolTip>
+                </Grid.ToolTip>
+
+                <Image Source="{Binding Image}" Stretch="Uniform" Margin="1" IsHitTestVisible="False"/>
 
                 <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16"
-                        Background="#CC222222" CornerRadius="4" Padding="10,5">
+                Background="#CC222222" CornerRadius="4" Padding="10,5"
+                IsHitTestVisible="False">
                     <StackPanel Orientation="Horizontal">
                         <Ellipse Width="8" Height="8" Fill="#00E676" Margin="0,0,8,0"/>
                         <TextBlock Text="CÁMARA ACTIVA" Foreground="White" FontSize="11" FontWeight="Bold"/>
