@@ -1,19 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel; // Necesario para ObservableCollection
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using TrafficDesktopApp.Models;
+using TrafficDesktopApp.Services;
+using TrafficDesktopApp.Windows; // Necesario para EditUserWindow
 
 namespace TrafficDesktopApp.Controls.Users
 {
@@ -22,14 +14,17 @@ namespace TrafficDesktopApp.Controls.Users
     /// </summary>
     public partial class UsersListView : UserControl
     {
+        // Esta es la colección que lee el XAML
         public ObservableCollection<User> VisibleUsers { get; set; } = new ObservableCollection<User>();
 
         public UsersListView()
         {
             InitializeComponent();
+            // Importante: DataContext = this permite que el XAML vea "VisibleUsers"
             DataContext = this;
         }
 
+        // --- MÉTODO QUE FALTABA (SetUsers) ---
         public void SetUsers(List<User> users)
         {
             VisibleUsers.Clear();
@@ -40,6 +35,14 @@ namespace TrafficDesktopApp.Controls.Users
                     VisibleUsers.Add(user);
                 }
             }
+        }
+
+        private async void SaveUser_Click(object sender, RoutedEventArgs e)
+        {
+            var user = (sender as Button)?.DataContext as User;
+            if (user == null) return;
+
+            await UsersService.UpdateUserAsync(user);
         }
     }
 }

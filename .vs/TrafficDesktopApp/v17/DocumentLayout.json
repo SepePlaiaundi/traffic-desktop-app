@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "D:\\SePe\\traffic-desktop-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\report\\reportbutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\report\\reportbutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\windows\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\report\\reportbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\report\\reportbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\services\\pdfreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\pdfreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\models\\reportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:models\\reportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\services\\uielementcapturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\uielementcapturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\dashboard\\linechart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\linechart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\dashboard\\monthlybarchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\monthlybarchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\dashboard\\monthlybarchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\monthlybarchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\dashboard\\dashboardcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\dashboardcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|d:\\sepe\\traffic-desktop-app\\controls\\users\\userslistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\users\\userslistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,132 +14,18 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReportData.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Models\\ReportData.cs",
-              "RelativeDocumentMoniker": "Models\\ReportData.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Models\\ReportData.cs",
-              "RelativeToolTip": "Models\\ReportData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:27:49.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PdfReportService.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Services\\PdfReportService.cs",
-              "RelativeDocumentMoniker": "Services\\PdfReportService.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Services\\PdfReportService.cs",
-              "RelativeToolTip": "Services\\PdfReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:28:50.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReportButton.xaml.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
-              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowFsAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:32:55.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReportButton.xaml",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
-              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
-              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml",
+              "Title": "UsersListView.xaml",
+              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Users\\UsersListView.xaml",
+              "RelativeDocumentMoniker": "Controls\\Users\\UsersListView.xaml",
+              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Users\\UsersListView.xaml",
+              "RelativeToolTip": "Controls\\Users\\UsersListView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T11:33:09.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Windows\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "Windows\\Dashboard.xaml",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Windows\\Dashboard.xaml",
-              "RelativeToolTip": "Windows\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T11:25:21.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UiElementCapturer.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Services\\UiElementCapturer.cs",
-              "RelativeDocumentMoniker": "Services\\UiElementCapturer.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Services\\UiElementCapturer.cs",
-              "RelativeToolTip": "Services\\UiElementCapturer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:40:27.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LineChart.xaml.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\LineChart.xaml.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\LineChart.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:39:07.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MonthlyBarChart.xaml.cs",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:38:53.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MonthlyBarChart.xaml",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\MonthlyBarChart.xaml",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml",
-              "RelativeToolTip": "Controls\\Dashboard\\MonthlyBarChart.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T11:38:50.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DashboardCard.xaml",
-              "DocumentMoniker": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\DashboardCard.xaml",
-              "ToolTip": "D:\\SePe\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml",
-              "RelativeToolTip": "Controls\\Dashboard\\DashboardCard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T11:38:48.866Z",
+              "WhenOpened": "2026-01-28T10:42:53.126Z",
               "EditorCaption": ""
             }
           ]

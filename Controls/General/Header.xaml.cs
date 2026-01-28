@@ -35,22 +35,8 @@ namespace TrafficDesktopApp.Controls.General
         public Header()
         {
             InitializeComponent();
-            CheckUserRole(); // Run security check on load
         }
 
-        // --- NEW: ROLE CHECK ---
-        private void CheckUserRole()
-        {
-            // If the user is NOT an Admin, hide the "Users" navigation link
-            if (!AuthService.IsAdmin())
-            {
-                UsersLink.Visibility = Visibility.Collapsed;
-                UsersUnderline.Visibility = Visibility.Collapsed;
-
-                // Optional: Disable the click event or hide the container
-                // (Assuming the parent stackpanel doesn't have a name, hiding the text is usually enough)
-            }
-        }
 
         // --- EXISTING: NAVIGATION HIGHLIGHTING ---
         public void SetActive(string page)

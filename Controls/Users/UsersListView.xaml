@@ -6,29 +6,145 @@
             BorderBrush="#DDD"
             BorderThickness="1"
             CornerRadius="6"
-            Padding="16">
+            Padding="20">
 
-        <DockPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <TextBlock Text="Todos los usuarios"
+            <!-- Título -->
+            <TextBlock Text="Usuarios"
                        FontSize="14"
                        FontWeight="SemiBold"
-                       DockPanel.Dock="Top"
-                       Margin="0,0,0,10"/>
+                       Margin="0,0,0,16"/>
 
-            <DataGrid ItemsSource="{Binding VisibleUsers}"
+            <!-- Tabla -->
+            <DataGrid Grid.Row="1"
+                      ItemsSource="{Binding VisibleUsers}"
                       AutoGenerateColumns="False"
+                      CanUserAddRows="False"
                       HeadersVisibility="Column"
                       GridLinesVisibility="None"
-                      CanUserAddRows="False">
+                      Background="Transparent"
+                      BorderThickness="0"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow"
+                      RowHeight="48"
+                      ColumnHeaderHeight="36"
+                      IsReadOnly="False">
 
+                <!-- Cabeceras -->
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Foreground" Value="#6B7280"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="BorderBrush" Value="#E5E7EB"/>
+                        <Setter Property="Padding" Value="12,0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+
+                <!-- Filas -->
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="DataGridRow">
+                                    <Border x:Name="RowBorder"
+                                            Background="Transparent"
+                                            BorderBrush="#E5E7EB"
+                                            BorderThickness="0,0,0,1">
+                                        <DataGridCellsPresenter/>
+                                    </Border>
+
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="RowBorder"
+                                                    Property="Background"
+                                                    Value="#F9FAFB"/>
+                                        </Trigger>
+
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="RowBorder"
+                                                    Property="Background"
+                                                    Value="#EEF2FF"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </DataGrid.RowStyle>
+
+                <!-- Celdas -->
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="12,0"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="#111827"/>
+                    </Style>
+                </DataGrid.CellStyle>
+
+                <!-- Columnas -->
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nombre y Apellidos" Binding="{Binding Name}" Width="60"/>
-                    <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
-                </DataGrid.Columns>
 
+                    <!-- Nombre (editable) -->
+                    <DataGridTextColumn Header="Nombre"
+                                        Width="2*"
+                                        IsReadOnly="False"
+                                        Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+                        <DataGridTextColumn.EditingElementStyle>
+                            <Style TargetType="TextBox">
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Padding" Value="12,0"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.EditingElementStyle>
+
+                    </DataGridTextColumn>
+
+                    <!-- Email (solo lectura) -->
+                    <DataGridTextColumn Header="Email"
+                                        Width="*"
+                                        IsReadOnly="True"
+                                        Binding="{Binding Email}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Foreground" Value="#6B7280"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Acción -->
+                    <DataGridTemplateColumn Width="110">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Guardar"
+                                        Click="SaveUser_Click"
+                                        Padding="12,4"
+                                        FontSize="11"
+                                        Background="#F5F7FA"
+                                        Foreground="#2563EB"
+                                        BorderBrush="#D1D5DB"
+                                        BorderThickness="1"
+                                        Cursor="Hand"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
             </DataGrid>
 
-        </DockPanel>
+        </Grid>
     </Border>
 </UserControl>
