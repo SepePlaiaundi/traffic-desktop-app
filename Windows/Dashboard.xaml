@@ -57,6 +57,7 @@
                     </Grid.ColumnDefinitions>
 
                     <controls:DashboardCard
+                        x:Name="CardTotalIncidencias"
                         Grid.Column="0"
                         Margin="0,0,15,0"
                         Title="Incidencias hoy"
@@ -122,7 +123,9 @@
                         CornerRadius="6"
                         Padding="20"
                         Margin="0,0,20,0">
-                        <controls:IncidentsList Grid.Row="1"/>
+                        
+                        <controls:IncidentsList x:Name="IncidencesList" Grid.Row="1"/>
+                        
                     </Border>
 
                     <Border Grid.Column="1"

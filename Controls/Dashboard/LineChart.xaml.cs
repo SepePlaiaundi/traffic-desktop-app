@@ -1,5 +1,7 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -7,29 +9,32 @@ namespace TrafficDesktopApp.Controls.Dashboard
 {
     public partial class LineChart : UserControl
     {
-        public SeriesCollection Series { get; set; }
-        public string[] Labels { get; set; }
-
         public LineChart()
         {
             InitializeComponent();
+        }
 
-            Labels = new[] { "23 h", "4", "9", "14", "3", "4", "5", "30" };
+        public void SetHourlyData(IEnumerable<(string Label, int Value)> points)
+        {
+            AxisX.Labels = points.Select(p => p.Label).ToArray();
 
-            Series = new SeriesCollection
+            Chart.Series = new SeriesCollection
             {
-                new LineSeries
-                {
-                    Values = new ChartValues<int> { 0, 1, 2, 4, 6, 5, 7, 10 },
-                    Stroke = Brushes.Black,
-                    StrokeThickness = 3,
-                    Fill = Brushes.Transparent,
-                    PointGeometry = null, // sin puntos
-                    LineSmoothness = 0    // línea recta, no curva
-                }
+                CreateLineSeries(points.Select(p => p.Value))
             };
+        }
 
-            DataContext = this;
+        private static LineSeries CreateLineSeries(IEnumerable<int> values)
+        {
+            return new LineSeries
+            {
+                Values = new ChartValues<int>(values),
+                Stroke = Brushes.Black,
+                StrokeThickness = 3,
+                Fill = Brushes.Transparent,
+                PointGeometry = null,
+                LineSmoothness = 0
+            };
         }
     }
 }

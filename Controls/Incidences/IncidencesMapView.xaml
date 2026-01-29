@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="TrafficDesktopApp.Controls.Incidences.IncidencesMapView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation">
+
+    <Grid>
+        <gmap:GMapControl x:Name="Map"/>
+    </Grid>
+</UserControl>

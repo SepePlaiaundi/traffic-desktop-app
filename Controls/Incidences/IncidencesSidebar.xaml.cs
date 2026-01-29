@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -8,51 +7,84 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
-    /// <summary>
-    /// Interaction logic for IncidencesSidebar.xaml
-    /// </summary>
     public partial class IncidencesSidebar : UserControl
     {
-        public event Action<IncidenceType?> FilterChanged;
+        public event Action<string> FilterChanged;
 
         public IncidencesSidebar()
         {
             InitializeComponent();
+            BuildItems();
+            SetAllActive();
+        }
+
+        private void BuildItems()
+        {
+            foreach (var type in IncidenceTypes.All)
+            {
+                var dot = new Ellipse
+                {
+                    Width = 10,
+                    Height = 10,
+                    Fill = Brushes.LightGray,
+                    VerticalAlignment = System.Windows.VerticalAlignment.Center
+                };
+
+                var text = new TextBlock
+                {
+                    Text = type,
+                    Margin = new System.Windows.Thickness(10, 0, 0, 0)
+                };
+
+                var panel = new StackPanel
+                {
+                    Orientation = Orientation.Horizontal,
+                    Margin = new System.Windows.Thickness(0, 0, 0, 12)
+                };
+
+                panel.Children.Add(dot);
+                panel.Children.Add(text);
+
+                panel.MouseLeftButtonUp += (_, __) =>
+                {
+                    SetActive(dot, text);
+                    FilterChanged?.Invoke(type);
+                };
+
+                ItemsPanel.Children.Add(panel);
+            }
         }
 
         private void All_Click(object sender, MouseButtonEventArgs e)
         {
-            SetActive(AllDot, AllText);
+            SetAllActive();
             FilterChanged?.Invoke(null);
         }
 
-        private void Works_Click(object sender, MouseButtonEventArgs e)
-        {
-            SetActive(WorksDot, WorksText);
-            FilterChanged?.Invoke(IncidenceType.Obras);
-        }
-
-        private void Accidents_Click(object sender, MouseButtonEventArgs e)
-        {
-            SetActive(AccidentsDot, AccidentsText);
-            FilterChanged?.Invoke(IncidenceType.Accidente);
-        }
-
-        private void Others_Click(object sender, MouseButtonEventArgs e)
-        {
-            SetActive(OthersDot, OthersText);
-            FilterChanged?.Invoke(IncidenceType.Otro);
-        }
-
-
         private void SetActive(Ellipse activeDot, TextBlock activeText)
         {
-            AllDot.Fill = WorksDot.Fill = AccidentsDot.Fill = OthersDot.Fill = Brushes.LightGray;
-            AllText.FontWeight = WorksText.FontWeight = AccidentsText.FontWeight = OthersText.FontWeight = FontWeights.Normal;
-
+            ResetActive();
             activeDot.Fill = Brushes.Gold;
-            activeText.FontWeight = FontWeights.SemiBold;
+            activeText.FontWeight = System.Windows.FontWeights.SemiBold;
         }
 
+        private void SetAllActive()
+        {
+            ResetActive();
+            AllDot.Fill = Brushes.Gold;
+            AllText.FontWeight = System.Windows.FontWeights.SemiBold;
+        }
+
+        private void ResetActive()
+        {
+            AllDot.Fill = Brushes.LightGray;
+            AllText.FontWeight = System.Windows.FontWeights.Normal;
+
+            foreach (StackPanel panel in ItemsPanel.Children)
+            {
+                ((Ellipse)panel.Children[0]).Fill = Brushes.LightGray;
+                ((TextBlock)panel.Children[1]).FontWeight = System.Windows.FontWeights.Normal;
+            }
+        }
     }
 }

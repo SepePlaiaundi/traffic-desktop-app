@@ -9,45 +9,55 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <!-- TÍTULO -->
         <TextBlock Text="Últimas incidencias"
-                       FontSize="14"
-                       FontWeight="SemiBold"
-                       Margin="0,0,0,12"/>
+                   FontSize="14"
+                   FontWeight="SemiBold"
+                   Margin="0,0,0,12"/>
 
-        <Grid Grid.Row="1"
-                  Margin="0,0,0,8">
+        <!-- CABECERA -->
+        <Grid Grid.Row="1" Margin="0,0,0,8">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Incidencia" Foreground="#777"/>
-            <TextBlock Text="Carretera" Grid.Column="1" Foreground="#777"/>
-            <TextBlock Text="Provincia" Grid.Column="2" Foreground="#777"/>
+            <TextBlock Text="Incidencia" Foreground="#777" VerticalAlignment="Center"/>
+            <TextBlock Text="Carretera" Grid.Column="1" Foreground="#777" VerticalAlignment="Center"/>
+            <TextBlock Text="Provincia" Grid.Column="2"
+                       Foreground="#777"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Right"/>
         </Grid>
 
+        <!-- LISTA -->
         <ItemsControl Grid.Row="2"
-                          ItemsSource="{Binding Incidents}">
+                      ItemsSource="{Binding Incidents, RelativeSource={RelativeSource AncestorType=UserControl}}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="0,6">
+                    <Grid Margin="0,4">
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="{Binding Type}"/>
+                        <TextBlock Text="{Binding Cause}"
+                                   VerticalAlignment="Center"/>
+
                         <TextBlock Text="{Binding Road}"
-                                       Grid.Column="1"/>
+                                   Grid.Column="1"
+                                   VerticalAlignment="Center"/>
+
                         <TextBlock Text="{Binding Province}"
-                                       Grid.Column="2"/>
+                                   Grid.Column="2"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Right"/>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
 
     </Grid>
-
 </UserControl>

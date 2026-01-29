@@ -6,41 +6,37 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
-    /// <summary>
-    /// Interaction logic for IncidentsListView.xaml
-    /// </summary>
     public partial class IncidencesListView : UserControl
     {
-
-        private List<Incidence> _allIncidents;
-        public ObservableCollection<Incidence> VisibleIncidents { get; set; }
+        private List<Incidence> _allIncidents = new List<Incidence>();
+        public ObservableCollection<Incidence> VisibleIncidents { get; }
 
         public IncidencesListView()
         {
             InitializeComponent();
-
-            _allIncidents = new List<Incidence>
-            {
-                new Incidence{ Id=16345, Description="Obras en la calzada", Road="AP-8", Province="GI", Type=IncidenceType.Obras, Date="Dic 5"},
-                new Incidence{ Id=16346, Description="Accidente", Road="A-1", Province="AR", Type=IncidenceType.Accidente, Date="Dic 5"},
-                new Incidence{ Id=16347, Description="Desvío temporal", Road="GI-20", Province="GI", Type=IncidenceType.Otro, Date="Dic 4"},
-            };
-
-            VisibleIncidents = new ObservableCollection<Incidence>(_allIncidents);
+            VisibleIncidents = new ObservableCollection<Incidence>();
             DataContext = this;
         }
 
+        public void SetIncidences(List<Incidence> incidences)
+        { 
+            _allIncidents = incidences;
+            ApplyFilter(null);
+        }
 
-        public void ApplyFilter(IncidenceType? filter)
+        public void ApplyFilter(string type)
         {
             VisibleIncidents.Clear();
 
-            var filtered = filter == null
-                ? _allIncidents
-                : _allIncidents.Where(i => i.Type == filter);
+            IEnumerable<Incidence> filtered =
+                type == null
+                    ? _allIncidents
+                    : _allIncidents.Where(i => i.Type == type);
 
             foreach (var item in filtered)
                 VisibleIncidents.Add(item);
         }
+
+
     }
 }

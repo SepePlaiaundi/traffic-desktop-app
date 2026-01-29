@@ -312,3 +312,5 @@ D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.dll
 D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.xml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.baml

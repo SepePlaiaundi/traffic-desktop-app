@@ -18,18 +18,77 @@
 
             <DataGrid ItemsSource="{Binding VisibleIncidents}"
                       AutoGenerateColumns="False"
-                      HeadersVisibility="Column"
+                      CanUserAddRows="False"
                       GridLinesVisibility="None"
-                      CanUserAddRows="False">
+                      HeadersVisibility="Column">
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
-                    <DataGridTextColumn Header="Descripción" Binding="{Binding Description}" Width="*"/>
-                    <DataGridTextColumn Header="Carretera" Binding="{Binding Road}" Width="120"/>
-                    <DataGridTextColumn Header="Provincia" Binding="{Binding Province}" Width="80"/>
-                    <DataGridTextColumn Header="Fecha" Binding="{Binding Date}" Width="90"/>
-                </DataGrid.Columns>
 
+                    <DataGridTextColumn Header="ID"
+                                        Binding="{Binding Id}"
+                                        Width="70"/>
+
+                    <DataGridTextColumn Header="Origen"
+                                        Binding="{Binding Source}"
+                                        Width="180"/>
+
+                    <DataGridTextColumn Header="Causa"
+                                        Binding="{Binding Cause}"
+                                        Width="180"/>
+
+                    <DataGridTextColumn Header="Carretera"
+                                        Binding="{Binding Road}"
+                                        Width="100"/>
+
+                    <DataGridTextColumn Header="Dirección"
+                                        Binding="{Binding Direction}"
+                                        Width="100"/>
+
+                    <DataGridTextColumn Header="Ciudad"
+                                        Binding="{Binding City}"
+                                        Width="130"/>
+
+                    <DataGridTextColumn Header="Provincia"
+                                        Binding="{Binding Province}"
+                                        Width="130"/>
+
+                    <DataGridTextColumn Header="Latitud"
+                                        Binding="{Binding Latitude, StringFormat=F6}"
+                                        Width="110"/>
+
+                    <DataGridTextColumn Header="Longitud"
+                                        Binding="{Binding Longitude, StringFormat=F6}"
+                                        Width="110"/>
+
+                    <DataGridTextColumn Header="Nivel"
+                                        Binding="{Binding Level}"
+                                        Width="90"/>
+
+                    <DataGridTextColumn Header="Tipo"
+                                        Binding="{Binding Type}"
+                                        Width="140"/>
+
+                    <DataGridTextColumn Header="Inicio"
+                                        Binding="{Binding StartDate, StringFormat=dd/MM/yyyy HH:mm}"
+                                        Width="150"/>
+
+                    <DataGridTextColumn Header="Fin"
+                                        Binding="{Binding EndDate, StringFormat=dd/MM/yyyy HH:mm}"
+                                        Width="150"/>
+
+                    <DataGridTextColumn Header="Creado"
+                                        Binding="{Binding FirstInserted, StringFormat=dd/MM/yyyy HH:mm}"
+                                        Width="150"/>
+
+                    <DataGridTextColumn Header="Actualizado"
+                                        Binding="{Binding LastUpdated, StringFormat=dd/MM/yyyy HH:mm}"
+                                        Width="150"/>
+
+                    <DataGridCheckBoxColumn Header="Nueva"
+                                            Binding="{Binding IsNew}"
+                                            Width="80"/>
+
+                </DataGrid.Columns>
             </DataGrid>
 
         </DockPanel>

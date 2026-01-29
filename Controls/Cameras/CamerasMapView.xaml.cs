@@ -14,6 +14,8 @@ namespace TrafficDesktopApp.Controls.Cameras
 {
     public partial class CamerasMapView : UserControl
     {
+        private const double MarkerSize = 40;
+
         public CamerasMapView()
         {
             InitializeComponent();
@@ -46,8 +48,6 @@ namespace TrafficDesktopApp.Controls.Cameras
             );
         }
 
-        // Inside CamerasMapView.cs
-
         public void SetCameras(List<Camera> cameras)
         {
             Map.Markers.Clear();
@@ -60,10 +60,14 @@ namespace TrafficDesktopApp.Controls.Cameras
                 double lat = cam.Latitude.Value;
                 double lon = cam.Longitude.Value;
 
-                if (lat > 1000 || lat < -1000)
+                // Conversión UTM → WGS84 si aplica
+                if (lat > 90 || lon > 180)
                 {
+                    var converted = Helpers.CoordinateConverter.UtmToWgs84(
+                        x: lon,
+                        y: lat
+                    );
 
-                    var converted = TrafficDesktopApp.Helpers.CoordinateConverter.UtmToWgs84(x: lon, y: lat);
                     lat = converted.Latitude;
                     lon = converted.Longitude;
                 }
@@ -71,7 +75,7 @@ namespace TrafficDesktopApp.Controls.Cameras
                 var marker = new GMapMarker(new PointLatLng(lat, lon))
                 {
                     Shape = CreateCameraMarker(cam),
-                    Offset = new Point(-20, -40)
+                    Offset = new Point(-MarkerSize / 2, -MarkerSize)
                 };
 
                 Map.Markers.Add(marker);
@@ -82,8 +86,9 @@ namespace TrafficDesktopApp.Controls.Cameras
         {
             var image = new Image
             {
-                Width = 40,
-                Height = 40,
+                Width = MarkerSize,
+                Height = MarkerSize,
+                Stretch = Stretch.Uniform,
                 Source = new BitmapImage(
                     new System.Uri("pack://application:,,,/Assets/camera.png")),
                 RenderTransformOrigin = new Point(0.5, 1.0),
@@ -91,26 +96,12 @@ namespace TrafficDesktopApp.Controls.Cameras
                 ToolTip = cam.CameraName
             };
 
-            var scale = new ScaleTransform(1.0, 1.0);
-            image.RenderTransform = scale;
+            // Hover suave (sin agrandar)
+            image.MouseEnter += (_, __) => image.Opacity = 0.85;
+            image.MouseLeave += (_, __) => image.Opacity = 1.0;
 
-            // Hover animation
-            image.MouseEnter += (s, e) =>
-            {
-                scale.ScaleX = 1.25;
-                scale.ScaleY = 1.25;
-                image.Opacity = 0.95;
-            };
-
-            image.MouseLeave += (s, e) =>
-            {
-                scale.ScaleX = 1.0;
-                scale.ScaleY = 1.0;
-                image.Opacity = 1.0;
-            };
-
-            // CLICK → OPEN CAMERA DETAILS
-            image.MouseLeftButtonUp += (s, e) =>
+            // Click → detalle cámara
+            image.MouseLeftButtonUp += (_, e) =>
             {
                 var detailsWindow = new CameraDetails(cam)
                 {

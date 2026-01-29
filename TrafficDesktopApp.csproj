@@ -239,6 +239,9 @@
     <Compile Include="Controls\Cameras\CamerasMapView.xaml.cs">
       <DependentUpon>CamerasMapView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Incidences\IncidencesMapView.xaml.cs">
+      <DependentUpon>IncidencesMapView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Report\ReportButton.xaml.cs">
       <DependentUpon>ReportButton.xaml</DependentUpon>
     </Compile>
@@ -246,10 +249,13 @@
       <DependentUpon>UsersListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CoordinateConverter.cs" />
+    <Compile Include="Helpers\IncidenceIconResolver.cs" />
+    <Compile Include="Models\IncidenceTypes.cs" />
     <Compile Include="Models\LoginResponse.cs" />
     <Compile Include="Models\ReportData.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\IncidenceService.cs" />
     <Compile Include="Services\PdfReportService.cs" />
     <Compile Include="Services\UiElementCapturer.cs" />
     <Compile Include="Services\UsersService.cs" />
@@ -270,6 +276,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Cameras\CamerasMapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Incidences\IncidencesMapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -378,7 +388,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Incidence.cs" />
-    <Compile Include="Models\IncidenceItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -411,6 +420,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\accidente.png" />
+    <Resource Include="Assets\obras.png" />
+    <Resource Include="Assets\otras_incidencias.png" />
+    <Resource Include="Assets\puertos_de_montaña.png" />
+    <Resource Include="Assets\seguridad_vial.png" />
+    <Resource Include="Assets\vialidad_invernal_tramos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />

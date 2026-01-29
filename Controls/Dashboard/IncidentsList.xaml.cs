@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using TrafficDesktopApp.Models;
 
@@ -6,24 +7,22 @@ namespace TrafficDesktopApp.Controls.Dashboard
 {
     public partial class IncidentsList : UserControl
     {
-        public List<IncidenceItem> Incidents { get; set; }
+        public List<Incidence> Incidents
+        {
+            get => (List<Incidence>)GetValue(IncidentsProperty);
+            set => SetValue(IncidentsProperty, value);
+        }
+
+        public static readonly DependencyProperty IncidentsProperty =
+            DependencyProperty.Register(
+                nameof(Incidents),
+                typeof(List<Incidence>),
+                typeof(IncidentsList),
+                new PropertyMetadata(null));
 
         public IncidentsList()
         {
             InitializeComponent();
-
-            Incidents = new List<IncidenceItem>
-            {
-                new IncidenceItem("Accidente", "AP-8", "GI"),
-                new IncidenceItem("Obras", "GI-20", "GI"),
-                new IncidenceItem("Desvío temporal", "A-1", "GI"),
-                new IncidenceItem("Accidente grave", "Calle Lezo, Km-20", "GI"),
-                new IncidenceItem("Obras", "BI-13", "BI"),
-                new IncidenceItem("Obras", "AP-1", "AR"),
-                new IncidenceItem("Accidente", "A-1", "AR")
-            };
-
-            DataContext = this;
         }
     }
 }

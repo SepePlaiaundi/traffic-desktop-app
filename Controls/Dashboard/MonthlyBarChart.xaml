@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf">
 
-    <lvc:CartesianChart Series="{Binding SeriesCollection}"
+    <lvc:CartesianChart x:Name="Chart"
                         LegendLocation="None"
                         Background="Transparent">
 
         <lvc:CartesianChart.AxisX>
-            <lvc:Axis Labels="{Binding Labels}"
-                      Foreground="#777">
+            <lvc:Axis x:Name="AxisX" Foreground="#777">
                 <lvc:Axis.Separator>
                     <lvc:Separator IsEnabled="False"/>
                 </lvc:Axis.Separator>
@@ -25,5 +24,4 @@
         </lvc:CartesianChart.AxisY>
 
     </lvc:CartesianChart>
-    
 </UserControl>

@@ -10,51 +10,15 @@
 
         <StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
-                MouseLeftButtonUp="All_Click">
-                <Ellipse x:Name="AllDot"
-                 Width="10" Height="10"
-                 Fill="#F5B400"
-                 VerticalAlignment="Center"/>
-                <TextBlock x:Name="AllText"
-                   Text="Todas"
-                   Margin="10,0,0,0"
-                   FontWeight="SemiBold"
-                   VerticalAlignment="Center"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
-                MouseLeftButtonUp="Works_Click">
-                <Ellipse x:Name="WorksDot"
-                 Width="10" Height="10"
-                 Fill="#CCC"/>
-                <TextBlock x:Name="WorksText"
-                   Text="Obras"
-                   Margin="10,0,0,0"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,12"
-                MouseLeftButtonUp="Accidents_Click">
-                <Ellipse x:Name="AccidentsDot"
-                 Width="10" Height="10"
-                 Fill="#CCC"/>
-                <TextBlock x:Name="AccidentsText"
-                   Text="Accidentes"
-                   Margin="10,0,0,0"/>
-            </StackPanel>
-
             <StackPanel Orientation="Horizontal"
-                MouseLeftButtonUp="Others_Click">
-                <Ellipse x:Name="OthersDot"
-                 Width="10" Height="10"
-                 Fill="#CCC"/>
-                <TextBlock x:Name="OthersText"
-                   Text="Otros"
-                   Margin="10,0,0,0"/>
+                        Margin="0,0,0,12"
+                        MouseLeftButtonUp="All_Click">
+                <Ellipse x:Name="AllDot" Width="10" Height="10" Fill="#F5B400"/>
+                <TextBlock x:Name="AllText" Text="Todas" Margin="10,0,0,0"/>
             </StackPanel>
+
+            <StackPanel x:Name="ItemsPanel"/>
 
         </StackPanel>
-
-
     </Border>
 </UserControl>
