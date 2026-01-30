@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:TrafficDesktopApp"
              StartupUri="Windows/Users.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="/Styles/Theme.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

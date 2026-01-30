@@ -25,26 +25,43 @@ namespace TrafficDesktopApp.Windows
         {
             InitializeComponent();
 
+            // Asegúrate de que tu control Header tenga este método definido
             Header.SetActive("Users");
 
             LoadUsersData();
         }
 
-
         private async void LoadUsersData()
         {
             try
             {
-                var allUsers = await UsersService.GetUsersAsync();
+                // CORRECCIÓN: El método en el servicio es GetAllUsersAsync
+                var allUsers = await UsersService.GetAllUsersAsync();
 
                 if (allUsers != null)
                 {
+                    // Asegúrate de que tu UserControl 'UsersList' (UsersListView) tenga este método
                     UsersList.SetUsers(allUsers);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar usuarios: " + ex.Message);
+            }
+        }
+
+        private void CreateUser_Click(object sender, RoutedEventArgs e)
+        {
+            var modal = new CreateUserWindow
+            {
+                Owner = this
+            };
+
+            // ShowDialog bloquea la ventana padre hasta que se cierra la modal
+            if (modal.ShowDialog() == true)
+            {
+                // Si se creó correctamente, recargamos la lista
+                LoadUsersData();
             }
         }
     }

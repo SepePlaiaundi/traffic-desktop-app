@@ -27,7 +27,7 @@ namespace TrafficDesktopApp.Controls.Cameras
             GMaps.Instance.Mode = AccessMode.ServerOnly;
 
             Map.MapProvider = OpenStreetMapProvider.Instance;
-            Map.Position = new PointLatLng(43.10, -2.50);
+            Map.Position = new PointLatLng(43.10, -2.50); // Centro aproximado
 
             Map.MinZoom = 8;
             Map.MaxZoom = 18;
@@ -40,12 +40,7 @@ namespace TrafficDesktopApp.Controls.Cameras
             Map.ShowCenter = false;
             Map.ShowTileGridLines = false;
 
-            Map.BoundsOfMap = new RectLatLng(
-                43.45,
-                -3.45,
-                1.75,
-                0.55
-            );
+            // Se ha eliminado el bloqueo de límites (Map.BoundsOfMap) para permitir movimiento libre
         }
 
         public void SetCameras(List<Camera> cameras)
@@ -60,16 +55,33 @@ namespace TrafficDesktopApp.Controls.Cameras
                 double lat = cam.Latitude.Value;
                 double lon = cam.Longitude.Value;
 
-                // Conversión UTM → WGS84 si aplica
-                if (lat > 90 || lon > 180)
+                // 1. INTENTO DE CONVERSIÓN UTM -> WGS84
+                // Si los valores son muy altos, asumimos que son UTM y convertimos
+                if (lat > 90 || lon > 180 || lat < -90 || lon < -180)
                 {
-                    var converted = Helpers.CoordinateConverter.UtmToWgs84(
-                        x: lon,
-                        y: lat
-                    );
+                    try
+                    {
+                        var converted = Helpers.CoordinateConverter.UtmToWgs84(
+                            x: lon,
+                            y: lat
+                        );
+                        lat = converted.Latitude;
+                        lon = converted.Longitude;
+                    }
+                    catch
+                    {
+                        // Si falla la conversión, saltamos esta cámara
+                        continue;
+                    }
+                }
 
-                    lat = converted.Latitude;
-                    lon = converted.Longitude;
+                // 2. FILTRO DE VALIDACIÓN GEOGRÁFICA (El Fix)
+                // Descartamos coordenadas que, aunque sean numéricamente válidas,
+                // apunten al mar, a Francia o al 0,0 por error de datos.
+                // Rango aproximado extendido (Norte de España / Sur de Francia)
+                if (!IsLocationValid(lat, lon))
+                {
+                    continue;
                 }
 
                 var marker = new GMapMarker(new PointLatLng(lat, lon))
@@ -80,6 +92,23 @@ namespace TrafficDesktopApp.Controls.Cameras
 
                 Map.Markers.Add(marker);
             }
+        }
+
+        /// <summary>
+        /// Comprueba si la coordenada cae dentro de un rectángulo lógico alrededor del País Vasco.
+        /// Esto evita que datos corruptos (como el de Jersey) aparezcan en el mapa.
+        /// </summary>
+        private bool IsLocationValid(double lat, double lon)
+        {
+            // Latitud aprox Euskadi: 42.4 a 43.5
+            // Longitud aprox Euskadi: -3.5 a -1.7
+            // Damos un margen amplio de seguridad:
+            double minLat = 41.0;
+            double maxLat = 44.0;
+            double minLon = -5.0;
+            double maxLon = -1.0;
+
+            return (lat >= minLat && lat <= maxLat) && (lon >= minLon && lon <= maxLon);
         }
 
         private UIElement CreateCameraMarker(Camera cam)

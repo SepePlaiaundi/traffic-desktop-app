@@ -1,10 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using Newtonsoft.Json; // Asegúrate de tener este using
 
 namespace TrafficDesktopApp.Models
 {
-    public class User
+    public class UserUpdateRequest
     {
-        [JsonProperty("email")]
+        [JsonProperty("email")] // <--- ESTO ES VITAL
         public string Email { get; set; }
 
         [JsonProperty("nombreCompleto")]

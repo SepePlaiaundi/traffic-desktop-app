@@ -1,147 +1,34 @@
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.AssemblyReference.cache
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.SuggestedBindingRedirects.cache
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe.config
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasGridView.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasMapView.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Users\UsersListView.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\CameraDetails.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\General\Header.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesListView.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesSidebar.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasGridView.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasMapView.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Users\UsersListView.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\CameraDetails.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Cameras.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\IncidentsList.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\LineChart.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\General\Header.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesListView.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesSidebar.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Incidences.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\MainWindow.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Users.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\App.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_Content.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.cache
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.lref
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\x86\libHarfBuzzSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\x64\libHarfBuzzSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\arm64\libHarfBuzzSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dylib
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\libSkiaSharp.dylib
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\x86\libSkiaSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\x64\libSkiaSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\arm64\libSkiaSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe.config
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\TrafficDesktopApp.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\BruTile.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\EntityFramework.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\EntityFramework.SqlServer.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Fizzler.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\GMap.NET.Core.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\GMap.NET.WindowsForms.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\GMap.NET.WindowsPresentation.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\HarfBuzzSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Data.Sqlite.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Newtonsoft.Json.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.GLControl.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\ShimSkiaSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.HarfBuzz.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Desktop.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Gtk.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.WindowsForms.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.WPF.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SQLitePCLRaw.core.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Svg.Custom.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Svg.Model.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Svg.Skia.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Svg2Xaml.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Buffers.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SqlClient.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SQLite.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.IO.Pipelines.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Memory.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Net.Http.Json.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Numerics.Vectors.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Security.Principal.Windows.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Encodings.Web.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Json.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Topten.RichTextKit.dll
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\BruTile.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\EntityFramework.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\EntityFramework.SqlServer.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\HarfBuzzSharp.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\LiveCharts.Wpf.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Data.Sqlite.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Newtonsoft.Json.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.GLControl.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\OpenTK.GLControl.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.HarfBuzz.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Desktop.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.Gtk.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.WindowsForms.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\SkiaSharp.Views.WPF.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Svg2Xaml.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Buffers.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SqlClient.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Data.SQLite.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.IO.Pipelines.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Memory.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Net.Http.Json.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Numerics.Vectors.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Security.Principal.Windows.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Encodings.Web.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Text.Json.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Topten.RichTextKit.pdb
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Topten.RichTextKit.xml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Dashboard.g.cs
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Cameras.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Dashboard.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Incidences.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\MainWindow.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\Users.baml
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.g.resources
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.Properties.Resources.resources
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.GenerateResource.cache
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.CoreCompileInputs.cache
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe
-C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
+D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x86\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x64\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\arm64\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\libSkiaSharp.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\x86\libSkiaSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x64\libSkiaSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\arm64\libSkiaSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libqpdf.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libQuestPdfSkia.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-musl-x64\native\libqpdf.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-x64\native\libqpdf.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-x64\native\libQuestPdfSkia.so
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-arm64\native\libqpdf.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-x64\native\libqpdf.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-x64\native\libQuestPdfSkia.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libgcc_s_seh-1.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libstdc++-6.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libwinpthread-1.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\qpdf.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\QuestPdfSkia.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\zlib1.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libstdc++-6.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libwinpthread-1.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\qpdf.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\QuestPdfSkia.dll
+D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\zlib1.dll
 D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe.config
 D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe
 D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.pdb
@@ -161,6 +48,7 @@ D:\SePe\traffic-desktop-app\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
 D:\SePe\traffic-desktop-app\bin\Debug\Newtonsoft.Json.dll
 D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.dll
 D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.GLControl.dll
+D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.dll
 D:\SePe\traffic-desktop-app\bin\Debug\ShimSkiaSharp.dll
 D:\SePe\traffic-desktop-app\bin\Debug\SkiaSharp.dll
 D:\SePe\traffic-desktop-app\bin\Debug\SkiaSharp.HarfBuzz.dll
@@ -205,6 +93,7 @@ D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.pdb
 D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.xml
 D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.GLControl.pdb
 D:\SePe\traffic-desktop-app\bin\Debug\OpenTK.GLControl.xml
+D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.xml
 D:\SePe\traffic-desktop-app\bin\Debug\SkiaSharp.pdb
 D:\SePe\traffic-desktop-app\bin\Debug\SkiaSharp.xml
 D:\SePe\traffic-desktop-app\bin\Debug\SkiaSharp.HarfBuzz.xml
@@ -233,7 +122,10 @@ D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.SuggestedBindingR
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe.config
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasGridView.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasMapView.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Users\UsersListView.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Styles\Theme.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\CameraDetails.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\CamerasList.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\DashboardCard.baml
@@ -243,8 +135,11 @@ D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\General\Header.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesListView.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesSidebar.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Windows\CreateUserWindow.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasGridView.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Cameras\CamerasMapView.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Users\UsersListView.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\CameraDetails.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Cameras.g.cs
@@ -256,16 +151,20 @@ D:\SePe\traffic-desktop-app\obj\Debug\Controls\Dashboard\MonthlyBarChart.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\General\Header.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesListView.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesSidebar.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Windows\CreateUserWindow.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Dashboard.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Incidences.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\Windows\Login.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Users.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\App.g.cs
+D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp_Content.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.cache
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp_MarkupCompile.lref
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Cameras.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Dashboard.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Incidences.baml
+D:\SePe\traffic-desktop-app\obj\Debug\Windows\Login.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\Users.baml
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.g.resources
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.Properties.Resources.resources
@@ -274,43 +173,4 @@ D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.CoreCompileInputs
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
-D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\x86\libHarfBuzzSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\x64\libHarfBuzzSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\arm64\libHarfBuzzSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\libSkiaSharp.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\x86\libSkiaSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\x64\libSkiaSharp.dll
-D:\SePe\traffic-desktop-app\bin\Debug\arm64\libSkiaSharp.dll
-D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp_Content.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Windows\Login.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Windows\Login.baml
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libqpdf.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libQuestPdfSkia.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-musl-x64\native\libqpdf.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-x64\native\libqpdf.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-x64\native\libQuestPdfSkia.so
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-arm64\native\libqpdf.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-x64\native\libqpdf.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\osx-x64\native\libQuestPdfSkia.dylib
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libgcc_s_seh-1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libstdc++-6.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\libwinpthread-1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\qpdf.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\QuestPdfSkia.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x64\native\zlib1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libgcc_s_dw2-1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libstdc++-6.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\libwinpthread-1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\qpdf.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\QuestPdfSkia.dll
-D:\SePe\traffic-desktop-app\bin\Debug\runtimes\win-x86\native\zlib1.dll
-D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.dll
-D:\SePe\traffic-desktop-app\bin\Debug\QuestPDF.xml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.baml
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\Report\ReportButton.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.g.cs
-D:\SePe\traffic-desktop-app\obj\Debug\Controls\Incidences\IncidencesMapView.baml
+D:\SePe\traffic-desktop-app\obj\Debug\App.baml

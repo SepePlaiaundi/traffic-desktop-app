@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="TrafficDesktopApp.Controls.Incidences.IncidencesSidebar"
+<UserControl x:Class="TrafficDesktopApp.Controls.Incidences.IncidencesSidebar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
