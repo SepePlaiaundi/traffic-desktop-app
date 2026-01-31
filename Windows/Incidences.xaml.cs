@@ -21,6 +21,11 @@ namespace TrafficDesktopApp.Windows
             LoadIncidences();
         }
 
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            LoadIncidences();
+        }
+
         private async void LoadIncidences()
         {
             try

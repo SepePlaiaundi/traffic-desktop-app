@@ -46,7 +46,7 @@ namespace TrafficDesktopApp.Services
         }
 
         // POST: /users/login
-        public static async Task<LoginResponse> LoginAsync(string email, string password)
+        public static async Task<bool> LoginAsync(string email, string password)
         {
             var loginData = new { email = email, password = password };
             var json = JsonConvert.SerializeObject(loginData);
@@ -59,17 +59,20 @@ namespace TrafficDesktopApp.Services
                 var responseJson = await response.Content.ReadAsStringAsync();
                 var result = JsonConvert.DeserializeObject<LoginResponse>(responseJson);
 
-                // Configurar token en ApiClient para las siguientes llamadas
                 if (result != null && !string.IsNullOrEmpty(result.Token))
                 {
-                    ApiClient.Http.DefaultRequestHeaders.Authorization =
-                        new AuthenticationHeaderValue("Bearer", result.Token);
-                }
+                    // Guardamos el token y el rol en AuthService para consultar desde la UI
+                    AuthService.CurrentToken = result.Token;
+                    AuthService.CurrentUserRole = result.Role;
 
-                return result;
+                    // Configuramos el token en ApiClient para las peticiones al servidor
+                    ApiClient.SetAuthToken(result.Token);
+                    
+                    return true;
+                }
             }
 
-            return null;
+            return false;
         }
     }
 }

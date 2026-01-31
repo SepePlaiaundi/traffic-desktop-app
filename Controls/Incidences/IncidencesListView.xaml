@@ -20,7 +20,8 @@
                       AutoGenerateColumns="False"
                       CanUserAddRows="False"
                       GridLinesVisibility="None"
-                      HeadersVisibility="Column">
+                      HeadersVisibility="Column"
+                      IsReadOnly="True">
 
                 <DataGrid.Columns>
 

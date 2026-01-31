@@ -7,5 +7,10 @@ namespace TrafficDesktopApp
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            // Forzar GMap a no usar caché local (SQLite) si hay problemas cargando la DLL
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+        }
     }
 }

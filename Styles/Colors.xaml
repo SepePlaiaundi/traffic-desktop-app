@@ -1,0 +1,37 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="AppBackgroundColor">#F7F7F7</Color>
+    <Color x:Key="SurfaceColor">#FFFFFF</Color>
+
+    <Color x:Key="BorderLightColor">#E5E7EB</Color>
+    <Color x:Key="BorderMediumColor">#DDD</Color>
+
+    <Color x:Key="TextPrimaryColor">#111111</Color>
+    <Color x:Key="TextSecondaryColor">#6B7280</Color>
+    <Color x:Key="TextMutedColor">#999999</Color>
+
+    <Color x:Key="AccentColor">#F5B400</Color>
+    <Color x:Key="AccentHoverColor">#E5A800</Color>
+
+    <Color x:Key="HoverBackgroundColor">#F9FAFB</Color>
+
+    <Color x:Key="PrimaryColor">#111111</Color>
+    <Color x:Key="PrimaryHoverColor">#000000</Color>
+
+    <Color x:Key="DangerColor">#DC2626</Color>
+    <Color x:Key="DangerBackgroundColor">#FEF2F2</Color>
+
+    <Color x:Key="MutedIconColor">#999999</Color>
+
+    <Color x:Key="InputBorderHoverColor">#D1D5DB</Color>
+    <Color x:Key="InputFocusColor">#F5B400</Color>
+
+    <Color x:Key="LinkColor">#0078D4</Color>
+    <Color x:Key="LinkHoverColor">#005A9E</Color>
+
+    <Color x:Key="AvatarBackgroundColor">#FDE68A</Color>
+    <Color x:Key="AvatarTextColor">#92400E</Color>
+
+</ResourceDictionary>

@@ -24,5 +24,12 @@ namespace TrafficDesktopApp.Controls.Dashboard
         {
             InitializeComponent();
         }
+
+        private void BtnViewMore_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new TrafficDesktopApp.Windows.Incidences();
+            window.Show();
+            Window.GetWindow(this)?.Close();
+        }
     }
 }

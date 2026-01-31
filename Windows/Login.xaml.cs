@@ -7,9 +7,6 @@ namespace TrafficDesktopApp.Windows
 {
     public partial class Login : Window
     {
-        // Instantiate your AuthService
-        private readonly AuthService _authService = new AuthService();
-
         public Login()
         {
             InitializeComponent();
@@ -34,13 +31,12 @@ namespace TrafficDesktopApp.Windows
             try
             {
                 // 4. Call the Backend
-                bool isSuccess = await _authService.LoginAsync(email, password);
+                bool isSuccess = await UsersService.LoginAsync(email, password);
 
                 if (isSuccess)
                 {
                     // 5. SUCCESS: Open the main app window
-                    // Replace 'DashboardWindow' with whatever your main map window is called
-                    var dashboard = new Dashboard();
+                    var dashboard = new TrafficDesktopApp.Windows.Dashboard();
                     dashboard.Show();
 
                     // Close the login window

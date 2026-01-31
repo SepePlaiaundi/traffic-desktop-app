@@ -8,12 +8,11 @@
       MinWidth="1100"
       MinHeight="720"
       WindowStartupLocation="CenterScreen"
-      WindowState="Maximized"
-      Background="#F7F7F7" >
+      WindowState="Maximized">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -36,14 +35,20 @@
 
                 <Grid Grid.Row="0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Style="{StaticResource RefreshButtonStyle}" 
+                                Content="Actualizar"
+                                Margin="0,0,15,0"
+                                Click="Refresh_Click"/>
+
                         <TextBlock Text="Última actualización: Hace 5 min" 
-                                   VerticalAlignment="Center" Foreground="#999" Margin="0,0,15,0"/>
+                                   VerticalAlignment="Center" Foreground="{DynamicResource TextMutedBrush}" Margin="0,0,15,0"/>
 
                         <report:ReportButton
                                 CameraCount="{Binding ActiveCameras}"
                                 IncidentsToday="{Binding IncidentsToday}"
                                 DailyChartSource="{Binding ElementName=DailyChart}"
-                                MonthlyChartSource="{Binding ElementName=MonthlyChart}" />
+                                MonthlyChartSource="{Binding ElementName=MonthlyChart}"
+                                RecentIncidents="{Binding ElementName=IncidencesList, Path=Incidents}" />
 
 
                     </StackPanel>
@@ -69,14 +74,14 @@
                         Grid.Column="1"
                         Margin="0,0,15,0"
                         Title="Cámaras disponibles"
-                        Value="—"
-                        Subtitle="Última añadida —"/>
+                        Value="—"/>
 
                     <controls:DashboardCard
+                        x:Name="CardTotalUsuarios"
                         Grid.Column="2"
                         Title="Usuarios"
                         Value="—"
-                        Subtitle="Respecto al mes anterior"/>
+                        Subtitle="Operadores en el sistema"/>
                 </Grid>
 
                 <Grid Grid.Row="4">
@@ -86,12 +91,8 @@
                     </Grid.ColumnDefinitions>
 
                     <Border Grid.Column="0"
-                        Background="White"
-                        BorderBrush="#DDD"
-                        BorderThickness="1"
-                        CornerRadius="6"
-                        Padding="20"
-                        Margin="0,0,20,0">
+                            Style="{StaticResource CardBorder}"
+                            Margin="0,0,20,0">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -99,9 +100,8 @@
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="Incidencias en el último día"
-                               FontSize="14"
-                               FontWeight="SemiBold"
-                               Margin="0,0,0,12"/>
+                                       Style="{StaticResource SectionTitle}"
+                                       Margin="0,0,0,12"/>
 
                             <controls:LineChart Grid.Row="1" Height="260" x:Name="DailyChart"/>
                         </Grid>
@@ -117,23 +117,15 @@
                     </Grid.ColumnDefinitions>
 
                     <Border Grid.Column="0"
-                        Background="White"
-                        BorderBrush="#DDD"
-                        BorderThickness="1"
-                        CornerRadius="6"
-                        Padding="20"
-                        Margin="0,0,20,0">
+                            Style="{StaticResource CardBorder}"
+                            Margin="0,0,20,0">
                         
                         <controls:IncidentsList x:Name="IncidencesList" Grid.Row="1"/>
                         
                     </Border>
 
                     <Border Grid.Column="1"
-                        Background="White"
-                        BorderBrush="#DDD"
-                        BorderThickness="1"
-                        CornerRadius="6"
-                        Padding="20">
+                            Style="{StaticResource CardBorder}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -141,11 +133,10 @@
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="Incidencias en el último mes"
-                               FontSize="14"
-                               FontWeight="SemiBold"
-                               Margin="0,0,0,12"/>
+                                       Style="{StaticResource SectionTitle}"
+                                       Margin="0,0,0,12"/>
 
-                            <controls:MonthlyBarChart Grid.Row="1" x:Name="MonthlyChart"/>
+                            <controls:MonthlyBarChart Grid.Row="1" x:Name="MonthlyChart" Height="300"/>
                         </Grid>
                     </Border>
                 </Grid>

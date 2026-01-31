@@ -36,7 +36,18 @@ namespace TrafficDesktopApp.Windows
             try
             {
                 // CORRECCIÓN: El método en el servicio es GetAllUsersAsync
-                var allUsers = await UsersService.GetAllUsersAsync();
+                var taskUsers = UsersService.GetAllUsersAsync();
+                var taskRoles = UsersService.GetRolesAsync();
+
+                await Task.WhenAll(taskUsers, taskRoles);
+
+                var allUsers = taskUsers.Result;
+                var roles = taskRoles.Result;
+
+                if (roles != null)
+                {
+                    UsersList.SetRoles(roles);
+                }
 
                 if (allUsers != null)
                 {
@@ -50,19 +61,5 @@ namespace TrafficDesktopApp.Windows
             }
         }
 
-        private void CreateUser_Click(object sender, RoutedEventArgs e)
-        {
-            var modal = new CreateUserWindow
-            {
-                Owner = this
-            };
-
-            // ShowDialog bloquea la ventana padre hasta que se cierra la modal
-            if (modal.ShowDialog() == true)
-            {
-                // Si se creó correctamente, recargamos la lista
-                LoadUsersData();
-            }
-        }
     }
 }

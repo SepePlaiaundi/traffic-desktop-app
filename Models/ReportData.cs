@@ -11,5 +11,7 @@ namespace TrafficDesktopApp.Models
 
         public byte[] DailyChartImage { get; set; }
         public byte[] MonthlyChartImage { get; set; }
+
+        public System.Collections.Generic.List<Incidence> RecentIncidents { get; set; }
     }
 }

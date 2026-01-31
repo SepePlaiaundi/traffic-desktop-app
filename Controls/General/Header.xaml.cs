@@ -3,27 +3,15 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using TrafficDesktopApp.Services; // Ensure you have this for AuthService
-using TrafficDesktopApp.Windows;  // Ensure this for MainWindow (Login)
+using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Controls.General
 {
-    /// <summary>
-    /// Interaction logic for Header.xaml
-    /// </summary>
     public partial class Header : UserControl
     {
-        // --- EXISTING EVENTS ---
-        public event Action DashboardClicked;
-        public event Action IncidentsClicked;
-
-        // --- DEPENDENCY PROPERTIES ---
+        // Propiedad para cambiar el título desde XAML
         public static readonly DependencyProperty TitleProperty =
-            DependencyProperty.Register(
-                nameof(Title),
-                typeof(string),
-                typeof(Header),
-                new PropertyMetadata("Panel de control"));
+            DependencyProperty.Register(nameof(Title), typeof(string), typeof(Header), new PropertyMetadata("Panel de control"));
 
         public string Title
         {
@@ -31,77 +19,53 @@ namespace TrafficDesktopApp.Controls.General
             set => SetValue(TitleProperty, value);
         }
 
-        // --- CONSTRUCTOR ---
+        private static readonly Brush ActiveColor = (Brush)new BrushConverter().ConvertFrom("#F5B400");
+
         public Header()
         {
             InitializeComponent();
         }
 
-
-        // --- EXISTING: NAVIGATION HIGHLIGHTING ---
+        /// <summary>
+        /// Resalta la página activa en el menú de navegación.
+        /// </summary>
         public void SetActive(string page)
         {
-            DashboardLink.Foreground = Brushes.Gray;
-            IncidencesLink.Foreground = Brushes.Gray;
-            CamerasLink.Foreground = Brushes.Gray;
-            UsersLink.Foreground = Brushes.Gray;
+            // Resetear todos a gris/transparente
+            DashboardLink.Foreground = IncidencesLink.Foreground = CamerasLink.Foreground = UsersLink.Foreground = Brushes.Gray;
+            DashboardUnderline.Background = IncidencesUnderline.Background = CamerasUnderline.Background = UsersUnderline.Background = Brushes.Transparent;
 
-            DashboardUnderline.Background = Brushes.Transparent;
-            IncidencesUnderline.Background = Brushes.Transparent;
-            CamerasUnderline.Background = Brushes.Transparent;
-            UsersUnderline.Background = Brushes.Transparent;
-
-            if (page == "Dashboard")
+            // Activar el seleccionado
+            switch (page)
             {
-                DashboardLink.Foreground = Brushes.Black;
-                DashboardUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
-            }
-            else if (page == "Incidences")
-            {
-                IncidencesLink.Foreground = Brushes.Black;
-                IncidencesUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
-            }
-            else if (page == "Cameras")
-            {
-                CamerasLink.Foreground = Brushes.Black;
-                CamerasUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
-            }
-            else if (page == "Users")
-            {
-                UsersLink.Foreground = Brushes.Black;
-                UsersUnderline.Background = (Brush)new BrushConverter().ConvertFrom("#F5B400");
+                case "Dashboard":
+                    DashboardLink.Foreground = Brushes.Black;
+                    DashboardUnderline.Background = ActiveColor;
+                    break;
+                case "Incidences":
+                    IncidencesLink.Foreground = Brushes.Black;
+                    IncidencesUnderline.Background = ActiveColor;
+                    break;
+                case "Cameras":
+                    CamerasLink.Foreground = Brushes.Black;
+                    CamerasUnderline.Background = ActiveColor;
+                    break;
+                case "Users":
+                    UsersLink.Foreground = Brushes.Black;
+                    UsersUnderline.Background = ActiveColor;
+                    break;
             }
         }
 
-        // --- EXISTING: NAVIGATION CLICKS ---
-        private void Dashboard_Click(object sender, RoutedEventArgs e)
-        {
-            OpenWindow(new TrafficDesktopApp.Windows.Dashboard());
-        }
-
-        private void Incidences_Click(object sender, RoutedEventArgs e)
-        {
-            OpenWindow(new TrafficDesktopApp.Windows.Incidences());
-        }
-
-        private void Cameras_Click(object sender, RoutedEventArgs e)
-        {
-            OpenWindow(new TrafficDesktopApp.Windows.Cameras());
-        }
-
-        private void Users_Click(object sender, RoutedEventArgs e)
-        {
-            OpenWindow(new TrafficDesktopApp.Windows.Users());
-        }
-
-        // --- NEW: AVATAR & LOGOUT LOGIC ---
+        // Navegación entre ventanas
+        // Usamos el nombre completo (TrafficDesktopApp.Windows) para evitar conflictos con los nombres de carpetas de controles
+        private void Dashboard_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Dashboard());
+        private void Incidences_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Incidences());
+        private void Cameras_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Cameras());
+        private void Users_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Users());
 
         private void Avatar_Click(object sender, MouseButtonEventArgs e)
         {
-            // Find the ContextMenu defined in XAML resources or inline
-            // Note: Ensure your XAML Border has the ContextMenu defined inside it
-            // and the Border sender is cast correctly.
-
             if (sender is FrameworkElement element && element.ContextMenu != null)
             {
                 element.ContextMenu.PlacementTarget = element;
@@ -116,28 +80,20 @@ namespace TrafficDesktopApp.Controls.General
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            // 1. Clear Session
             AuthService.Logout();
-
-            // 2. Open Login Window (MainWindow)
-            Login loginWindow = new Login();
-            loginWindow.Show();
-
-            // 3. Close the current window (Dashboard/Cameras/etc.)
-            Window currentWindow = Window.GetWindow(this);
-            currentWindow?.Close();
+            new TrafficDesktopApp.Windows.Login().Show();
+            Window.GetWindow(this)?.Close();
         }
 
-        // --- EXISTING: WINDOW SWAPPING ---
+        /// <summary>
+        /// Abre una nueva ventana manteniendo el tamaño y posición de la actual.
+        /// </summary>
         private void OpenWindow(Window newWindow)
         {
             Window current = Window.GetWindow(this);
-
             if (current != null)
             {
-                // Preserve state (Maximized/Normal) and position
                 newWindow.WindowState = current.WindowState;
-
                 if (current.WindowState == WindowState.Normal)
                 {
                     newWindow.Width = current.Width;
@@ -145,7 +101,6 @@ namespace TrafficDesktopApp.Controls.General
                     newWindow.Left = current.Left;
                     newWindow.Top = current.Top;
                 }
-
                 newWindow.Show();
                 current.Close();
             }

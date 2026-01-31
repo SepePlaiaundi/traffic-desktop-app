@@ -7,46 +7,15 @@
         MinWidth="1100"
         MinHeight="720"
         WindowStartupLocation="CenterScreen"
-        WindowState="Maximized"
-        Background="#F7F7F7">
+        WindowState="Maximized">
+
 
     <!-- ===== MISMO STYLE QUE CAMERAS ===== -->
-    <Window.Resources>
-        <Style x:Key="SegmentedButtonStyle" TargetType="RadioButton">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="#666666"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="FontSize" Value="12"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="RadioButton">
-                        <Border x:Name="BackgroundBorder"
-                                Background="{TemplateBinding Background}"
-                                CornerRadius="15"
-                                Padding="15,0">
-                            <ContentPresenter HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Setter TargetName="BackgroundBorder"
-                                        Property="Background"
-                                        Value="#222222"/>
-                                <Setter Property="Foreground" Value="White"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -54,26 +23,30 @@
         <general:Header x:Name="Header" Grid.Row="0" Title="Incidencias"/>
 
         <!-- TOGGLER -->
-        <Border Grid.Row="1" Background="White" BorderBrush="#E0E0E0" BorderThickness="0,0,0,1">
+        <Border Grid.Row="1" Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,0,1">
             <Grid Margin="24,0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Border Background="#F0F0F0" CornerRadius="18" Padding="3" Height="36">
+                    <Border Background="{DynamicResource AppBackgroundBrush}" CornerRadius="18" Padding="3" Height="36">
                         <StackPanel Orientation="Horizontal">
                             <RadioButton x:Name="BtnList"
                                      Content="LISTA"
-                                     Style="{StaticResource SegmentedButtonStyle}"
+                                     Style="{StaticResource SegmentedRadioButtonStyle}"
                                      IsChecked="True"
                                      MinWidth="110"
                                      Click="SwitchView_Click"/>
 
                             <RadioButton x:Name="BtnMap"
                                      Content="MAPA"
-                                     Style="{StaticResource SegmentedButtonStyle}"
+                                     Style="{StaticResource SegmentedRadioButtonStyle}"
                                      MinWidth="110"
                                      Click="SwitchView_Click"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>
+                <Button Style="{StaticResource RefreshButtonStyle}" 
+                        Content="Actualizar Datos"
+                        HorizontalAlignment="Right"
+                        Click="Refresh_Click"/>
             </Grid>
         </Border>
 

@@ -73,6 +73,19 @@ namespace TrafficDesktopApp.Controls.Report
             set { SetValue(MonthlyChartSourceProperty, value); }
         }
 
+        public static readonly DependencyProperty RecentIncidentsProperty =
+            DependencyProperty.Register(
+                nameof(RecentIncidents),
+                typeof(System.Collections.Generic.List<Incidence>),
+                typeof(ReportButton),
+                new PropertyMetadata(null));
+
+        public System.Collections.Generic.List<Incidence> RecentIncidents
+        {
+            get { return (System.Collections.Generic.List<Incidence>)GetValue(RecentIncidentsProperty); }
+            set { SetValue(RecentIncidentsProperty, value); }
+        }
+
         // -----------------------------
         // Action
         // -----------------------------
@@ -97,7 +110,8 @@ namespace TrafficDesktopApp.Controls.Report
                 ActiveCameras = CameraCount,
                 IncidentsToday = IncidentsToday,
                 DailyChartImage = dailyChartImage,
-                MonthlyChartImage = monthlyChartImage
+                MonthlyChartImage = monthlyChartImage,
+                RecentIncidents = RecentIncidents
             };
 
             PdfReportService.Generate(reportData, dialog.FileName);

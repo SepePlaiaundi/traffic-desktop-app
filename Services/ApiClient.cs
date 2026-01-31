@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Cliente HTTP centralizado para toda la aplicación.
+    /// </summary>
     public static class ApiClient
     {
         public static readonly HttpClient Http = new HttpClient
@@ -18,10 +16,24 @@ namespace TrafficDesktopApp.Services
 
         static ApiClient()
         {
+            // Configuramos para que siempre pida y reciba JSON
             Http.DefaultRequestHeaders.Accept.Clear();
-            Http.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json")
-            );
+            Http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        }
+
+        /// <summary>
+        /// Configura el token de seguridad (Bearer) en todas las peticiones futuras.
+        /// </summary>
+        public static void SetAuthToken(string token)
+        {
+            if (string.IsNullOrEmpty(token))
+            {
+                Http.DefaultRequestHeaders.Authorization = null;
+            }
+            else
+            {
+                Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
         }
     }
 }

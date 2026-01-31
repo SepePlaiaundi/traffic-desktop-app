@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using TrafficDesktopApp.Models;
 using TrafficDesktopApp.Services;
+using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Users
 {
@@ -12,22 +13,17 @@ namespace TrafficDesktopApp.Controls.Users
         // Lista de usuarios para la tabla
         public ObservableCollection<User> VisibleUsers { get; set; } = new ObservableCollection<User>();
 
-        // Lista de roles disponibles traída del backend
+        // Lista de roles para el ComboBox de la tabla
         public ObservableCollection<RoleResponse> AvailableRoles { get; set; } = new ObservableCollection<RoleResponse>();
 
         public UsersListView()
         {
             InitializeComponent();
             DataContext = this;
-
-            // Cargar datos al iniciar
-            LoadRoles();
-            LoadUsers(); // <--- IMPORTANTE: Cargar los usuarios
         }
 
-        private async void LoadRoles()
+        public void SetRoles(List<RoleResponse> roles)
         {
-            var roles = await UsersService.GetRolesAsync();
             AvailableRoles.Clear();
             if (roles != null)
             {
@@ -35,10 +31,8 @@ namespace TrafficDesktopApp.Controls.Users
             }
         }
 
-        // --- ESTE MÉTODO ES EL QUE FALTABA O SE LLAMABA MAL ---
-        private async void LoadUsers()
+        public async void LoadUsers()
         {
-            // Nota: En el servicio se llama GetAllUsersAsync, no GetUsersAsync
             var users = await UsersService.GetAllUsersAsync();
             SetUsers(users);
         }
@@ -50,6 +44,7 @@ namespace TrafficDesktopApp.Controls.Users
             {
                 foreach (var user in users)
                 {
+                    user.SetAsOriginal();
                     VisibleUsers.Add(user);
                 }
             }
@@ -74,12 +69,34 @@ namespace TrafficDesktopApp.Controls.Users
 
             if (success)
             {
+                user.SetAsOriginal();
                 MessageBox.Show("Usuario actualizado correctamente.");
             }
             else
             {
                 MessageBox.Show("Error al actualizar el usuario. Verifique la conexión o los datos.");
             }
+        }
+
+        private void CreateUser_Click(object sender, RoutedEventArgs e)
+        {
+            // Pasamos una lista nueva basada en la colección observable
+            var rolesList = new List<RoleResponse>(AvailableRoles);
+            
+            var modal = new CreateUserWindow(rolesList)
+            {
+                Owner = Window.GetWindow(this)
+            };
+
+            if (modal.ShowDialog() == true)
+            {
+                LoadUsers();
+            }
+        }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            LoadUsers();
         }
     }
 }

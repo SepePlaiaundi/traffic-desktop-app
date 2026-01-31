@@ -27,7 +27,11 @@ namespace TrafficDesktopApp.Windows
             Header.SetActive("Cameras");
 
             LoadCamerasData();
+        }
 
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            LoadCamerasData();
         }
 
         private void SwitchView_Click(object sender, RoutedEventArgs e)

@@ -11,7 +11,6 @@ namespace TrafficDesktopApp.Helpers
         {
             // Specific parameters for ETRS89 / UTM zone 30N (Basque Country standard)
             int zone = 30;
-            bool north = true;
 
             double c_sa = 6378137.000000;
             double c_sb = 6356752.314245;

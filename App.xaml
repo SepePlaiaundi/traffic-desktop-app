@@ -5,11 +5,21 @@
              StartupUri="Windows/Users.xaml">
     <Application.Resources>
         <ResourceDictionary>
+
+            <!-- ============================= -->
+            <!-- GLOBAL THEME -->
+            <!-- ============================= -->
             <ResourceDictionary.MergedDictionaries>
-
                 <ResourceDictionary Source="/Styles/Theme.xaml"/>
-
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- ============================= -->
+            <!-- OPTIONAL: global converters -->
+            <!-- ============================= -->
+            <!--
+            <local:BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
+            -->
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

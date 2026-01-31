@@ -7,12 +7,12 @@
         MinWidth="1100"
         MinHeight="720"
         WindowStartupLocation="CenterScreen"
-        WindowState="Maximized"
-        Background="#F7F7F7">
+        WindowState="Maximized">
+
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -23,62 +23,9 @@
                       HorizontalScrollBarVisibility="Disabled">
 
             <Grid Margin="20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                <Border Style="{StaticResource CardBorderElevated}">
 
-                <Grid Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    
-                    <Button Grid.Column="1"
-                            Click="CreateUser_Click"
-                            Padding="14,8"
-                            Background="#1F2933"
-                            Foreground="White"
-                            BorderThickness="0"
-                            Cursor="Hand"
-                            FontWeight="SemiBold">
-
-                        <Button.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="6"/>
-                            </Style>
-                        </Button.Resources>
-
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Text="+ Crear usuario"/>
-                        </StackPanel>
-                    </Button>
-                </Grid>
-
-                <Border Grid.Row="2"
-                        Background="White"
-                        BorderBrush="#DDD"
-                        BorderThickness="1"
-                        CornerRadius="6"
-                        Padding="20">
-
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Text="Usuarios registrados"
-                                   FontSize="14"
-                                   FontWeight="SemiBold"
-                                   Foreground="#333"
-                                   Margin="0,0,0,15"/>
-
-                        <controls:UsersListView x:Name="UsersList" 
-                                                Grid.Row="1"/>
-                    </Grid>
+                    <controls:UsersListView x:Name="UsersList" ClipToBounds="True"/>
                 </Border>
             </Grid>
         </ScrollViewer>
