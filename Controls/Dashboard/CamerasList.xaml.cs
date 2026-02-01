@@ -11,6 +11,9 @@ namespace TrafficDesktopApp.Controls.Dashboard
     /// <summary>
     /// Interaction logic for DashboardCamerasList.xaml
     /// </summary>
+    /// <summary>
+    /// Lista compacta de cámaras para previsualización en el Dashboard.
+    /// </summary>
     public partial class CamerasList : UserControl
     {
         public ObservableCollection<Camera> Cameras { get; set; } =

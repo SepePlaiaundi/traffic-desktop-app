@@ -6,6 +6,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana que gestiona el listado completo de incidencias, permitiendo filtrado y cambio entre vista de lista y mapa.
+    /// </summary>
     public partial class Incidences : Window
     {
         private void ShowError(string message) { GlobalToast.Show(message); }
@@ -75,6 +78,19 @@ namespace TrafficDesktopApp.Windows
             {
                 IncidentsList.Visibility = Visibility.Collapsed;
                 IncidentsMap.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void CreateIncidence_Click(object sender, RoutedEventArgs e)
+        {
+            var modal = new CreateIncidenceWindow
+            {
+                Owner = this
+            };
+
+            if (modal.ShowDialog() == true)
+            {
+                LoadIncidences();
             }
         }
     }

@@ -12,6 +12,9 @@ using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Cameras
 {
+    /// <summary>
+    /// Vista de mapa interactiva que posiciona las cámaras de tráfico utilizando coordenadas geográficas o UTM convertidas.
+    /// </summary>
     public partial class CamerasMapView : UserControl
     {
         private const double MarkerSize = 40;

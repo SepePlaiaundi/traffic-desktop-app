@@ -18,6 +18,9 @@ namespace TrafficDesktopApp.Windows
     /// <summary>
     /// Lógica de interacción para Cameras.xaml
     /// </summary>
+    /// <summary>
+    /// Ventana que gestiona la visualización de cámaras tanto en formato rejilla (Grid) como en mapa.
+    /// </summary>
     public partial class Cameras : Window
     {
         private void ShowError(string message) { GlobalToast.Show(message); }

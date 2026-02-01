@@ -4,11 +4,17 @@ using TrafficDesktopApp.Helpers;
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Representa una incidencia de tráfico en el sistema.
+    /// </summary>
     public class Incidence
     {
         [JsonProperty("id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// Recurso asociado a la incidencia (fuente de información).
+        /// </summary>
         [JsonProperty("recurso")]
         public Recurso Recurso { get; set; }
 
@@ -21,6 +27,9 @@ namespace TrafficDesktopApp.Models
         [JsonProperty("ciudad")]
         public string City { get; set; }
 
+        /// <summary>
+        /// Carretera donde se localiza la incidencia.
+        /// </summary>
         [JsonProperty("carretera")]
         public string Road { get; set; }
 
@@ -30,6 +39,9 @@ namespace TrafficDesktopApp.Models
         [JsonProperty("causa")]
         public string Cause { get; set; }
 
+        /// <summary>
+        /// Fecha y hora de inicio de la incidencia.
+        /// </summary>
         [JsonProperty("fecIni")]
         public DateTime StartDate { get; set; }
 
@@ -48,6 +60,9 @@ namespace TrafficDesktopApp.Models
         [JsonProperty("tipo")]
         public string Type { get; set; }
 
+        /// <summary>
+        /// Descripción detallada de la incidencia.
+        /// </summary>
         [JsonProperty("descripcion")]
         public string Description { get; set; }
 
@@ -61,6 +76,9 @@ namespace TrafficDesktopApp.Models
         public bool IsNew { get; set; }
     }
 
+    /// <summary>
+    /// Representa el recurso o fuente de donde proviene la información de la incidencia.
+    /// </summary>
     public class Recurso
     {
         [JsonProperty("id")]

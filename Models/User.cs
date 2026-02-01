@@ -4,6 +4,9 @@ using System.Runtime.CompilerServices;
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Representa un usuario del sistema con soporte para notificación de cambios.
+    /// </summary>
     public class User : INotifyPropertyChanged
     {
         private string _email;
@@ -35,6 +38,9 @@ namespace TrafficDesktopApp.Models
         private string _originalNombreCompleto;
         private string _originalRol;
 
+        /// <summary>
+        /// Guarda el estado actual de las propiedades como los valores originales para detectar cambios futuros.
+        /// </summary>
         public void SetAsOriginal()
         {
             _originalEmail = Email;
@@ -43,6 +49,9 @@ namespace TrafficDesktopApp.Models
             OnPropertyChanged(nameof(HasChanges));
         }
 
+        /// <summary>
+        /// Indica si alguna de las propiedades editables ha cambiado respecto a su valor original.
+        /// </summary>
         [JsonIgnore]
         public bool HasChanges => 
             Email != _originalEmail || 

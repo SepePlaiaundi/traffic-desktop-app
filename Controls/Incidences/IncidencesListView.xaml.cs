@@ -6,6 +6,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
+    /// <summary>
+    /// Vista de tabla detallada para el listado de incidencias con filtrado dinámico.
+    /// </summary>
     public partial class IncidencesListView : UserControl
     {
         private List<Incidence> _allIncidents = new List<Incidence>();

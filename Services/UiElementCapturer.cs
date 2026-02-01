@@ -5,6 +5,9 @@ using System.Windows.Media.Imaging;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Utilidad para capturar la apariencia visual de un elemento de la interfaz (UIElement) y convertirlo en un array de bytes (imagen PNG).
+    /// </summary>
     public static class UiElementCapturer
     {
         public static byte[] Capture(FrameworkElement element)
@@ -15,6 +18,11 @@ namespace TrafficDesktopApp.Services
             var size = new Size(element.ActualWidth, element.ActualHeight);
             if (size.Width == 0 || size.Height == 0)
                 return null;
+
+            // Forzar actualización de layout para asegurar que todo esté renderizado (especialmente etiquetas de ejes)
+            element.Measure(size);
+            element.Arrange(new Rect(size));
+            element.UpdateLayout();
 
             var renderBitmap = new RenderTargetBitmap(
                 (int)size.Width,

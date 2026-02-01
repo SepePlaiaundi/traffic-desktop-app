@@ -7,6 +7,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Controls.General
 {
+    /// <summary>
+    /// Barra de navegación superior (Header) que gestiona el menú principal y la sesión del usuario.
+    /// </summary>
     public partial class Header : UserControl
     {
         // Propiedad para cambiar el título desde XAML

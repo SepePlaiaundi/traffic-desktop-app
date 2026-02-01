@@ -5,6 +5,9 @@ using System.Windows.Media;
 
 namespace TrafficDesktopApp.Helpers
 {
+    /// <summary>
+    /// Convierte el nivel de gravedad de una incidencia (texto) en un Color/Brush para la interfaz.
+    /// </summary>
     public class LevelToColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

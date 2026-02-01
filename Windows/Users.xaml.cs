@@ -19,6 +19,9 @@ namespace TrafficDesktopApp.Windows
     /// <summary>
     /// Lógica de interacción para Users.xaml
     /// </summary>
+    /// <summary>
+    /// Ventana administrativa para la gestión (visualización, creación y edición) de los usuarios del sistema.
+    /// </summary>
     public partial class Users : Window
     {
         private void ShowError(string message) { GlobalToast.Show(message); }

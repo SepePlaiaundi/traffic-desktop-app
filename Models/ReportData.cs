@@ -2,6 +2,9 @@
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Estructura de datos utilizada para la generación de informes técnicos.
+    /// </summary>
     public class ReportData
     {
         public DateTime GeneratedAt { get; set; }

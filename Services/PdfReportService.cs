@@ -5,8 +5,16 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Servicio responsable de la generación de informes en formato PDF utilizando QuestPDF.
+    /// </summary>
     public static class PdfReportService
     {
+        /// <summary>
+        /// Genera un documento PDF a partir de los datos proporcionados y lo guarda en la ruta especificada.
+        /// </summary>
+        /// <param name="data">Conjunto de datos analíticos y de incidencias para incluir en el reporte.</param>
+        /// <param name="filePath">Ruta completa del sistema de archivos donde se guardará el PDF.</param>
         public static void Generate(ReportData data, string filePath)
         {
             QuestPDF.Settings.License = LicenseType.Community;

@@ -12,6 +12,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
+    /// <summary>
+    /// Vista de mapa interactiva para la visualización geoespacial de incidencias de tráfico.
+    /// </summary>
     public partial class IncidencesMapView : UserControl
     {
         private const double MarkerSize = 48;
