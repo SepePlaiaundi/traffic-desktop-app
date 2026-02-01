@@ -5,6 +5,9 @@ using System.Windows.Media.Imaging;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Utilidad para capturar la apariencia visual de un elemento de la interfaz (UIElement) y convertirlo en un array de bytes (imagen PNG).
+    /// </summary>
     public static class UiElementCapturer
     {
         public static byte[] Capture(FrameworkElement element)

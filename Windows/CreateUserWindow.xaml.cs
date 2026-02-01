@@ -5,6 +5,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana modal para el registro de nuevos usuarios administrativos en el sistema.
+    /// </summary>
     public partial class CreateUserWindow : Window
     {
         public CreateUserWindow(List<RoleResponse> roles)

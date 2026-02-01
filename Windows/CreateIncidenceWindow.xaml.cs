@@ -6,6 +6,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana modal para la creación y registro de nuevas incidencias de tráfico en el servidor.
+    /// </summary>
     public partial class CreateIncidenceWindow : Window
     {
         public CreateIncidenceWindow()

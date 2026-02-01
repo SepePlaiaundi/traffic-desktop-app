@@ -9,9 +9,16 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Servicio para la gestión de usuarios, roles y autenticación.
+    /// </summary>
     public static class UsersService
     {
         // GET: /users/roles
+        /// <summary>
+        /// Obtiene la lista de roles disponibles en el sistema.
+        /// </summary>
+        /// <returns>Una lista de objetos RoleResponse.</returns>
         public static async Task<List<RoleResponse>> GetRolesAsync()
         {
             var json = await ApiClient.Http.GetStringAsync("users/roles");
@@ -19,6 +26,10 @@ namespace TrafficDesktopApp.Services
         }
 
         // GET: /users/all
+        /// <summary>
+        /// Obtiene la lista de todos los usuarios registrados.
+        /// </summary>
+        /// <returns>Una lista de objetos User.</returns>
         public static async Task<List<User>> GetAllUsersAsync()
         {
             var json = await ApiClient.Http.GetStringAsync("users/all");
@@ -26,6 +37,11 @@ namespace TrafficDesktopApp.Services
         }
 
         // PUT: /users/update
+        /// <summary>
+        /// Actualiza la información de un usuario existente.
+        /// </summary>
+        /// <param name="request">Objeto con los datos de actualización.</param>
+        /// <returns>True si la actualización fue exitosa.</returns>
         public static async Task<bool> UpdateUserAsync(UserUpdateRequest request)
         {
             var json = JsonConvert.SerializeObject(request);
@@ -36,6 +52,11 @@ namespace TrafficDesktopApp.Services
         }
 
         // POST: /users/register
+        /// <summary>
+        /// Registra un nuevo usuario en el sistema.
+        /// </summary>
+        /// <param name="request">Objeto con los datos del nuevo usuario.</param>
+        /// <returns>True si el registro fue exitoso.</returns>
         public static async Task<bool> CreateUserAsync(UserCreateRequest request)
         {
             var json = JsonConvert.SerializeObject(request);
@@ -46,6 +67,12 @@ namespace TrafficDesktopApp.Services
         }
 
         // POST: /users/login
+        /// <summary>
+        /// Realiza el proceso de inicio de sesión.
+        /// </summary>
+        /// <param name="email">Correo electrónico del usuario.</param>
+        /// <param name="password">Contraseña del usuario.</param>
+        /// <returns>True si las credenciales son válidas y se obtuvo el token.</returns>
         public static async Task<bool> LoginAsync(string email, string password)
         {
             var loginData = new { email = email, password = password };

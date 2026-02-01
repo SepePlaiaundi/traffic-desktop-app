@@ -2,6 +2,9 @@
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Objeto de solicitud para la creación de un nuevo usuario en el sistema.
+    /// </summary>
     public class UserCreateRequest
     {
         [JsonProperty("email")]

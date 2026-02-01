@@ -9,6 +9,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Services
 {
+    /// <summary>
+    /// Servicio para la obtención de datos de cámaras de tráfico desde la API.
+    /// </summary>
     public static class CamerasService
     {
         public static async Task<List<Models.Camera>> GetCamerasAsync()

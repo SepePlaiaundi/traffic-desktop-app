@@ -1,5 +1,8 @@
 ﻿namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Define los tipos constantes de incidencias permitidos por el sistema.
+    /// </summary>
     public static class IncidenceTypes
     {
         public const string SeguridadVial = "Seguridad vial";

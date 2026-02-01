@@ -6,6 +6,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Controls.Report
 {
+    /// <summary>
+    /// Botón personalizado que orquestra la captura de datos de la UI y la generación de informes PDF profesionales.
+    /// </summary>
     public partial class ReportButton : UserControl
     {
         public ReportButton()

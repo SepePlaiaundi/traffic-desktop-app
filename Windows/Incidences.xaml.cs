@@ -6,6 +6,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana que gestiona el listado completo de incidencias, permitiendo filtrado y cambio entre vista de lista y mapa.
+    /// </summary>
     public partial class Incidences : Window
     {
         private List<Incidence> _allIncidences;

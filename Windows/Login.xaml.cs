@@ -5,6 +5,9 @@ using TrafficDesktopApp.Services; // Ensure you have this namespace
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana de inicio de sesión que gestiona la autenticación del usuario.
+    /// </summary>
     public partial class Login : Window
     {
         public Login()
@@ -12,6 +15,9 @@ namespace TrafficDesktopApp.Windows
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Maneja el evento de clic en el botón de login, validando las credenciales con el servidor.
+        /// </summary>
         private async void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
             // 1. Get inputs

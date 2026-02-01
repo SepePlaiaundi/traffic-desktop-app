@@ -190,3 +190,9 @@ git_stats/*
 StyleCop.Cache
 bin
 obj
+
+# DocFX
+_site/
+api/
+docs/api/
+docs/obj/

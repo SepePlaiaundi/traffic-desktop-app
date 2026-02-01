@@ -12,6 +12,10 @@ namespace TrafficDesktopApp.Windows
     /// <summary>
     /// Lógica de interacción para Dashboard.xaml
     /// </summary>
+    /// <summary>
+    /// Ventana principal del Dashboard que muestra estadísticas, cámaras e incidencias recientes.
+    /// Implementa INotifyPropertyChanged para permitir el enlace de datos (Binding).
+    /// </summary>
     public partial class Dashboard : Window, System.ComponentModel.INotifyPropertyChanged
     {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
@@ -43,6 +47,9 @@ namespace TrafficDesktopApp.Windows
             LoadDashboardData();
         }
 
+        /// <summary>
+        /// Carga de manera asíncrona todos los datos necesarios para el Dashboard desde los servicios.
+        /// </summary>
         private async void LoadDashboardData()
         {
             try
@@ -70,6 +77,9 @@ namespace TrafficDesktopApp.Windows
             }
         }
 
+        /// <summary>
+        /// Actualiza los contadores de la interfaz (Cards) y calcula variaciones respecto a días anteriores.
+        /// </summary>
         private void UpdateCounters(
             IReadOnlyCollection<Camera> cameras,
             IReadOnlyCollection<Incidence> incidences,

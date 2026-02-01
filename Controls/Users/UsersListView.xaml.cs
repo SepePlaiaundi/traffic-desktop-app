@@ -8,6 +8,9 @@ using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Users
 {
+    /// <summary>
+    /// Control que muestra la lista de usuarios en una tabla editable, permitiendo actualizar roles y datos básicos.
+    /// </summary>
     public partial class UsersListView : UserControl
     {
         // Lista de usuarios para la tabla

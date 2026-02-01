@@ -9,6 +9,9 @@ using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Cameras
 {
+    /// <summary>
+    /// Vista de rejilla (Grid) que muestra las cámaras de tráfico en tarjetas visuales.
+    /// </summary>
     public partial class CamerasGridView : UserControl
     {
         public ObservableCollection<Camera> VisibleCameras { get; set; } = new ObservableCollection<Camera>();

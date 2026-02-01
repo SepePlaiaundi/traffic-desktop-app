@@ -6,6 +6,9 @@ namespace TrafficDesktopApp.Controls.Dashboard
     /// <summary>
     /// Lógica de interacción para DashboardCard.xaml
     /// </summary>
+    /// <summary>
+    /// Tarjeta visual del Dashboard que muestra un título, valor numérico y un subtítulo opcional.
+    /// </summary>
     public partial class DashboardCard : UserControl
     {
         public static readonly DependencyProperty ValueProperty =

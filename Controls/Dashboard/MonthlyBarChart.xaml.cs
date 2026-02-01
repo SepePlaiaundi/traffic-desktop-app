@@ -9,6 +9,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
+    /// <summary>
+    /// Gráfico de barras que muestra el histórico mensual de incidencias (últimos 30 días).
+    /// </summary>
     public partial class MonthlyBarChart : UserControl
     {
         public MonthlyBarChart()

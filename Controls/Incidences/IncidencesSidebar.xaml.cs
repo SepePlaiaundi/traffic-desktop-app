@@ -7,6 +7,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
+    /// <summary>
+    /// Barra lateral de navegación y filtrado para la sección de incidencias.
+    /// </summary>
     public partial class IncidencesSidebar : UserControl
     {
         public event Action<string> FilterChanged;

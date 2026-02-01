@@ -7,6 +7,9 @@ using System.Windows.Media;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
+    /// <summary>
+    /// Gráfico de líneas interactivo que muestra la evolución horaria de las incidencias.
+    /// </summary>
     public partial class LineChart : UserControl
     {
         public LineChart()
