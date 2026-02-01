@@ -6,6 +6,7 @@
     <lvc:CartesianChart x:Name="Chart"
                         LegendLocation="None"
                         Background="Transparent"
+                        Margin="0,0,0,30"
                         Padding="0,0,0,30"
                         DisableAnimations="True">
 

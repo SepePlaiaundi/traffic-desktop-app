@@ -66,5 +66,18 @@ namespace TrafficDesktopApp.Windows
                 IncidentsMap.Visibility = Visibility.Visible;
             }
         }
+
+        private void CreateIncidence_Click(object sender, RoutedEventArgs e)
+        {
+            var modal = new CreateIncidenceWindow
+            {
+                Owner = this
+            };
+
+            if (modal.ShowDialog() == true)
+            {
+                LoadIncidences();
+            }
+        }
     }
 }

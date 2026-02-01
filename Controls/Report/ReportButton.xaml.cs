@@ -115,6 +115,16 @@ namespace TrafficDesktopApp.Controls.Report
             };
 
             PdfReportService.Generate(reportData, dialog.FileName);
+
+            // Abrir el archivo automáticamente
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(dialog.FileName) { UseShellExecute = true });
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show($"Reporte generado con éxito en: {dialog.FileName}\n\n(No se pudo abrir automáticamente: {ex.Message})", "Reporte Generado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
     }

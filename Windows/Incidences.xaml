@@ -43,10 +43,19 @@
                         </StackPanel>
                     </Border>
                 </StackPanel>
-                <Button Style="{StaticResource RefreshButtonStyle}" 
-                        Content="Actualizar Datos"
-                        HorizontalAlignment="Right"
-                        Click="Refresh_Click"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Style="{StaticResource DarkButton}" 
+                            VerticalAlignment="Center"
+                            Margin="0,0,10,0"
+                            Click="CreateIncidence_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="+ NUEVA INCIDENCIA" FontSize="12" FontWeight="Bold"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource RefreshButtonStyle}" 
+                            Content="Actualizar Datos"
+                            Click="Refresh_Click"/>
+                </StackPanel>
             </Grid>
         </Border>
 

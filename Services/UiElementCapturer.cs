@@ -16,6 +16,11 @@ namespace TrafficDesktopApp.Services
             if (size.Width == 0 || size.Height == 0)
                 return null;
 
+            // Forzar actualización de layout para asegurar que todo esté renderizado (especialmente etiquetas de ejes)
+            element.Measure(size);
+            element.Arrange(new Rect(size));
+            element.UpdateLayout();
+
             var renderBitmap = new RenderTargetBitmap(
                 (int)size.Width,
                 (int)size.Height,
