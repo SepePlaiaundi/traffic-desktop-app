@@ -14,6 +14,12 @@ namespace TrafficDesktopApp.Windows
     /// </summary>
     public partial class Dashboard : Window, System.ComponentModel.INotifyPropertyChanged
     {
+        private void ShowError(string message) { GlobalToast.Show(message); }
+        private void ToggleLoading(bool isLoading) 
+        { 
+            GlobalLoading.IsLoading = isLoading; 
+            this.Cursor = isLoading ? System.Windows.Input.Cursors.Wait : System.Windows.Input.Cursors.Arrow; 
+        }
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         private int _activeCameras;
@@ -45,6 +51,7 @@ namespace TrafficDesktopApp.Windows
 
         private async void LoadDashboardData()
         {
+            ToggleLoading(true);
             try
             {
                 // Cargamos todos los datos en paralelo para mayor velocidad
@@ -64,9 +71,13 @@ namespace TrafficDesktopApp.Windows
                 UpdateMonthlyChart(incidences);
                 UpdateDailyChart(incidences);
             }
-            catch
+            catch (Exception ex)
             {
-                CardTotalCamaras.Value = "Err";
+                ShowError("Error al cargar datos: " + ex.Message);
+            }
+            finally
+            {
+                ToggleLoading(false);
             }
         }
 

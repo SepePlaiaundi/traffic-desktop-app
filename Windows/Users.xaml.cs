@@ -21,6 +21,13 @@ namespace TrafficDesktopApp.Windows
     /// </summary>
     public partial class Users : Window
     {
+        private void ShowError(string message) { GlobalToast.Show(message); }
+        private void ToggleLoading(bool isLoading) 
+        { 
+            GlobalLoading.IsLoading = isLoading; 
+            this.Cursor = isLoading ? System.Windows.Input.Cursors.Wait : System.Windows.Input.Cursors.Arrow; 
+        } 
+
         public Users()
         {
             InitializeComponent();
@@ -33,6 +40,7 @@ namespace TrafficDesktopApp.Windows
 
         private async void LoadUsersData()
         {
+            ToggleLoading(true);
             try
             {
                 // CORRECCIÓN: El método en el servicio es GetAllUsersAsync
@@ -57,7 +65,11 @@ namespace TrafficDesktopApp.Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar usuarios: " + ex.Message);
+                ShowError("Error al cargar usuarios: " + ex.Message);
+            }
+            finally
+            {
+                ToggleLoading(false);
             }
         }
 

@@ -20,6 +20,13 @@ namespace TrafficDesktopApp.Windows
     /// </summary>
     public partial class Cameras : Window
     {
+        private void ShowError(string message) { GlobalToast.Show(message); }
+        private void ToggleLoading(bool isLoading) 
+        { 
+            GlobalLoading.IsLoading = isLoading; 
+            this.Cursor = isLoading ? System.Windows.Input.Cursors.Wait : System.Windows.Input.Cursors.Arrow; 
+        } 
+
         public Cameras()
         {
             InitializeComponent();
@@ -50,6 +57,7 @@ namespace TrafficDesktopApp.Windows
 
         private async void LoadCamerasData()
         {
+            ToggleLoading(true);
             try
             {
                 var cameras = await CamerasService.GetCamerasAsync();
@@ -63,7 +71,11 @@ namespace TrafficDesktopApp.Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                ShowError("Error: " + ex.Message);
+            }
+            finally
+            {
+                ToggleLoading(false);
             }
         }
     }

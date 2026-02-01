@@ -282,6 +282,21 @@
     <Compile Include="Windows\Users.xaml.cs">
       <DependentUpon>Users.xaml</DependentUpon>
     </Compile>
+
+    <Compile Include="Controls\General\LoadingOverlay.xaml.cs">
+      <DependentUpon>LoadingOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\General\ToastNotification.xaml.cs">
+      <DependentUpon>ToastNotification.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\General\LoadingOverlay.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\General\ToastNotification.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\Cameras\CamerasGridView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

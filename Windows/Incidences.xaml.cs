@@ -8,6 +8,12 @@ namespace TrafficDesktopApp.Windows
 {
     public partial class Incidences : Window
     {
+        private void ShowError(string message) { GlobalToast.Show(message); }
+        private void ToggleLoading(bool isLoading) 
+        { 
+            GlobalLoading.IsLoading = isLoading; 
+            this.Cursor = isLoading ? System.Windows.Input.Cursors.Wait : System.Windows.Input.Cursors.Arrow; 
+        }
         private List<Incidence> _allIncidences;
 
         public Incidences()
@@ -28,6 +34,7 @@ namespace TrafficDesktopApp.Windows
 
         private async void LoadIncidences()
         {
+            ToggleLoading(true);
             try
             {
                 _allIncidences = await IncidenceService.GetIncidencesAsync();
@@ -37,7 +44,11 @@ namespace TrafficDesktopApp.Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                ShowError(ex.Message);
+            }
+            finally
+            {
+                ToggleLoading(false);
             }
         }
 

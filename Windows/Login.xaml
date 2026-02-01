@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:general="clr-namespace:TrafficDesktopApp.Controls.General"
         xmlns:local="clr-namespace:TrafficDesktopApp"
         mc:Ignorable="d"
         Title="Seid" Height="500" Width="900" WindowStartupLocation="CenterScreen">
@@ -23,9 +24,6 @@
 
                     <PasswordBox x:Name="TxtPassword" Style="{StaticResource InputStyle}" Margin="0,4,0,16"/>
 
-                    <TextBlock x:Name="TxtError" Foreground="{DynamicResource DangerBrush}" FontSize="11" Margin="0,0,0,10" 
-                               TextAlignment="Center" Visibility="Collapsed"/>
-
                     <Button Content="Entrar" 
                             Style="{StaticResource DarkButton}"
                             Click="BtnLogin_Click"/>
@@ -38,5 +36,7 @@
 
         </StackPanel>
 
+        <general:LoadingOverlay x:Name="GlobalLoading"/>
+        <general:ToastNotification x:Name="GlobalToast" VerticalAlignment="Bottom" Margin="0,0,0,20"/>
     </Grid>
 </Window>

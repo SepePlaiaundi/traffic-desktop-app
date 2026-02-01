@@ -57,17 +57,18 @@ namespace TrafficDesktopApp.Windows
             }
         }
 
+
+
         private void ShowError(string message)
         {
-            TxtError.Text = message;
-            TxtError.Visibility = Visibility.Visible;
+            GlobalToast.Show(message);
         }
 
         private void ToggleLoading(bool isLoading)
         {
-            // Simple way to prevent double-clicking
-            this.IsEnabled = !isLoading;
+            GlobalLoading.IsLoading = isLoading;
             this.Cursor = isLoading ? Cursors.Wait : Cursors.Arrow;
+            this.IsEnabled = !isLoading;
         }
     }
 }
