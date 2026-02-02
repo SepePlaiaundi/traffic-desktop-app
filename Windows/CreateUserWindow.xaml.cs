@@ -5,31 +5,31 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
 {
+    /// <summary>
+    /// Ventana modal para el registro de nuevos usuarios administrativos en el sistema.
+    /// </summary>
     public partial class CreateUserWindow : Window
     {
-        public CreateUserWindow()
+        public CreateUserWindow(List<RoleResponse> roles)
         {
             InitializeComponent();
-        }
-
-        private async void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            try
+            
+            if (roles != null)
             {
-                List<RoleResponse> roles = await UsersService.GetRolesAsync();
                 RoleBox.ItemsSource = roles;
-
-                // --- CORRECCIÓN AQUÍ ---
-                // Usamos las propiedades que coinciden con el Backend Java
-                RoleBox.DisplayMemberPath = "Description"; // Lo que ve el usuario (ej: "Administrador")
-                RoleBox.SelectedValuePath = "Name";        // El valor interno (ej: "ADMIN")
-
                 if (roles.Count > 0) RoleBox.SelectedIndex = 0;
             }
-            catch
-            {
-                ShowError("No se pudieron cargar los roles.");
-            }
+        }
+
+        private void Border_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
+                this.DragMove();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Ya no cargamos roles aquí
         }
 
         private async void Create_Click(object sender, RoutedEventArgs e)
@@ -76,7 +76,7 @@ namespace TrafficDesktopApp.Windows
         private void ShowError(string message)
         {
             ErrorText.Text = message;
-            ErrorText.Visibility = Visibility.Visible;
+            ErrorBorder.Visibility = Visibility.Visible;
         }
     }
 }

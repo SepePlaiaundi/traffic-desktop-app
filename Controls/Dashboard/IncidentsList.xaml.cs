@@ -5,6 +5,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Controls.Dashboard
 {
+    /// <summary>
+    /// Lista compacta de incidencias para su visualización en el Dashboard.
+    /// </summary>
     public partial class IncidentsList : UserControl
     {
         public List<Incidence> Incidents
@@ -23,6 +26,13 @@ namespace TrafficDesktopApp.Controls.Dashboard
         public IncidentsList()
         {
             InitializeComponent();
+        }
+
+        private void BtnViewMore_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new TrafficDesktopApp.Windows.Incidences();
+            window.Show();
+            Window.GetWindow(this)?.Close();
         }
     }
 }

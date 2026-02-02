@@ -18,6 +18,9 @@ namespace TrafficDesktopApp.Windows
     /// <summary>
     /// Lógica de interacción para Cameras.xaml
     /// </summary>
+    /// <summary>
+    /// Ventana que gestiona la visualización de cámaras tanto en formato rejilla (Grid) como en mapa.
+    /// </summary>
     public partial class Cameras : Window
     {
         public Cameras()
@@ -27,7 +30,11 @@ namespace TrafficDesktopApp.Windows
             Header.SetActive("Cameras");
 
             LoadCamerasData();
+        }
 
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            LoadCamerasData();
         }
 
         private void SwitchView_Click(object sender, RoutedEventArgs e)

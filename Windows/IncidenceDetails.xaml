@@ -1,0 +1,149 @@
+<Window x:Class="TrafficDesktopApp.Windows.IncidenceDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:helpers="clr-namespace:TrafficDesktopApp.Helpers"
+        Title="SEID - Detalle de Incidencia" 
+        Height="650" Width="900"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <helpers:LevelToColorConverter x:Key="LevelToColorConverter" />
+    </Window.Resources>
+
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Cabecera con Título y Badge de Gravedad -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,24">
+            <StackPanel>
+                <TextBlock Text="DETALLE DE INCIDENCIA" Style="{StaticResource MutedText}" FontWeight="Bold" Margin="0,0,0,4"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Cause}" Style="{StaticResource PageTitle}" VerticalAlignment="Center"/>
+                    <Border Margin="16,0,0,0" 
+                            Padding="12,4" 
+                            CornerRadius="12" 
+                            Background="{Binding Level, Converter={StaticResource LevelToColorConverter}}"
+                            VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Level}" Foreground="White" FontSize="11" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Contenido principal en dos columnas -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Columna Izquierda: Detalles de Ubicación y Descripción -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Margin="0,0,12,0">
+                <StackPanel>
+                    <!-- Tarjeta de Ubicación -->
+                    <Border Style="{StaticResource CardBorder}" Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="INFORMACIÓN DE UBICACIÓN" Style="{StaticResource SectionTitle}" Margin="0,0,0,16"/>
+                            
+                            <UniformGrid Columns="2">
+                                <StackPanel Margin="0,0,0,16">
+                                    <TextBlock Text="CARRETERA" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding Road}" FontWeight="SemiBold" FontSize="15"/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,16">
+                                    <TextBlock Text="DIRECCIÓN" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding Direction}" FontWeight="SemiBold" FontSize="15"/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,16">
+                                    <TextBlock Text="CIUDAD" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding City}"/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,16">
+                                    <TextBlock Text="PROVINCIA" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding Province}"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock Text="LATITUD" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding Latitude, StringFormat=F6}"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock Text="LONGITUD" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                                    <TextBlock Text="{Binding Longitude, StringFormat=F6}"/>
+                                </StackPanel>
+                            </UniformGrid>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tarjeta de Descripción -->
+                    <Border Style="{StaticResource CardBorder}">
+                        <StackPanel>
+                            <TextBlock Text="DESCRIPCIÓN ADICIONAL" Style="{StaticResource SectionTitle}" Margin="0,0,0,12"/>
+                            <TextBlock Text="{Binding Description, TargetNullValue='No hay descripción adicional disponible para esta incidencia.'}" 
+                                       TextWrapping="Wrap" 
+                                       LineHeight="22" 
+                                       Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Columna Derecha: Estado y Tiempos -->
+            <StackPanel Grid.Column="1" Margin="12,0,0,0">
+                <!-- Tarjeta de Estado -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,0,0,20">
+                    <StackPanel>
+                        <TextBlock Text="ESTADO Y ORIGEN" Style="{StaticResource SectionTitle}" Margin="0,0,0,16"/>
+                        
+                        <StackPanel Margin="0,0,0,16">
+                            <TextBlock Text="TIPO DE INCIDENCIA" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                            <TextBlock Text="{Binding Type}" FontWeight="SemiBold"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="FUENTE DE DATOS" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                            <TextBlock Text="{Binding Source}" Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Tarjeta de Horarios -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock Text="FECHAS Y HORARIOS" Style="{StaticResource SectionTitle}" Margin="0,0,0,16"/>
+
+                        <StackPanel Margin="0,0,0,16">
+                            <TextBlock Text="FECHA DE INICIO" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                            <TextBlock Text="{Binding StartDate, StringFormat='{}{0:dd/MM/yyyy HH:mm}'}" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,0,0,16">
+                            <TextBlock Text="FIN PREVISTO" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                            <TextBlock Text="{Binding EndDate, StringFormat='{}{0:dd/MM/yyyy HH:mm}', TargetNullValue='Sin fecha fija'}" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="ÚLTIMA ACTUALIZACIÓN" Style="{StaticResource MutedText}" Margin="0,0,0,2"/>
+                            <TextBlock Text="{Binding LastUpdated, StringFormat='{}{0:dd/MM/yyyy HH:mm}'}" FontSize="12" FontStyle="Italic"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Pie de página con Botón de Cierre -->
+        <Border Grid.Row="2" Margin="0,24,0,0">
+            <Button Content="Cerrar Detalle" 
+                    Style="{StaticResource DarkButton}" 
+                    HorizontalAlignment="Right" 
+                    Width="160" 
+                    Height="40" 
+                    Click="CloseButton_Click"/>
+        </Border>
+    </Grid>
+</Window>

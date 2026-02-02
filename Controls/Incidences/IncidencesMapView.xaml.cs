@@ -9,9 +9,13 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using TrafficDesktopApp.Models;
+using TrafficDesktopApp.Windows;
 
 namespace TrafficDesktopApp.Controls.Incidences
 {
+    /// <summary>
+    /// Vista de mapa interactiva para la visualización geoespacial de incidencias de tráfico.
+    /// </summary>
     public partial class IncidencesMapView : UserControl
     {
         private const double MarkerSize = 48;
@@ -31,13 +35,14 @@ namespace TrafficDesktopApp.Controls.Incidences
 
             Map.MinZoom = 8;
             Map.MaxZoom = 18;
-            Map.Zoom = 9;
+            Map.Zoom = 10;
 
             Map.CanDragMap = true;
             Map.DragButton = MouseButton.Left;
             Map.MouseWheelZoomType = MouseWheelZoomType.MousePositionAndCenter;
             Map.ShowCenter = false;
             Map.IgnoreMarkerOnMouseWheel = true;
+            Map.ShowTileGridLines = false;
         }
 
         public void SetIncidences(List<Incidence> incidences)
@@ -46,7 +51,8 @@ namespace TrafficDesktopApp.Controls.Incidences
 
             foreach (var inc in incidences)
             {
-                if (inc.Latitude == 0 || inc.Longitude == 0)
+                // Validación de coordenadas (evitar 0,0 o puntos fuera de rango lógico)
+                if (inc.Latitude == 0 || inc.Longitude == 0 || !IsLocationValid(inc.Latitude, inc.Longitude))
                     continue;
 
                 var marker = new GMapMarker(
@@ -58,6 +64,12 @@ namespace TrafficDesktopApp.Controls.Incidences
 
                 Map.Markers.Add(marker);
             }
+        }
+
+        private bool IsLocationValid(double lat, double lon)
+        {
+            // Rango aproximado para filtrar datos erróneos (similar a cámaras)
+            return lat >= 41.0 && lat <= 44.0 && lon >= -5.0 && lon <= -1.0;
         }
 
         private UIElement CreateIncidenceMarker(Incidence inc)
@@ -76,6 +88,16 @@ namespace TrafficDesktopApp.Controls.Incidences
 
             image.MouseEnter += (_, __) => image.Opacity = 0.85;
             image.MouseLeave += (_, __) => image.Opacity = 1.0;
+
+            image.MouseLeftButtonUp += (s, e) =>
+            {
+                var details = new IncidenceDetails(inc)
+                {
+                    Owner = Window.GetWindow(this)
+                };
+                details.ShowDialog();
+                e.Handled = true;
+            };
 
             return image;
         }

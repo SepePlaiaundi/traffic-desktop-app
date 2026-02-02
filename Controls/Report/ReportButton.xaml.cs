@@ -6,6 +6,9 @@ using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Controls.Report
 {
+    /// <summary>
+    /// Botón personalizado que orquestra la captura de datos de la UI y la generación de informes PDF profesionales.
+    /// </summary>
     public partial class ReportButton : UserControl
     {
         public ReportButton()
@@ -73,6 +76,19 @@ namespace TrafficDesktopApp.Controls.Report
             set { SetValue(MonthlyChartSourceProperty, value); }
         }
 
+        public static readonly DependencyProperty RecentIncidentsProperty =
+            DependencyProperty.Register(
+                nameof(RecentIncidents),
+                typeof(System.Collections.Generic.List<Incidence>),
+                typeof(ReportButton),
+                new PropertyMetadata(null));
+
+        public System.Collections.Generic.List<Incidence> RecentIncidents
+        {
+            get { return (System.Collections.Generic.List<Incidence>)GetValue(RecentIncidentsProperty); }
+            set { SetValue(RecentIncidentsProperty, value); }
+        }
+
         // -----------------------------
         // Action
         // -----------------------------
@@ -97,10 +113,21 @@ namespace TrafficDesktopApp.Controls.Report
                 ActiveCameras = CameraCount,
                 IncidentsToday = IncidentsToday,
                 DailyChartImage = dailyChartImage,
-                MonthlyChartImage = monthlyChartImage
+                MonthlyChartImage = monthlyChartImage,
+                RecentIncidents = RecentIncidents
             };
 
             PdfReportService.Generate(reportData, dialog.FileName);
+
+            // Abrir el archivo automáticamente
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(dialog.FileName) { UseShellExecute = true });
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show($"Reporte generado con éxito en: {dialog.FileName}\n\n(No se pudo abrir automáticamente: {ex.Message})", "Reporte Generado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
     }

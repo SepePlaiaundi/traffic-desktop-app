@@ -2,6 +2,9 @@
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Representa una cámara de tráfico conectada al sistema de monitorización.
+    /// </summary>
     public class Camera
     {
         // 1. JSON envía "nombre" -> XAML pide "CameraName"

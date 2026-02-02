@@ -3,18 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Button Click="OnGenerateClick"
-            Padding="14,8"
-            Background="#1F2933"
-            Foreground="White"
-            BorderThickness="0"
-            Cursor="Hand"
-            FontWeight="SemiBold">
-
-        <Button.Resources>
-            <Style TargetType="Border">
-                <Setter Property="CornerRadius" Value="6"/>
-            </Style>
-        </Button.Resources>
+            Style="{StaticResource DarkButton}">
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
             <TextBlock Text="Descargar reporte PDF"/>

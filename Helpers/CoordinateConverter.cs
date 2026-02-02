@@ -2,16 +2,25 @@
 
 namespace TrafficDesktopApp.Helpers
 {
+    /// <summary>
+    /// Utilidad para la conversión de coordenadas geográficas.
+    /// </summary>
     public static class CoordinateConverter
     {
         // Bizkaia/Basque Country is usually in UTM Zone 30 North
         private const double EarthRadius = 6378137;
 
+        /// <summary>
+        /// Convierte coordenadas UTM (Easting/Northing) a WGS84 (Latitud/Longitud).
+        /// Específicamente configurado para la Zona UTM 30N (Estándar en el País Vasco).
+        /// </summary>
+        /// <param name="x">Coordenada X (Easting).</param>
+        /// <param name="y">Coordenada Y (Northing).</param>
+        /// <returns>Una tupla con la Latitud y Longitud calculadas.</returns>
         public static (double Latitude, double Longitude) UtmToWgs84(double x, double y)
         {
             // Specific parameters for ETRS89 / UTM zone 30N (Basque Country standard)
             int zone = 30;
-            bool north = true;
 
             double c_sa = 6378137.000000;
             double c_sb = 6356752.314245;

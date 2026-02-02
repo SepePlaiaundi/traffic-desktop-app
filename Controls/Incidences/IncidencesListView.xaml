@@ -20,7 +20,9 @@
                       AutoGenerateColumns="False"
                       CanUserAddRows="False"
                       GridLinesVisibility="None"
-                      HeadersVisibility="Column">
+                      HeadersVisibility="Column"
+                      IsReadOnly="True"
+            MouseDoubleClick="DataGrid_MouseDoubleClick">
 
                 <DataGrid.Columns>
 

@@ -2,6 +2,9 @@
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Representa un rol de usuario devuelto por la API.
+    /// </summary>
     public class RoleResponse
     {
         [JsonProperty("name")]

@@ -7,6 +7,9 @@ using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Helpers
 {
+    /// <summary>
+    /// Resuelve la ruta del icono correspondiente a un tipo de incidencia.
+    /// </summary>
     public static class IncidenceIconResolver
     {
         public static string GetIcon(string type)

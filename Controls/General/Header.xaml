@@ -2,11 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Border Background="White"
-            BorderBrush="#E0E0E0"
+    <Border Background="{DynamicResource SurfaceBrush}"
+            BorderBrush="{DynamicResource BorderLightBrush}"
             BorderThickness="0,0,0,1">
 
-        <Grid Margin="24,0" Height="60">
+        <Grid Margin="24,0" Height="70">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -25,10 +25,10 @@
                                Text="Dashboard"
                                FontSize="14"/>
                     <Border x:Name="DashboardUnderline"
-                            Height="3"
-                            Width="24"
-                            Background="Transparent"
-                            Margin="0,6,0,0"/>
+                             Height="3"
+                             Width="24"
+                             Background="Transparent"
+                             Margin="0,6,0,0"/>
                 </StackPanel>
 
                 <StackPanel Cursor="Hand"
@@ -38,10 +38,10 @@
                                Text="Incidencias"
                                FontSize="14"/>
                     <Border x:Name="IncidencesUnderline"
-                            Height="3"
-                            Width="24"
-                            Background="Transparent"
-                            Margin="0,6,0,0"/>
+                             Height="3"
+                             Width="24"
+                             Background="Transparent"
+                             Margin="0,6,0,0"/>
                 </StackPanel>
 
                 <StackPanel Cursor="Hand"
@@ -51,10 +51,10 @@
                                Text="Cámaras"
                                FontSize="14"/>
                     <Border x:Name="CamerasUnderline"
-                            Height="3"
-                            Width="24"
-                            Background="Transparent"
-                            Margin="0,6,0,0"/>
+                             Height="3"
+                             Width="24"
+                             Background="Transparent"
+                             Margin="0,6,0,0"/>
                 </StackPanel>
 
                 <StackPanel Cursor="Hand"
@@ -64,26 +64,25 @@
                                Text="Usuarios"
                                FontSize="14"/>
                     <Border x:Name="UsersUnderline"
-                            Height="3"
-                            Width="24"
-                            Background="Transparent"
-                            Margin="0,6,0,0"/>
+                             Height="3"
+                             Width="24"
+                             Background="Transparent"
+                             Margin="0,6,0,0"/>
                 </StackPanel>
             </StackPanel>
 
             <!-- Logo -->
             <Image Grid.Column="1"
                    Source="/Assets/logo.png"
-                   Height="40"
+                   Height="50"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-
             <!-- Avatar -->
             <Border Grid.Column="2"
                     Width="36"
                     Height="36"
                     CornerRadius="18"
-                    BorderBrush="#DDD"
+                    BorderBrush="{DynamicResource BorderLightBrush}"
                     BorderThickness="1"
                     VerticalAlignment="Center"
                     Cursor="Hand"
@@ -103,14 +102,20 @@
                 </Border.ContextMenu>
 
                 <Grid>
+                    <Ellipse Fill="{DynamicResource BorderLightBrush}"/>
                     
-                    <Ellipse Fill="#EEE"/>
-                    
-                    <TextBlock Text="U" 
+                    <TextBlock x:Name="UserInitials"
+                               Text="U" 
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Center" 
-                               Foreground="#888" 
+                               Foreground="{DynamicResource TextMutedBrush}" 
                                FontWeight="Bold"/>
+                    
+                    <Ellipse x:Name="UserAvatarEllipse" Visibility="Collapsed">
+                        <Ellipse.Fill>
+                            <ImageBrush x:Name="UserAvatarBrush" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
                 </Grid>
                 
             </Border>

@@ -2,6 +2,9 @@
 
 namespace TrafficDesktopApp.Models
 {
+    /// <summary>
+    /// Objeto de solicitud para la actualización de un usuario existente.
+    /// </summary>
     public class UserUpdateRequest
     {
         [JsonProperty("email")] // <--- ESTO ES VITAL

@@ -1,0 +1,131 @@
+<Window x:Class="TrafficDesktopApp.Windows.CreateIncidenceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        Title="SEID - Nueva Incidencia" 
+        Height="720" Width="1050"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{DynamicResource AppBackgroundBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Header -->
+            <RowDefinition Height="*"/>    <!-- Main Content -->
+            <RowDefinition Height="Auto"/> <!-- Footer -->
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="{DynamicResource SurfaceBrush}" Padding="24,16" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,0,1">
+            <DockPanel>
+                <StackPanel>
+                    <TextBlock Text="REGISTRO MANUAL" Style="{StaticResource MutedText}" FontWeight="Bold" FontSize="10" Margin="0,0,0,2"/>
+                    <TextBlock Text="Nueva Incidencia de Tráfico" Style="{StaticResource PageTitle}"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- Main Content (Split View) -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/> <!-- Form -->
+                <ColumnDefinition Width="*"/>   <!-- Map -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Form (Scrollable) -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Padding="24">
+                <StackPanel>
+                    <TextBlock Text="DETALLES DEL SUCESO" Style="{StaticResource SectionTitle}" Margin="0,0,0,16"/>
+                    
+                    <TextBlock Text="Fuente / Recurso" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                    <ComboBox x:Name="RecursoComboBox" Height="36" Margin="0,0,0,16" DisplayMemberPath="DescEs"/>
+
+                    <TextBlock Text="Causa o Título" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                    <TextBox x:Name="CauseBox" Height="36" Margin="0,0,0,16"/>
+
+                    <UniformGrid Columns="2" Margin="0,0,0,16">
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Carretera" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="RoadBox" Height="36"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0,0,0">
+                            <TextBlock Text="Tipo" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="TypeBox" Height="36"/>
+                        </StackPanel>
+                    </UniformGrid>
+
+                    <UniformGrid Columns="2" Margin="0,0,0,16">
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Ciudad" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="CityBox" Height="36"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0,0,0">
+                            <TextBlock Text="Provincia" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="ProvinceBox" Height="36"/>
+                        </StackPanel>
+                    </UniformGrid>
+
+                    <TextBlock Text="Ubicación (Fija con el mapa)" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                    <UniformGrid Columns="2" Margin="0,0,0,16">
+                        <TextBox x:Name="LatBox" Height="36" Margin="0,0,4,0" IsReadOnly="True" Background="{DynamicResource HoverBackgroundBrush}" Text="Latitud"/>
+                        <TextBox x:Name="LngBox" Height="36" Margin="4,0,0,0" IsReadOnly="True" Background="{DynamicResource HoverBackgroundBrush}" Text="Longitud"/>
+                    </UniformGrid>
+
+                    <UniformGrid Columns="2" Margin="0,0,0,16">
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Nivel" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="LevelBox" Height="36"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0,0,0">
+                            <TextBlock Text="Dirección" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <TextBox x:Name="DirectionBox" Height="36"/>
+                        </StackPanel>
+                    </UniformGrid>
+
+                    <TextBlock Text="Descripción" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                    <TextBox x:Name="DescriptionBox" Height="80" Margin="0,0,0,16" TextWrapping="Wrap" AcceptsReturn="True" VerticalContentAlignment="Top" Padding="8"/>
+
+                    <UniformGrid Columns="2">
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Fecha Inicio" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <DatePicker x:Name="StartDatePicker" Height="36"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0,0,0">
+                            <TextBlock Text="Fecha Fin" Style="{StaticResource MutedText}" Margin="0,0,0,6"/>
+                            <DatePicker x:Name="EndDatePicker" Height="36"/>
+                        </StackPanel>
+                    </UniformGrid>
+
+                    <!-- Área de Error -->
+                    <Border x:Name="ErrorBorder" Background="{DynamicResource DangerBackgroundBrush}" 
+                            BorderBrush="{DynamicResource DangerBrush}" BorderThickness="1" 
+                            CornerRadius="6" Padding="12" Margin="0,20,0,0" Visibility="Collapsed">
+                        <TextBlock x:Name="ErrorText" Foreground="{DynamicResource DangerBrush}" FontSize="12" TextWrapping="Wrap"/>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Right: Map (Fixed - No scroll interference) -->
+            <Grid Grid.Column="1">
+                <gmap:GMapControl x:Name="MapSelection" MouseLeftButtonUp="MapSelection_MouseLeftButtonUp"/>
+                
+                <!-- Map Overlay Hint -->
+                <Border VerticalAlignment="Top" HorizontalAlignment="Right" Margin="16" 
+                        Background="#CCFFFFFF" CornerRadius="4" Padding="12,8" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="8" Height="8" Fill="{DynamicResource AccentBrush}" Margin="0,0,8,0"/>
+                        <TextBlock Text="Haz clic para marcar la posición" FontSize="11" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimaryBrush}"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="{DynamicResource SurfaceBrush}" Padding="24,16" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,1,0,0">
+            <DockPanel>
+                <Button Content="Cerrar" Style="{StaticResource SecondaryButton}" Width="100" IsCancel="True" DockPanel.Dock="Left"/>
+                <Button Content="Guardar Incidencia" Style="{StaticResource PrimaryButton}" Width="200" Click="Create_Click" DockPanel.Dock="Right"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

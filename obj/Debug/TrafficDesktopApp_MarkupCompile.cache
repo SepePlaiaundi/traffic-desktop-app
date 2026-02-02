@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\SePe\traffic-desktop-app\App.xaml
-21-1294089101
-102030783744
-42856823345
+28530123797
+1-1080067585
+48218482471
 167-1872508715
-Controls\Cameras\CamerasGridView.xaml;Controls\Cameras\CamerasMapView.xaml;Controls\Incidences\IncidencesMapView.xaml;Controls\Report\ReportButton.xaml;Controls\Users\UsersListView.xaml;Styles\Theme.xaml;Windows\CameraDetails.xaml;Windows\Cameras.xaml;Controls\Dashboard\CamerasList.xaml;Controls\Dashboard\DashboardCard.xaml;Controls\Dashboard\IncidentsList.xaml;Controls\Dashboard\LineChart.xaml;Controls\Dashboard\MonthlyBarChart.xaml;Controls\General\Header.xaml;Controls\Incidences\IncidencesListView.xaml;Controls\Incidences\IncidencesSidebar.xaml;Windows\CreateUserWindow.xaml;Windows\Dashboard.xaml;Windows\Incidences.xaml;Windows\Login.xaml;Windows\Users.xaml;
+Controls\Cameras\CamerasGridView.xaml;Controls\Cameras\CamerasMapView.xaml;Controls\Incidences\IncidencesMapView.xaml;Controls\Report\ReportButton.xaml;Controls\Users\UsersListView.xaml;Styles\Brushes.xaml;Styles\Colors.xaml;Styles\Controls.xaml;Styles\Theme.xaml;Styles\Typography.xaml;Windows\CameraDetails.xaml;Windows\IncidenceDetails.xaml;Windows\Cameras.xaml;Controls\Dashboard\CamerasList.xaml;Controls\Dashboard\DashboardCard.xaml;Controls\Dashboard\IncidentsList.xaml;Controls\Dashboard\LineChart.xaml;Controls\Dashboard\MonthlyBarChart.xaml;Controls\General\Header.xaml;Controls\Incidences\IncidencesListView.xaml;Controls\Incidences\IncidencesSidebar.xaml;Windows\CreateUserWindow.xaml;Windows\CreateIncidenceWindow.xaml;Windows\Dashboard.xaml;Windows\Incidences.xaml;Windows\Login.xaml;Windows\Users.xaml;Windows\UserProfileWindow.xaml;
 
 False
 

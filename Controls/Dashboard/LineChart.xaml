@@ -6,7 +6,9 @@
     <lvc:CartesianChart x:Name="Chart"
                         LegendLocation="None"
                         Background="Transparent"
-                        Margin="0,10,0,0">
+                        Margin="0,0,0,30"
+                        Padding="0,0,0,30"
+                        DisableAnimations="True">
 
         <!-- EJE X -->
         <lvc:CartesianChart.AxisX>
