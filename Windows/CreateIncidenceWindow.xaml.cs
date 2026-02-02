@@ -97,7 +97,6 @@ namespace TrafficDesktopApp.Windows
             }
         }
 
-
         private async void Create_Click(object sender, RoutedEventArgs e)
         {
             try

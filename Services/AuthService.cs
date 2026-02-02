@@ -19,7 +19,10 @@
             CurrentToken = null;
             CurrentUserRole = null;
             ApiClient.SetAuthToken(null);
+<<<<<<< HEAD
             UsersService.ClearCache();
+=======
+>>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
         }
     }
 }

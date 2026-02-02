@@ -104,8 +104,14 @@
                 <Grid>
                     <Ellipse Fill="{DynamicResource BorderLightBrush}"/>
                     
+<<<<<<< HEAD
                     <TextBlock x:Name="UserInitials"
                                Text="U" 
+=======
+                    <Ellipse Fill="{DynamicResource BorderLightBrush}"/>
+                    
+                    <TextBlock Text="U" 
+>>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Center" 
                                Foreground="{DynamicResource TextMutedBrush}" 

@@ -172,6 +172,7 @@ C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\bin\Debug\Assets\logo.png
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp_Content.g.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\CreateIncidenceWindow.baml
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\Windows\CreateIncidenceWindow.g.cs
+<<<<<<< HEAD
 D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libqpdf.so
 D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-arm64\native\libQuestPdfSkia.so
 D:\SePe\traffic-desktop-app\bin\Debug\runtimes\linux-musl-x64\native\libqpdf.so
@@ -350,3 +351,5 @@ D:\SePe\traffic-desktop-app\obj\Debug\Windows\UserProfileWindow.baml
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\UserProfileWindow.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\IncidenceDetails.g.cs
 D:\SePe\traffic-desktop-app\obj\Debug\Windows\IncidenceDetails.baml
+=======
+>>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
