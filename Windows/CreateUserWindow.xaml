@@ -124,6 +124,12 @@
             <Setter Property="Foreground" Value="#374151"/>
             <Setter Property="Margin" Value="0,0,0,8"/>
         </Style>
+
+        <Storyboard x:Key="SpinAnimation" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetName="SpinnerRotate" 
+                             Storyboard.TargetProperty="Angle" 
+                             From="0" To="360" Duration="0:0:1" />
+        </Storyboard>
     </Window.Resources>
 
     <Border BorderBrush="#E5E7EB" BorderThickness="1" CornerRadius="12" Background="White" Margin="15"
@@ -254,6 +260,26 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+            </Grid>
+
+            <!-- Loading Overlay -->
+            <Grid x:Name="LoadingOverlay" Grid.RowSpan="4" Background="#CCFFFFFF" Visibility="Collapsed">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid Width="48" Height="48">
+                        <Ellipse Stroke="#E5E7EB" StrokeThickness="4"/>
+                        <Ellipse Stroke="#F5B400" StrokeThickness="4" StrokeDashArray="3 1">
+                            <Ellipse.RenderTransform>
+                                <RotateTransform x:Name="SpinnerRotate" CenterX="24" CenterY="24" Angle="0"/>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                    </Grid>
+                    <TextBlock Text="Creando usuario..." 
+                               Margin="0,16,0,0" 
+                               FontSize="14" 
+                               FontWeight="SemiBold" 
+                               Foreground="#374151" 
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
             </Grid>
         </Grid>
     </Border>

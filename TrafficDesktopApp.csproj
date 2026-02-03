@@ -139,6 +139,7 @@
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
@@ -255,6 +256,7 @@
     <Compile Include="Helpers\CoordinateConverter.cs" />
     <Compile Include="Helpers\IncidenceIconResolver.cs" />
     <Compile Include="Helpers\LevelToColorConverter.cs" />
+    <Compile Include="Helpers\SecurityHelper.cs" />
     <Compile Include="Models\IncidenceTypes.cs" />
     <Compile Include="Models\LoginResponse.cs" />
     <Compile Include="Models\ReportData.cs" />

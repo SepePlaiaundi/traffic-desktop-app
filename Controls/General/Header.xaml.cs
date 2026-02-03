@@ -4,10 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using TrafficDesktopApp.Services;
-<<<<<<< HEAD
 using System.Windows.Media.Imaging;
-=======
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
 
 namespace TrafficDesktopApp.Controls.General
 {
@@ -34,7 +31,6 @@ namespace TrafficDesktopApp.Controls.General
             LoadUserData();
         }
 
-<<<<<<< HEAD
         private async void LoadUserData()
         {
             try
@@ -63,9 +59,6 @@ namespace TrafficDesktopApp.Controls.General
             }
             catch { /* Silencioso en el header */ }
         }
-
-=======
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
         /// <summary>
         /// Resalta la página activa en el menú de navegación.
         /// </summary>

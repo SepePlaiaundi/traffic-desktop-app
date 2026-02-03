@@ -74,22 +74,14 @@
                         Grid.Column="1"
                         Margin="0,0,15,0"
                         Title="Cámaras disponibles"
-<<<<<<< HEAD
                         Value=""/>
-=======
-                        Value="—"/>
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
 
                     <controls:DashboardCard
                         x:Name="CardTotalUsuarios"
                         Grid.Column="2"
                         Title="Usuarios"
                         Value="—"
-<<<<<<< HEAD
                         Subtitle=""/>
-=======
-                        Subtitle="Operadores en el sistema"/>
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
                 </Grid>
 
                 <Grid Grid.Row="4">

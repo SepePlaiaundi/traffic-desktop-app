@@ -19,22 +19,7 @@ namespace TrafficDesktopApp.Services
         /// <param name="incidence">El objeto de incidencia con los datos a guardar.</param>
         /// <returns>True si la creación fue exitosa; de lo contrario, False.</returns>
         public static async Task<bool> CreateIncidenceAsync(Models.Incidence incidence)
-<<<<<<< HEAD
-=======
-        {
-            var json = JsonConvert.SerializeObject(incidence);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await ApiClient.Http.PostAsync("incidencia", content);
-            return response.IsSuccessStatusCode;
-        }
-
-        /// <summary>
-        /// Obtiene la lista completa de incidencias registradas.
-        /// </summary>
-        /// <returns>Una lista de objetos de tipo Incidence.</returns>
-        public static async Task<List<Models.Incidence>> GetIncidencesAsync()
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
         {
             var json = JsonConvert.SerializeObject(incidence);
             var content = new StringContent(json, Encoding.UTF8, "application/json");

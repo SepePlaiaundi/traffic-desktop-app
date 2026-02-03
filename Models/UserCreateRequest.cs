@@ -18,5 +18,8 @@ namespace TrafficDesktopApp.Models
 
         [JsonProperty("rol")]
         public string Rol { get; set; }
+
+        [JsonProperty("bypassEmail")]
+        public bool? BypassEmail { get; set; }
     }
 }
