@@ -182,7 +182,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -234,6 +234,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "MonthlyBarChart.xaml.cs",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
@@ -254,18 +266,6 @@
               "RelativeToolTip": "Windows\\CameraDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-01T20:16:02.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.952Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

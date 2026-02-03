@@ -12,10 +12,7 @@ namespace TrafficDesktopApp.Models
         private string _email;
         private string _nombreCompleto;
         private string _rol;
-<<<<<<< HEAD
         private string _avatar;
-=======
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
 
         [JsonProperty("email")]
         public string Email
@@ -38,7 +35,6 @@ namespace TrafficDesktopApp.Models
             set { _rol = value; OnPropertyChanged(); OnPropertyChanged(nameof(HasChanges)); }
         }
 
-<<<<<<< HEAD
         [JsonProperty("avatar")]
         public string Avatar
         {
@@ -50,11 +46,6 @@ namespace TrafficDesktopApp.Models
         private string _originalNombreCompleto;
         private string _originalRol;
         private string _originalAvatar;
-=======
-        private string _originalEmail;
-        private string _originalNombreCompleto;
-        private string _originalRol;
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
 
         /// <summary>
         /// Guarda el estado actual de las propiedades como los valores originales para detectar cambios futuros.
@@ -64,10 +55,7 @@ namespace TrafficDesktopApp.Models
             _originalEmail = Email;
             _originalNombreCompleto = NombreCompleto;
             _originalRol = Rol;
-<<<<<<< HEAD
             _originalAvatar = Avatar;
-=======
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
             OnPropertyChanged(nameof(HasChanges));
         }
 
@@ -78,12 +66,8 @@ namespace TrafficDesktopApp.Models
         public bool HasChanges => 
             Email != _originalEmail || 
             NombreCompleto != _originalNombreCompleto || 
-<<<<<<< HEAD
             Rol != _originalRol ||
             Avatar != _originalAvatar;
-=======
-            Rol != _originalRol;
->>>>>>> af2a4adbe1ddbf3ffd6114b99aa7f8eba957d4c0
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
