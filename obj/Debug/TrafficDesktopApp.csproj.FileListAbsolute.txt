@@ -176,3 +176,11 @@ D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.csproj.CoreCompileInputs
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
+D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x86\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x64\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\arm64\libHarfBuzzSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\libHarfBuzzSharp.dylib
+D:\SePe\traffic-desktop-app\bin\Debug\x86\libSkiaSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x64\libSkiaSharp.dll
+D:\SePe\traffic-desktop-app\bin\Debug\arm64\libSkiaSharp.dll

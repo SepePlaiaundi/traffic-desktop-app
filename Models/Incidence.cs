@@ -10,13 +10,27 @@ namespace TrafficDesktopApp.Models
     public class Incidence
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
+
+        /// <summary>
+        /// ID externo de la incidencia (usado para la restricción única en BD).
+        /// </summary>
+        [JsonProperty("externalId")]
+        public int ExternalId { get; set; }
 
         /// <summary>
         /// Recurso asociado a la incidencia (fuente de información).
         /// </summary>
-        [JsonProperty("recurso")]
+        [JsonProperty("recurso", NullValueHandling = NullValueHandling.Ignore)]
         public Recurso Recurso { get; set; }
+
+        public bool ShouldSerializeRecurso() => false;
+
+        /// <summary>
+        /// ID del recurso para creación/edición (backend only field).
+        /// </summary>
+        [JsonProperty("recursoId", NullValueHandling = NullValueHandling.Ignore)]
+        public int? RecursoId { get; set; }
 
         [JsonIgnore]
         public string Source => Recurso?.DescEs;

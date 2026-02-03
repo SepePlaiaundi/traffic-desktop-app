@@ -48,7 +48,8 @@
                                 IncidentsToday="{Binding IncidentsToday}"
                                 DailyChartSource="{Binding ElementName=DailyChart}"
                                 MonthlyChartSource="{Binding ElementName=MonthlyChart}"
-                                RecentIncidents="{Binding ElementName=IncidencesList, Path=Incidents}" />
+                                RecentIncidents="{Binding ElementName=IncidencesList, Path=Incidents}"
+                                AllIncidents="{Binding AllIncidences}" />
 
 
                     </StackPanel>

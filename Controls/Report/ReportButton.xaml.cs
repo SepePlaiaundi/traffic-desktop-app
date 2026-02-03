@@ -89,6 +89,19 @@ namespace TrafficDesktopApp.Controls.Report
             set { SetValue(RecentIncidentsProperty, value); }
         }
 
+        public static readonly DependencyProperty AllIncidentsProperty =
+            DependencyProperty.Register(
+                nameof(AllIncidents),
+                typeof(System.Collections.Generic.List<Incidence>),
+                typeof(ReportButton),
+                new PropertyMetadata(null));
+
+        public System.Collections.Generic.List<Incidence> AllIncidents
+        {
+            get { return (System.Collections.Generic.List<Incidence>)GetValue(AllIncidentsProperty); }
+            set { SetValue(AllIncidentsProperty, value); }
+        }
+
         // -----------------------------
         // Action
         // -----------------------------
@@ -114,7 +127,8 @@ namespace TrafficDesktopApp.Controls.Report
                 IncidentsToday = IncidentsToday,
                 DailyChartImage = dailyChartImage,
                 MonthlyChartImage = monthlyChartImage,
-                RecentIncidents = RecentIncidents
+                RecentIncidents = RecentIncidents,
+                AllIncidents = AllIncidents
             };
 
             PdfReportService.Generate(reportData, dialog.FileName);

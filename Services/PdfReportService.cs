@@ -1,6 +1,10 @@
 ﻿using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using SkiaSharp;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using TrafficDesktopApp.Models;
 
 namespace TrafficDesktopApp.Services
@@ -117,6 +121,69 @@ namespace TrafficDesktopApp.Services
                     }
                 });
 
+                // Circular Graph (Pie Chart) of Incidence Types
+                var incidentsForChart = data.AllIncidents ?? data.RecentIncidents;
+                if (incidentsForChart != null && incidentsForChart.Any())
+                {
+                    var typeStats = IncidenceTypes.All
+                        .Select(type => new KeyValuePair<string, int>(type, incidentsForChart.Count(i => i.Type == type)))
+                        .ToList();
+
+                    // Incluir tipos que existan en los datos pero no estén en la lista estándar
+                    var extraTypes = incidentsForChart
+                        .Where(i => !IncidenceTypes.All.Contains(i.Type))
+                        .GroupBy(i => i.Type ?? "Otros")
+                        .Select(g => new KeyValuePair<string, int>(g.Key, g.Count()));
+
+                    foreach (var extra in extraTypes)
+                    {
+                        typeStats.Add(extra);
+                    }
+
+                    typeStats = typeStats.OrderByDescending(x => x.Value).ToList();
+
+                    var total = typeStats.Sum(x => x.Value);
+                    var colors = new[] { 
+                        SKColors.IndianRed, SKColors.CornflowerBlue, SKColors.MediumSeaGreen, 
+                        SKColors.Goldenrod, SKColors.BlueViolet, SKColors.LightSlateGray, SKColors.DarkOrange 
+                    };
+
+                    column.Item().Column(c =>
+                    {
+                        c.Spacing(10);
+                        c.Item().Text("Distribución de Tipos de Incidencia").FontSize(12).SemiBold();
+                        
+                        c.Item().Border(1).BorderColor(Colors.Grey.Lighten2).Padding(15).Row(row =>
+                        {
+                            // Pie Chart Image
+                            row.ConstantItem(200).Height(200).Image(GeneratePieChartImage(typeStats, total, colors));
+
+                            row.ConstantItem(20);
+
+                            // Legend
+                            row.RelativeItem().Column(legendCol =>
+                            {
+                                legendCol.Spacing(5);
+                                legendCol.Item().Text("Leyenda").SemiBold().FontSize(10).Underline();
+
+                                for (int i = 0; i < typeStats.Count; i++)
+                                {
+                                    var stat = typeStats[i];
+                                    var percentage = (double)stat.Value / total * 100;
+                                    var color = colors[i % colors.Length];
+                                    var colorHex = $"#{color.Red:X2}{color.Green:X2}{color.Blue:X2}";
+
+                                    legendCol.Item().Row(legendRow =>
+                                    {
+                                        legendRow.ConstantItem(15).Height(15).Background(colorHex);
+                                        legendRow.ConstantItem(10);
+                                        legendRow.RelativeItem().Text($"{stat.Key}: {stat.Value} ({percentage:F1}%)").FontSize(10);
+                                    });
+                                }
+                            });
+                        });
+                    });
+                }
 
                 // Incidents Table
                 if (data.RecentIncidents != null && data.RecentIncidents.Count > 0)
@@ -154,6 +221,44 @@ namespace TrafficDesktopApp.Services
                     });
                 }
             });
+        }
+
+        static byte[] GeneratePieChartImage(List<KeyValuePair<string, int>> typeStats, int total, SKColor[] colors)
+        {
+            const int size = 400; // Render at higher resolution for better quality
+            using (var surface = SKSurface.Create(new SKImageInfo(size, size)))
+            {
+                var canvas = surface.Canvas;
+                canvas.Clear(SKColors.Transparent);
+
+                float startAngle = 0;
+                var center = new SKPoint(size / 2f, size / 2f);
+                var radius = (size / 2f) * 0.9f;
+
+                for (int i = 0; i < typeStats.Count; i++)
+                {
+                    var stat = typeStats[i];
+                    float sweepAngle = (float)stat.Value / total * 360;
+
+                    using (var paint = new SKPaint
+                    {
+                        Style = SKPaintStyle.Fill,
+                        Color = colors[i % colors.Length],
+                        IsAntialias = true
+                    })
+                    {
+                        canvas.DrawArc(new SKRect(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius), startAngle, sweepAngle, true, paint);
+                    }
+
+                    startAngle += sweepAngle;
+                }
+
+                using (var image = surface.Snapshot())
+                using (var data = image.Encode(SKEncodedImageFormat.Png, 100))
+                {
+                    return data.ToArray();
+                }
+            }
         }
 
         static IContainer HeaderCellStyle(IContainer container)

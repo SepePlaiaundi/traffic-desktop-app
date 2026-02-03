@@ -131,7 +131,7 @@ namespace TrafficDesktopApp.Windows
 
                 var incidence = new Incidence
                 {
-                    Id = nextId,
+                    Id = null, // Dejamos que el backend genere el PK (id_model)
                     Cause = CauseBox.Text,
                     Road = RoadBox.Text,
                     City = CityBox.Text,
@@ -144,7 +144,7 @@ namespace TrafficDesktopApp.Windows
                     Description = DescriptionBox.Text,
                     StartDate = StartDatePicker.SelectedDate ?? DateTime.Now,
                     EndDate = EndDatePicker.SelectedDate,
-                    Recurso = selectedRecurso,
+                    RecursoId = selectedRecurso.Id,
                     IsNew = true
                 };
 
@@ -180,10 +180,10 @@ namespace TrafficDesktopApp.Windows
             
             if (existing == null || existing.Count == 0) return 0;
 
-            // Obtenemos los IDs ocupados para este recurso específico
+            // Obtenemos los IDs externos ocupados para este recurso específico
             var occupiedIds = existing
                 .Where(i => i.Recurso != null && i.Recurso.Id == recursoId)
-                .Select(i => i.Id)
+                .Select(i => i.ExternalId)
                 .OrderBy(id => id)
                 .ToList();
 

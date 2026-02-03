@@ -17,8 +17,8 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ShouldIncludeNativeHarfBuzzSharp>False</ShouldIncludeNativeHarfBuzzSharp>
-    <ShouldIncludeNativeSkiaSharp>False</ShouldIncludeNativeSkiaSharp>
+    <ShouldIncludeNativeHarfBuzzSharp>True</ShouldIncludeNativeHarfBuzzSharp>
+    <ShouldIncludeNativeSkiaSharp>True</ShouldIncludeNativeSkiaSharp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -512,9 +512,7 @@
   </Target>
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
-  <!-- 
   <Import Project="packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets" Condition="Exists('packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
-  -->
   <Import Project="packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets')" />
 </Project>

@@ -34,6 +34,13 @@ namespace TrafficDesktopApp.Windows
             set { _incidentsToday = value; PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(IncidentsToday))); }
         }
 
+        private List<Incidence> _allIncidences;
+        public List<Incidence> AllIncidences
+        {
+            get => _allIncidences;
+            set { _allIncidences = value; PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(AllIncidences))); }
+        }
+
         public Dashboard()
         {
             InitializeComponent();
@@ -65,6 +72,7 @@ namespace TrafficDesktopApp.Windows
                 List<Incidence> incidences = await incidencesTask;
                 List<User> users = await usersTask;
 
+                AllIncidences = incidences;
                 UpdateCounters(cameras, incidences, users);
                 UpdateCamerasList(cameras);
                 UpdateIncidencesList(incidences);
