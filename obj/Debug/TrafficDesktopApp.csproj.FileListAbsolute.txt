@@ -370,3 +370,7 @@ C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.cs
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficD.CD59EF22.Up2Date
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe
 C:\Dev Projects\SepePlaiaundi\traffic-desktop-app\obj\Debug\TrafficDesktopApp.pdb
+D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe.manifest
+D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.application
+D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe.manifest
+D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.application
