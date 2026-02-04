@@ -3,6 +3,74 @@
   "WorkspaceRootPath": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\windows\\cameradetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameradetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\services\\cameraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\cameraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\cameradetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameradetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\incidences.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\incidences.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasgridview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasgridview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasgridview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasgridview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\windows\\cameras.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameras.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\cameras.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameras.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\typography.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\typography.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\theme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\theme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasmapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasmapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasmapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasmapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|c:\\dev projects\\sepeplaiaundi\\traffic-desktop-app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -21,14 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\general\\header.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\general\\header.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasgridview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasgridview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasmapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasmapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\dashboard\\cameraslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,14 +171,6 @@
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\cameraslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasmapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasmapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\cameras\\camerasgridview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\cameras\\camerasgridview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -127,48 +179,16 @@
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\users.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\incidences.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\incidences.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\createuserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\createuserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\cameras.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameras.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\cameradetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\cameradetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\windows\\users.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:windows\\users.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\typography.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\typography.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\controls\\dashboard\\monthlybarchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:controls\\dashboard\\monthlybarchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\styles\\theme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|solutionrelative:styles\\theme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BE2D838-5265-404C-8FC2-BE506CD9AEF1}|TrafficDesktopApp.csproj|C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\helpers\\coordinateconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,323 +202,161 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Incidences.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\Incidences.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml.cs",
-              "RelativeToolTip": "Windows\\Incidences.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-02-01T20:16:02.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CamerasGridView.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasGridView.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml.cs",
-              "RelativeToolTip": "Controls\\Cameras\\CamerasGridView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardCard.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\DashboardCard.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\DashboardCard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IncidentsList.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\IncidentsList.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\IncidentsList.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.952Z",
+              "WhenOpened": "2026-02-04T07:31:46.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MonthlyBarChart.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CameraDetails.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml",
-              "RelativeDocumentMoniker": "Windows\\CameraDetails.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml",
-              "RelativeToolTip": "Windows\\CameraDetails.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PdfReportService.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\PdfReportService.cs",
-              "RelativeDocumentMoniker": "Services\\PdfReportService.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\PdfReportService.cs",
-              "RelativeToolTip": "Services\\PdfReportService.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAYwI0AAAB1AAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-02-01T20:16:02.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 5,
               "Title": "CamerasGridView.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml",
               "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasGridView.xaml",
               "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml",
               "RelativeToolTip": "Controls\\Cameras\\CamerasGridView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CreateUserWindow.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CreateUserWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\CreateUserWindow.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CreateUserWindow.xaml",
-              "RelativeToolTip": "Windows\\CreateUserWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Users.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Users.xaml",
-              "RelativeDocumentMoniker": "Windows\\Users.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Users.xaml",
-              "RelativeToolTip": "Windows\\Users.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Brushes.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Brushes.xaml",
-              "RelativeDocumentMoniker": "Styles\\Brushes.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Brushes.xaml",
-              "RelativeToolTip": "Styles\\Brushes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LineChart.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\LineChart.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\LineChart.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.958Z"
+              "WhenOpened": "2026-02-01T20:16:02.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Header.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\General\\Header.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml.cs",
-              "RelativeToolTip": "Controls\\General\\Header.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Controls.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Controls.xaml",
+              "RelativeDocumentMoniker": "Styles\\Controls.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Controls.xaml",
+              "RelativeToolTip": "Styles\\Controls.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraDetails.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\CameraDetails.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml.cs",
+              "RelativeToolTip": "Windows\\CameraDetails.xaml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAA2wFoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.959Z"
+              "WhenOpened": "2026-02-04T06:55:43.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Header.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml",
-              "RelativeDocumentMoniker": "Controls\\General\\Header.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml",
-              "RelativeToolTip": "Controls\\General\\Header.xaml",
+              "DocumentIndex": 2,
+              "Title": "CameraDetails.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml",
+              "RelativeDocumentMoniker": "Windows\\CameraDetails.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CameraDetails.xaml",
+              "RelativeToolTip": "Windows\\CameraDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.959Z"
+              "WhenOpened": "2026-02-01T20:16:02.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "Windows\\Dashboard.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Dashboard.xaml",
-              "RelativeToolTip": "Windows\\Dashboard.xaml",
+              "DocumentIndex": 9,
+              "Title": "Cameras.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml",
+              "RelativeDocumentMoniker": "Windows\\Cameras.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml",
+              "RelativeToolTip": "Windows\\Cameras.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.96Z"
+              "WhenOpened": "2026-02-01T20:16:02.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Models\\Camera.cs",
+              "RelativeDocumentMoniker": "Models\\Camera.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Models\\Camera.cs",
+              "RelativeToolTip": "Models\\Camera.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T06:59:53.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CamerasList.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\CamerasList.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
-              "RelativeToolTip": "Controls\\Dashboard\\CamerasList.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Cameras.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Cameras.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml.cs",
+              "RelativeToolTip": "Windows\\Cameras.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwCIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.96Z"
+              "WhenOpened": "2026-02-04T07:09:05.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraService.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\CameraService.cs",
+              "RelativeDocumentMoniker": "Services\\CameraService.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\CameraService.cs",
+              "RelativeToolTip": "Services\\CameraService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwDMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T06:54:39.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Styles\\Colors.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Styles\\Colors.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Incidences.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml",
+              "RelativeDocumentMoniker": "Windows\\Incidences.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml",
+              "RelativeToolTip": "Windows\\Incidences.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CamerasMapView.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasMapView.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml.cs",
-              "RelativeToolTip": "Controls\\Cameras\\CamerasMapView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CamerasGridView.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasGridView.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasGridView.xaml.cs",
+              "RelativeToolTip": "Controls\\Cameras\\CamerasGridView.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvyEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.96Z"
+              "WhenOpened": "2026-02-01T20:16:02.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IncidencesSidebar.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesSidebar.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml.cs",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesSidebar.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IncidencesMapView.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesMapView.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml.cs",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesMapView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IncidencesListView.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesListView.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml.cs",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesListView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ReportButton.xaml.cs",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml.cs",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
-              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:16:02.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IncidentsList.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml",
-              "RelativeDocumentMoniker": "Controls\\Dashboard\\IncidentsList.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml",
-              "RelativeToolTip": "Controls\\Dashboard\\IncidentsList.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IncidencesListView.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesListView.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesListView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IncidencesMapView.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesMapView.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesMapView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IncidencesSidebar.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml",
-              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesSidebar.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml",
-              "RelativeToolTip": "Controls\\Incidences\\IncidencesSidebar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ReportButton.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
-              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
-              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 33,
               "Title": "UsersListView.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Users\\UsersListView.xaml",
               "RelativeDocumentMoniker": "Controls\\Users\\UsersListView.xaml",
@@ -509,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 32,
               "Title": "UsersListView.xaml.cs",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Users\\UsersListView.xaml.cs",
               "RelativeDocumentMoniker": "Controls\\Users\\UsersListView.xaml.cs",
@@ -521,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "LineChart.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml",
               "RelativeDocumentMoniker": "Controls\\Dashboard\\LineChart.xaml",
@@ -532,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 40,
               "Title": "DashboardCard.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml",
               "RelativeDocumentMoniker": "Controls\\Dashboard\\DashboardCard.xaml",
@@ -543,7 +401,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Login.xaml",
+              "RelativeDocumentMoniker": "Windows\\Login.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Login.xaml",
+              "RelativeToolTip": "Windows\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Brushes.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Brushes.xaml",
+              "RelativeDocumentMoniker": "Styles\\Brushes.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Brushes.xaml",
+              "RelativeToolTip": "Styles\\Brushes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Theme.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Theme.xaml",
+              "RelativeDocumentMoniker": "Styles\\Theme.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Theme.xaml",
+              "RelativeToolTip": "Styles\\Theme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CamerasMapView.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasMapView.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml.cs",
+              "RelativeToolTip": "Controls\\Cameras\\CamerasMapView.xaml.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwJUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CamerasMapView.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml",
+              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasMapView.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml",
+              "RelativeToolTip": "Controls\\Cameras\\CamerasMapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IncidentsList.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\IncidentsList.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml.cs",
+              "RelativeToolTip": "Controls\\Dashboard\\IncidentsList.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "CamerasList.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml",
               "RelativeDocumentMoniker": "Controls\\Dashboard\\CamerasList.xaml",
@@ -554,18 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Colors.xaml",
-              "RelativeDocumentMoniker": "Styles\\Colors.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Colors.xaml",
-              "RelativeToolTip": "Styles\\Colors.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 45,
               "Title": "Users.xaml.cs",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Users.xaml.cs",
               "RelativeDocumentMoniker": "Windows\\Users.xaml.cs",
@@ -577,84 +496,262 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Cameras.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml",
-              "RelativeDocumentMoniker": "Windows\\Cameras.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Cameras.xaml",
-              "RelativeToolTip": "Windows\\Cameras.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 13,
               "Title": "Typography.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Typography.xaml",
               "RelativeDocumentMoniker": "Styles\\Typography.xaml",
               "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Typography.xaml",
               "RelativeToolTip": "Styles\\Typography.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.967Z"
+              "WhenOpened": "2026-02-01T20:16:02.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MonthlyBarChart.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
+              "RelativeToolTip": "Controls\\Dashboard\\MonthlyBarChart.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DashboardCard.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\DashboardCard.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\DashboardCard.xaml.cs",
+              "RelativeToolTip": "Controls\\Dashboard\\DashboardCard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Incidences.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Incidences.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml.cs",
+              "RelativeToolTip": "Windows\\Incidences.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-01T20:16:02.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PdfReportService.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\PdfReportService.cs",
+              "RelativeDocumentMoniker": "Services\\PdfReportService.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Services\\PdfReportService.cs",
+              "RelativeToolTip": "Services\\PdfReportService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAYwI0AAAB1AAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-02-01T20:16:02.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CreateUserWindow.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CreateUserWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\CreateUserWindow.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\CreateUserWindow.xaml",
+              "RelativeToolTip": "Windows\\CreateUserWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Users.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Users.xaml",
+              "RelativeDocumentMoniker": "Windows\\Users.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Users.xaml",
+              "RelativeToolTip": "Windows\\Users.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LineChart.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\LineChart.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\LineChart.xaml.cs",
+              "RelativeToolTip": "Controls\\Dashboard\\LineChart.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.958Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "CamerasMapView.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml",
-              "RelativeDocumentMoniker": "Controls\\Cameras\\CamerasMapView.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Cameras\\CamerasMapView.xaml",
-              "RelativeToolTip": "Controls\\Cameras\\CamerasMapView.xaml",
+              "Title": "Header.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\General\\Header.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml.cs",
+              "RelativeToolTip": "Controls\\General\\Header.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Header.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml",
+              "RelativeDocumentMoniker": "Controls\\General\\Header.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\General\\Header.xaml",
+              "RelativeToolTip": "Controls\\General\\Header.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.968Z"
+              "WhenOpened": "2026-02-01T20:16:02.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "Windows\\Dashboard.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Dashboard.xaml",
+              "RelativeToolTip": "Windows\\Dashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CamerasList.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\CamerasList.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\CamerasList.xaml.cs",
+              "RelativeToolTip": "Controls\\Dashboard\\CamerasList.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IncidencesSidebar.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesSidebar.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml.cs",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesSidebar.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Login.xaml",
-              "RelativeDocumentMoniker": "Windows\\Login.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Login.xaml",
-              "RelativeToolTip": "Windows\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.968Z"
+              "Title": "IncidencesMapView.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesMapView.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml.cs",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesMapView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IncidencesListView.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesListView.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml.cs",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesListView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Incidences.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml",
-              "RelativeDocumentMoniker": "Windows\\Incidences.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Windows\\Incidences.xaml",
-              "RelativeToolTip": "Windows\\Incidences.xaml",
+              "Title": "ReportButton.xaml.cs",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml.cs",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml.cs",
+              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T20:16:02.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IncidentsList.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml",
+              "RelativeDocumentMoniker": "Controls\\Dashboard\\IncidentsList.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\IncidentsList.xaml",
+              "RelativeToolTip": "Controls\\Dashboard\\IncidentsList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.968Z"
+              "WhenOpened": "2026-02-01T20:16:02.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IncidencesListView.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesListView.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesListView.xaml",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesListView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IncidencesMapView.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesMapView.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesMapView.xaml",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesMapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T20:16:02.963Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "Controls.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Controls.xaml",
-              "RelativeDocumentMoniker": "Styles\\Controls.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Controls.xaml",
-              "RelativeToolTip": "Styles\\Controls.xaml",
+              "Title": "IncidencesSidebar.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml",
+              "RelativeDocumentMoniker": "Controls\\Incidences\\IncidencesSidebar.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Incidences\\IncidencesSidebar.xaml",
+              "RelativeToolTip": "Controls\\Incidences\\IncidencesSidebar.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.969Z"
+              "WhenOpened": "2026-02-01T20:16:02.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Theme.xaml",
-              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Theme.xaml",
-              "RelativeDocumentMoniker": "Styles\\Theme.xaml",
-              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Styles\\Theme.xaml",
-              "RelativeToolTip": "Styles\\Theme.xaml",
+              "DocumentIndex": 34,
+              "Title": "ReportButton.xaml",
+              "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
+              "RelativeDocumentMoniker": "Controls\\Report\\ReportButton.xaml",
+              "ToolTip": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Report\\ReportButton.xaml",
+              "RelativeToolTip": "Controls\\Report\\ReportButton.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-01T20:16:02.969Z"
+              "WhenOpened": "2026-02-01T20:16:02.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "CoordinateConverter.cs",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Helpers\\CoordinateConverter.cs",
               "RelativeDocumentMoniker": "Helpers\\CoordinateConverter.cs",
@@ -666,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "MonthlyBarChart.xaml",
               "DocumentMoniker": "C:\\Dev Projects\\SepePlaiaundi\\traffic-desktop-app\\Controls\\Dashboard\\MonthlyBarChart.xaml",
               "RelativeDocumentMoniker": "Controls\\Dashboard\\MonthlyBarChart.xaml",

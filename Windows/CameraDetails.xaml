@@ -129,25 +129,44 @@
                             </StackPanel>
 
                             <ToggleButton Grid.Column="1" 
-                                          Style="{StaticResource ModernSwitchStyle}" 
-                                          IsChecked="{Binding IsActive}"
-                                          Cursor="Hand"
-                                          VerticalAlignment="Center"/>
+                                  Style="{StaticResource ModernSwitchStyle}" 
+                                  IsChecked="{Binding IsActive, Mode=OneWay}" 
+                                  Cursor="Hand"
+                                  VerticalAlignment="Center"
+                                  Click="EstadoSwitch_Click"/>
                         </Grid>
                     </Border>
                 </StackPanel>
 
-                <Button Grid.Row="2" Content="Cerrar Detalle" Height="40" 
-                        Background="#222222" Foreground="White" FontWeight="Bold" 
-                        BorderThickness="0" Cursor="Hand" Click="CloseButton_Click">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="4">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                <StackPanel Grid.Row="2">
+                    <Button Content="Eliminar Cámara" Height="40" Margin="0,0,0,10"
+                            Background="Transparent" Foreground="#E74C3C" FontWeight="SemiBold" 
+                            BorderBrush="#E74C3C" BorderThickness="1" Cursor="Hand" 
+                            Click="DeleteButton_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="4">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button Content="Cerrar Detalle" Height="40" 
+                            Background="#222222" Foreground="White" FontWeight="Bold" 
+                            BorderThickness="0" Cursor="Hand" Click="CloseButton_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="4">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
             </Grid>
         </Border>
     </Grid>

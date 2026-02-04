@@ -1,33 +1,55 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace TrafficDesktopApp.Models
 {
-    /// <summary>
-    /// Representa una cámara de tráfico conectada al sistema de monitorización.
-    /// </summary>
-    public class Camera
+    public class Camera : INotifyPropertyChanged
     {
-        // 1. JSON envía "nombre" -> XAML pide "CameraName"
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private string _estado;
+
+        [JsonProperty("id")]
+        public int Id { get; set; }
+
         [JsonProperty("nombre")]
         public string CameraName { get; set; }
 
-        // 2. JSON envía "carretera" -> XAML pide "Road"
         [JsonProperty("carretera")]
         public string Road { get; set; }
 
-        // 3. JSON envía "urlImage" -> XAML pide "Image"
-        // WPF es listo: si le pasas una URL string al ImageSource, él descarga la imagen solo.
         [JsonProperty("urlImage")]
         public string Image { get; set; }
-
-        // Otros campos opcionales que venían en tu JSON
-        [JsonProperty("id")]
-        public string Id { get; set; }
 
         [JsonProperty("latitud")]
         public double? Latitude { get; set; }
 
         [JsonProperty("longitud")]
         public double? Longitude { get; set; }
+
+        [JsonProperty("estado")]
+        public string Estado
+        {
+            get => _estado;
+            set
+            {
+                _estado = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(IsActive)); // Important: Notify IsActive changed too
+            }
+        }
+
+        [JsonIgnore]
+        public bool IsActive
+        {
+            get => Estado == "ACTIVA";
+            set => Estado = value ? "ACTIVA" : "INACTIVA";
+        }
+
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
     }
 }
