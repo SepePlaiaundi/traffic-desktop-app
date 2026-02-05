@@ -212,7 +212,7 @@ namespace TrafficDesktopApp.Services
 
                             foreach (var inc in data.RecentIncidents)
                             {
-                                table.Cell().Element(CellStyle).Text(inc.StartDate.ToString("HH:mm"));
+                                table.Cell().Element(CellStyle).Text(inc.StartDate.Value.ToString("HH:mm"));
                                 table.Cell().Element(CellStyle).Text(inc.Type ?? "N/A");
                                 table.Cell().Element(CellStyle).Text(inc.Description ?? inc.Cause ?? "Sin detalles");
                                 table.Cell().Element(CellStyle).Text(inc.Province ?? "-");

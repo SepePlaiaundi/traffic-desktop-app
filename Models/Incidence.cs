@@ -56,8 +56,8 @@ namespace TrafficDesktopApp.Models
         /// <summary>
         /// Fecha y hora de inicio de la incidencia.
         /// </summary>
-        [JsonProperty("fecIni")]
-        public DateTime StartDate { get; set; }
+        [JsonProperty("fecIni", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTime? StartDate { get; set; }
 
         [JsonProperty("fecFin")]
         public DateTime? EndDate { get; set; }

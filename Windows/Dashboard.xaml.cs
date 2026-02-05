@@ -97,8 +97,9 @@ namespace TrafficDesktopApp.Windows
             var today = DateTime.Today;
             var yesterday = today.AddDays(-1);
 
-            int countToday = incidences.Count(i => i.StartDate.Date == today);
-            int countYesterday = incidences.Count(i => i.StartDate.Date == yesterday);
+            int countToday = incidences.Count(i => i.StartDate.HasValue && i.StartDate.Value.Date == today);
+            int countYesterday = incidences.Count(i => i.StartDate.HasValue && i.StartDate.Value.Date == yesterday);
+
 
             IncidentsToday = countToday; // Update property for Report Binding
             CardTotalIncidencias.Value = countToday.ToString();
@@ -133,7 +134,8 @@ namespace TrafficDesktopApp.Windows
         private void UpdateIncidencesList(List<Incidence> incidences)
         {
             IncidencesList.Incidents = incidences
-                .OrderByDescending(i => i.StartDate)
+                .Where(i => i.StartDate.HasValue)
+                .OrderByDescending(i => i.StartDate.Value)
                 .Take(5)
                 .ToList();
         }
@@ -141,7 +143,7 @@ namespace TrafficDesktopApp.Windows
 
         private void UpdateMonthlyChart(List<Incidence> incidences)
         {
-            MonthlyChart.SetIncidences(incidences);
+            MonthlyChart.SetIncidences(incidences.Where(i => i.StartDate.HasValue));
         }
 
         private void UpdateDailyChart(List<Incidence> incidences)
@@ -153,9 +155,12 @@ namespace TrafficDesktopApp.Windows
                 .ToList();
 
             var grouped = incidences
-                .Where(i => i.StartDate >= now.AddHours(-24))
-                .GroupBy(i => i.StartDate.Hour)
+                .Where(i =>
+                    i.StartDate.HasValue &&
+                    i.StartDate.Value >= now.AddHours(-24))
+                .GroupBy(i => i.StartDate.Value.Hour)
                 .ToDictionary(g => g.Key, g => g.Count());
+
 
             var points = hours
                 .Select(h =>

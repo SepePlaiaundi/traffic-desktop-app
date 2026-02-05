@@ -27,7 +27,7 @@ namespace TrafficDesktopApp.Controls.Dashboard
                 .ToList();
 
             var countsByDay = incidences
-                .GroupBy(i => i.StartDate.Date)
+                .GroupBy(i => i.StartDate.Value.Date)
                 .ToDictionary(g => g.Key, g => g.Count());
 
             var values = days

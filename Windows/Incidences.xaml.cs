@@ -51,7 +51,7 @@ namespace TrafficDesktopApp.Windows
             List<Incidence> filtered =
                 type == null
                     ? _allIncidences
-                    : _allIncidences.FindAll(i => i.Type == type);
+                    : _allIncidences.FindAll(i => i.StartDate.HasValue && i.Type == type);
 
             IncidentsMap.SetIncidences(filtered);
         }
