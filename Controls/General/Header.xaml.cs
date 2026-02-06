@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using TrafficDesktopApp.Services;
 using System.Windows.Media.Imaging;
+using TrafficDesktopApp.Helpers;
 
 namespace TrafficDesktopApp.Controls.General
 {
@@ -92,10 +93,10 @@ namespace TrafficDesktopApp.Controls.General
 
         // Navegación entre ventanas
         // Usamos el nombre completo (TrafficDesktopApp.Windows) para evitar conflictos con los nombres de carpetas de controles
-        private void Dashboard_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Dashboard());
-        private void Incidences_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Incidences());
-        private void Cameras_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Cameras());
-        private void Users_Click(object sender, RoutedEventArgs e) => OpenWindow(new TrafficDesktopApp.Windows.Users());
+        private void Dashboard_Click(object sender, RoutedEventArgs e) => OpenWindowSafe(() => new TrafficDesktopApp.Windows.Dashboard(), "Navigate:Dashboard");
+        private void Incidences_Click(object sender, RoutedEventArgs e) => OpenWindowSafe(() => new TrafficDesktopApp.Windows.Incidences(), "Navigate:Incidences");
+        private void Cameras_Click(object sender, RoutedEventArgs e) => OpenWindowSafe(() => new TrafficDesktopApp.Windows.Cameras(), "Navigate:Cameras");
+        private void Users_Click(object sender, RoutedEventArgs e) => OpenWindowSafe(() => new TrafficDesktopApp.Windows.Users(), "Navigate:Users");
 
         private void Avatar_Click(object sender, MouseButtonEventArgs e)
         {
@@ -126,21 +127,45 @@ namespace TrafficDesktopApp.Controls.General
         /// <summary>
         /// Abre una nueva ventana manteniendo el tamaño y posición de la actual.
         /// </summary>
-        private void OpenWindow(Window newWindow)
+        private void OpenWindowSafe(Func<Window> newWindowFactory, string context)
         {
             Window current = Window.GetWindow(this);
-            if (current != null)
+
+            try
             {
-                newWindow.WindowState = current.WindowState;
-                if (current.WindowState == WindowState.Normal)
+                Window newWindow = newWindowFactory?.Invoke();
+                if (newWindow == null)
+                    throw new InvalidOperationException("No se pudo crear la ventana de destino (null).");
+
+                if (current != null)
                 {
-                    newWindow.Width = current.Width;
-                    newWindow.Height = current.Height;
-                    newWindow.Left = current.Left;
-                    newWindow.Top = current.Top;
+                    newWindow.WindowState = current.WindowState;
+                    if (current.WindowState == WindowState.Normal)
+                    {
+                        newWindow.Width = current.Width;
+                        newWindow.Height = current.Height;
+                        newWindow.Left = current.Left;
+                        newWindow.Top = current.Top;
+                    }
                 }
+
+                // Evitar que el cierre de la ventana inicial apague la app en algunos escenarios de publicación.
+                Application.Current.MainWindow = newWindow;
                 newWindow.Show();
-                current.Close();
+
+                current?.Close();
+            }
+            catch (Exception ex)
+            {
+                string logPath = CrashLogger.LogException(ex, context);
+                MessageBox.Show(
+                    "No se pudo abrir la pantalla solicitada.\n\n" +
+                    ex.Message +
+                    (string.IsNullOrWhiteSpace(logPath) ? "" : "\n\nLog: " + logPath),
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
             }
         }
     }

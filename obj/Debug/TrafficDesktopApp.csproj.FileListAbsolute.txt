@@ -374,3 +374,6 @@ D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.exe.manifest
 D:\SePe\traffic-desktop-app\bin\Debug\TrafficDesktopApp.application
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.exe.manifest
 D:\SePe\traffic-desktop-app\obj\Debug\TrafficDesktopApp.application
+D:\SePe\traffic-desktop-app\bin\Debug\x64\SQLite.Interop.dll
+D:\SePe\traffic-desktop-app\bin\Debug\x86\SQLite.Interop.dll
+D:\SePe\traffic-desktop-app\bin\Debug\QuestPdfSkia.dll

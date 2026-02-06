@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using TrafficDesktopApp.Services;
 using TrafficDesktopApp.Models;
 using System.Configuration;
+using System.Threading;
+using TrafficDesktopApp.Helpers;
 
 namespace TrafficDesktopApp
 {
@@ -14,8 +16,43 @@ namespace TrafficDesktopApp
     {
         public App()
         {
+            AttachGlobalExceptionHandlers();
+
             // Forzar GMap a no usar caché local (SQLite) si hay problemas cargando la DLL
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+        }
+
+        private void AttachGlobalExceptionHandlers()
+        {
+            // UI thread exceptions (WPF Dispatcher)
+            this.DispatcherUnhandledException += (s, e) =>
+            {
+                string logPath = CrashLogger.LogException(e.Exception, "DispatcherUnhandledException");
+                MessageBox.Show(
+                    "Ha ocurrido un error inesperado.\n\n" +
+                    e.Exception.Message +
+                    (string.IsNullOrWhiteSpace(logPath) ? "" : "\n\nLog: " + logPath),
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
+                e.Handled = true; // avoid silent app exit
+            };
+
+            // Non-UI thread exceptions
+            AppDomain.CurrentDomain.UnhandledException += (s, e) =>
+            {
+                var ex = e.ExceptionObject as Exception;
+                CrashLogger.LogException(ex ?? new Exception("UnhandledException (non-Exception object)"), "AppDomain.UnhandledException");
+                // Can't reliably show UI here; we just log.
+            };
+
+            // Unobserved task exceptions
+            TaskScheduler.UnobservedTaskException += (s, e) =>
+            {
+                CrashLogger.LogException(e.Exception, "TaskScheduler.UnobservedTaskException");
+                e.SetObserved();
+            };
         }
 
         protected override async void OnStartup(StartupEventArgs e)

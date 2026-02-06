@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TrafficDesktopApp.Controls.Cameras;
+using TrafficDesktopApp.Models;
 using TrafficDesktopApp.Services;
 
 namespace TrafficDesktopApp.Windows
@@ -23,6 +25,9 @@ namespace TrafficDesktopApp.Windows
     /// </summary>
     public partial class Cameras : Window
     {
+        private CamerasMapView _camerasMapView;
+        private List<Camera> _allCameras;
+
         public Cameras()
         {
             InitializeComponent();
@@ -42,12 +47,15 @@ namespace TrafficDesktopApp.Windows
             if (BtnGrid.IsChecked == true)
             {
                 CamerasGrid.Visibility = Visibility.Visible;
-                CamerasMap.Visibility = Visibility.Collapsed;
+                CamerasMapHost.Visibility = Visibility.Collapsed;
             }
             else
             {
                 CamerasGrid.Visibility = Visibility.Collapsed;
-                CamerasMap.Visibility = Visibility.Visible;
+                EnsureMapCreated();
+                CamerasMapHost.Visibility = Visibility.Visible;
+                if (_allCameras != null)
+                    _camerasMapView?.SetCameras(_allCameras);
             }
         }
 
@@ -58,16 +66,27 @@ namespace TrafficDesktopApp.Windows
                 var cameras = await CamerasService.GetCamerasAsync();
                 if (cameras != null)
                 {
+                    _allCameras = cameras;
                     // Update the Grid
                     CamerasGrid.SetCameras(cameras);
                     // Update the Map
-                    CamerasMap.SetCameras(cameras);
+                    _camerasMapView?.SetCameras(cameras);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void EnsureMapCreated()
+        {
+            if (_camerasMapView != null)
+                return;
+
+            // Lazy-load the map so the window can open even if map deps fail in published builds.
+            _camerasMapView = new CamerasMapView();
+            CamerasMapHost.Content = _camerasMapView;
         }
     }
 }

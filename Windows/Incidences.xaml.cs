@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows;
+using TrafficDesktopApp.Controls.Incidences;
 using TrafficDesktopApp.Models;
 using TrafficDesktopApp.Services;
 
@@ -12,6 +13,8 @@ namespace TrafficDesktopApp.Windows
     public partial class Incidences : Window
     {
         private List<Incidence> _allIncidences;
+        private IncidencesMapView _incidencesMapView;
+        private string _currentFilterType;
 
         public Incidences()
         {
@@ -36,7 +39,7 @@ namespace TrafficDesktopApp.Windows
                 _allIncidences = await IncidenceService.GetIncidencesAsync();
 
                 IncidentsList.SetIncidences(_allIncidences);
-                IncidentsMap.SetIncidences(_allIncidences);
+                _incidencesMapView?.SetIncidences(_allIncidences);
             }
             catch (Exception ex)
             {
@@ -46,6 +49,7 @@ namespace TrafficDesktopApp.Windows
 
         private void OnFilterChanged(string type)
         {
+            _currentFilterType = type;
             IncidentsList.ApplyFilter(type);
 
             List<Incidence> filtered =
@@ -53,7 +57,7 @@ namespace TrafficDesktopApp.Windows
                     ? _allIncidences
                     : _allIncidences.FindAll(i => i.StartDate.HasValue && i.Type == type);
 
-            IncidentsMap.SetIncidences(filtered);
+            _incidencesMapView?.SetIncidences(filtered);
         }
 
         private void SwitchView_Click(object sender, RoutedEventArgs e)
@@ -61,13 +65,35 @@ namespace TrafficDesktopApp.Windows
             if (BtnList.IsChecked == true)
             {
                 IncidentsList.Visibility = Visibility.Visible;
-                IncidentsMap.Visibility = Visibility.Collapsed;
+                IncidentsMapHost.Visibility = Visibility.Collapsed;
             }
             else
             {
                 IncidentsList.Visibility = Visibility.Collapsed;
-                IncidentsMap.Visibility = Visibility.Visible;
+                EnsureMapCreated();
+                IncidentsMapHost.Visibility = Visibility.Visible;
+                _incidencesMapView?.SetIncidences(GetFilteredIncidences());
             }
+        }
+
+        private void EnsureMapCreated()
+        {
+            if (_incidencesMapView != null)
+                return;
+
+            // Lazy-load the map so the window can open even if map deps fail in published builds.
+            _incidencesMapView = new IncidencesMapView();
+            IncidentsMapHost.Content = _incidencesMapView;
+        }
+
+        private List<Incidence> GetFilteredIncidences()
+        {
+            if (_allIncidences == null)
+                return new List<Incidence>();
+
+            return _currentFilterType == null
+                ? _allIncidences
+                : _allIncidences.FindAll(i => i.StartDate.HasValue && i.Type == _currentFilterType);
         }
 
         private void CreateIncidence_Click(object sender, RoutedEventArgs e)

@@ -73,9 +73,9 @@
                                      Grid.Column="2"
                                      Visibility="Visible"/>
 
-            <controls:IncidencesMapView x:Name="IncidentsMap"
-                                    Grid.Column="2"
-                                    Visibility="Collapsed"/>
+            <ContentControl x:Name="IncidentsMapHost"
+                            Grid.Column="2"
+                            Visibility="Collapsed"/>
         </Grid>
     </Grid>
 

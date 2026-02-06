@@ -31,7 +31,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -70,6 +70,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SEID_ICON.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BruTile, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -283,6 +286,7 @@
       <DependentUpon>UsersListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CoordinateConverter.cs" />
+    <Compile Include="Helpers\CrashLogger.cs" />
     <Compile Include="Helpers\IncidenceIconResolver.cs" />
     <Compile Include="Helpers\LevelToColorConverter.cs" />
     <Compile Include="Helpers\SecurityHelper.cs" />
@@ -509,6 +513,7 @@
     <Content Include="Assets\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="SEID_ICON.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\camera.png" />
@@ -556,4 +561,70 @@
   <Import Project="packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets" Condition="Exists('packages\HarfBuzzSharp.2.6.1.7\build\net462\HarfBuzzSharp.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
   <Import Project="packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\build\net4\QuestPDF.targets')" />
+  <!--
+    ClickOnce publish fix (VS 2022 / VisualStudioVersion 17+):
+    Some NuGet .targets (notably Stub.System.Data.SQLite.Core.NetFramework 1.0.115.5) only hook
+    into the ClickOnce pipeline up to VS 2019 (16.0), so native files may be copied to bin
+    but NOT included in the published app. This target forces inclusion of the native DLLs
+    that QuestPDF (SkiaSharp/HarfBuzz) and GMap/SQLite typically require at runtime.
+  -->
+  <Target Name="ForceIncludeNativeDepsInClickOncePublish" BeforeTargets="PipelineCollectFilesPhase">
+    <ItemGroup>
+      <!--
+        IMPORTANT:
+        - System.Data.SQLite loads "SQLite.Interop.dll" via Win32 loader.
+          In ClickOnce installs, the safest location is the application root (same folder as .exe).
+        - QuestPDF loads "QuestPdfSkia.dll" the same way (DllImport "QuestPdfSkia").
+          Therefore we must publish these native DLLs into the app root too.
+      -->
+      <!-- SQLite interop (required by GMap.NET default cache provider) -->
+      <FilesForPackagingFromProject Include="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\x64\SQLite.Interop.dll" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\x64\SQLite.Interop.dll')">
+        <DestinationRelativePath>SQLite.Interop.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <!-- QuestPDF native engine (x64) -->
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\QuestPdfSkia.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\QuestPdfSkia.dll')">
+        <DestinationRelativePath>QuestPdfSkia.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\qpdf.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\qpdf.dll')">
+        <DestinationRelativePath>qpdf.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\zlib1.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\zlib1.dll')">
+        <DestinationRelativePath>zlib1.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libstdc++-6.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libstdc++-6.dll')">
+        <DestinationRelativePath>libstdc++-6.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libgcc_s_seh-1.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libgcc_s_seh-1.dll')">
+        <DestinationRelativePath>libgcc_s_seh-1.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <FilesForPackagingFromProject Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libwinpthread-1.dll" Condition="Exists('packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\libwinpthread-1.dll')">
+        <DestinationRelativePath>libwinpthread-1.dll</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <Content Include="$(OutputPath)x64\SQLite.Interop.dll">
+      <Link>x64\SQLite.Interop.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+      <PublishState>Include</PublishState>
+    </Content>
+    <Content Include="$(OutputPath)x86\SQLite.Interop.dll">
+      <Link>x86\SQLite.Interop.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+      <PublishState>Include</PublishState>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="x64\" />
+    <Folder Include="x86\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\QuestPDF.2025.12.3.1-alpha2\runtimes\win-x64\native\QuestPdfSkia.dll">
+      <Link>QuestPdfSkia.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </Content>
+  </ItemGroup>
 </Project>
